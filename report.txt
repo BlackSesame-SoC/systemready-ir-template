@@ -1,0 +1,34 @@
+General information
+-------------------
+- Arm SystemReady Band: IR
+- System name:BST C1200 ADAS
+- Prepared by:gordon.ge
+- E-mail:gordon.ge@bst.ai
+- Date:2026.09.28
+
+System information
+------------------
+- Company:Black Sesame Technologies,Co.,Ltd.
+- System:BST C1200 ADAS
+- SoC:C1296-cdcu1.0
+- FW version:Mainline U-Boot firmware plus patches 
+             U-Boot 2022.07
+- Memory:
+- Storage devices / disks: eMMC
+- Network controllers:
+- Total number of network controllers: 0
+- Other Hardware information:
+
+Test logs and results
+---------------------
+- ACS version used:v23.03_IR_2.0.0
+- ACS URL (if pre-built binary):https://github.com/ARM-software/arm-systemready/tree/v23.03_IR_2.0.0
+- Changes to ACS (if built from source):
+
+- Test logs and results collected
+[ok] ACS automated tests (SCT, UEFI BSA, Linux BSA, Linux FWTS, Linux DT)
+[ok] ACS SIE automated tests (SIE SCT, Linux SIE FWTS; if applicable)
+[ok] U-Boot sniff tests (if applicable)
+[ok] ACS UEFI Shell sniff tests
+[ok] ACS capsule update (direct and "on disk")
+[ok] OS installs and sniff tests

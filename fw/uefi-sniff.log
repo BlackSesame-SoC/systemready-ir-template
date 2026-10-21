@@ -1,0 +1,496 @@
+
+Boot services terminated
+Executing 'ExitBootServices' succeeded
+
+Executing 'variables at runtime'
+Executing 'variables at runtime' succeeded
+
+Executing 'virtual address map'
+Executing 'virtual address map' succeeded
+
+Summary: 1 failures
+
+Preparing for reset. Press any key...
+resetting ...
+
+BL2-NOTICE  :BL2: Built : 00:03:05, Nov  6 2025
+BL2-NOTICE  :BL2: Booting BL31 [26406]
+E/TC:0 0 bst_get_huk:1399 R5 HUK is not ready.
+host->align_buffer:0000000005170000
+dwmmc0@22200000: 0
+Net:   eth0: xgmac@32400000
+
+
+U-Boot 2022.07+ (Oct 10 2026 - 20:37:49 +0800)BST C1200 ADAS
+
+Autoboot in 3 seconds, hit ctrl+c to stop
+u-boot> 
+u-boot> 
+u-boot> warning: phy_calibration=0xffffffff 
+warning: phy_calibration=0xffffffff 
+
+BL2-NOTICE  :BL2: Built : 00:03:05, Nov  6 2025
+Hit ctrl+x to stop autoboot: 0
+BL2-NOTICE  :BL2: Booting BL31 [3761934]
+E/TC:0 0 bst_get_huk:1399 R5 HUK is not ready.
+host->align_buffer:0000000005170000
+dwmmc0@22200000: 0
+Net:   
+Warning: xgmac@32400000 MAC addresses don't match:
+Address in ROM is               ff:ff:ff:ff:ff:ff
+Address in environment is       5a:59:3e:4d:ba:b6
+eth0: xgmac@32400000
+
+
+U-Boot 2022.07+ (Oct 10 2026 - 20:37:49 +0800)BST C1200 ADAS
+
+Autoboot in 3 seconds, hit ctrl+c to stop
+u-boot> usb start
+starting USB...
+Bus usbhost@0x022100000: Using usb cmn_offset: 0x1000000000
+dwc3_hsphy_mode_setup 388 REG 102407
+Register 2000140 NbrPorts 2
+Starting the controller
+USB XHCI 1.20
+Bus usbhost@0x022000000: Using usb cmn_offset: 0x1000000000
+dwc3_hsphy_mode_setup 388 REG 102407
+Register 2000140 NbrPorts 2
+Starting the controller
+USB XHCI 1.20
+scanning bus usbhost@0x022100000 for devices... 2 USB Device(s) found
+scanning bus usbhost@0x022000000 for devices... 1 USB Device(s) found
+       scanning usb for storage devices... 1 Storage Device(s) found
+u-boot> efidebug boot add -b 0001 "UEFI Boot" usb 0:1 \EFI\BOOT\BOOTAA64.EFI
+u-boot> 
+u-boot> efidebug boot dump
+Boot0001:
+attributes: A-- (0x00000001)
+  label: UEFI Boot
+  file_path: /UsbClass(0x0,0x0,0x9,0x0,0x3)/UsbClass(0x346d,0x5678,0x0,0x0,0x0)/HD(1,GPT,ad9fb413-9895-4e6f-afdf-151f73f95331,0x800,0x32000)/EFIBOOTBOOTAA64.EFI
+  data:
+u-boot> run bootcmd
+Booting /efi\boot\bootaa64.efi
+Welcome to GRUB!
+
+error: no such device: ((hd0,gpt1)/efi/boot)/EFI/BOOT/grub.cfg.
+error: serial port `com0' isn't found.
+                                                                                                                                                                      
+                                                                        GNU GRUB  version 2.06                                                                        
+                                                                                                                                                                      
+ ┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐ 
+ │ Linux Boot                                                                                                                                                       │ 
+ │*bbr/bsa                                                                                                                                                          │ 
+ │ SCT for Security Interface Extension (optional)                                                                                                                  │ 
+ │ Linux Boot for Security Interface Extension (optional)                                                                                                           │ 
+ │                                                                                                                                                                  │ 
+ │                                                                                                                                                                  │ 
+ │                                                                                                                                                                  │ 
+ │                                                                                                                                                                  │ 
+ │                                                                                                                                                                  │ 
+ │                                                                                                                                                                  │ 
+ │                                                                                                                                                                  │ 
+ │                                                                                                                                                                  │ 
+ │                                                                                                                                                                  │ 
+ │                                                                                                                                                                  │ 
+ │                                                                                                                                                                  │ 
+ │                                                                                                                                                                  │ 
+ │                                                                                                                                                                  │ 
+ │                                                                                                                                                                  │ 
+ │                                                                                                                                                                  │ 
+ │                                                                                                                                                                  │ 
+ │                                                                                                                                                                  │ 
+ │                                                                                                                                                                  │ 
+ │                                                                                                                                                                  │ 
+ │                                                                                                                                                                  │ 
+ │                                                                                                                                                                  │ 
+ │                                                                                                                                                                  │ 
+ │                                                                                                                                                                  │ 
+ │                                                                                                                                                                  │ 
+ │                                                                                                                                                                  │ 
+ │                                                                                                                                                                  │ 
+ │                                                                                                                                                                  │ 
+ └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘ 
+                                                                                                                                                                      
+      Use the ▲ and ▼ keys to select which entry is highlighted.                                                                                                      
+      Press enter to boot the selected OS, `e' to edit the commands before booting or `c' for a command-line.                                                         
+                                                                                                                                                                      
+                                                                                                                                                                      
+/EndEntire                                                                                                                                                            
+file path: /HardwareVendor(e61d73b9-a384-4acc-aeab-82e828f3628b)[0: ]/USBClass(0,0,9,0,3)/USBClass(346d,5678,0,0,0)/HD(1,800,32000,13b49fad95986f4e,2,2)              
+/File(\EFI\BOOT)/File(Shell.efi)/EndEntire                                                                                                                            
+UEFI Interactive Shell v2.2                                                                                                                                           
+EDK II                                                                                                                                                                
+UEFI v2.90 (Das U-Boot, 0x20220700)                                                                                                                                   
+Mapping table                                                                                                                                                         
+      FS0: Alias(s):HD0b:;BLK1:                                                                                                                                       
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/UsbClass(0x0,0x0,0x9,0x0,0x3)/UsbClass(0x346d,0x5678,0x0,0x0,0x0)/HD(1,GPT,ad9fb413-9895-4e6f-afdf-151f73f95331,0x800,0x32000)                                                                                                                                                       
+      FS1: Alias(s):HD0c:;BLK2:                                                                                                                                       
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/UsbClass(0x0,0x0,0x9,0x0,0x3)/UsbClass(0x346d,0x5678,0x0,0x0,0x0)/HD(2,GPT,4491cc92-efd8-49c5-b6d6-79e30947620c,0x32800,0xcf2f0)                                                                                                                                                     
+      FS2: Alias(s):HD0d:;BLK3:                                                                                                                                       
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/UsbClass(0x0,0x0,0x9,0x0,0x3)/UsbClass(0x346d,0x5678,0x0,0x0,0x0)/HD(3,GPT,90489a78-a00e-4df4-9728-27a0308efe12,0x102000,0x19000)                                                                                                                                                    
+     BLK0: Alias(s):                                                                                                                                                  
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/UsbClass(0x0,0x0,0x9,0x0,0x3)/UsbClass(0x346d,0x5678,0x0,0x0,0x0)                                              
+No SimpleTextInputEx was found. CTRL-based features are not usable.                                                                                                   
+No SimpleTextInputEx was found. CTRL-based features are not usable.                                                                                                   
+Press ESC in 5 seconds to skip startup.nsh or any other key to continue.                                                                                              
+Shell> dmem                                                                           
+Memory Address 00000009BFEF2AA8 78 Bytes                                              
+  BFEF2AA8: 49 42 49 20 53 59 53 54-5A 00 02 00 78 00 00 00  *IBI SYSTZ...x...*       
+  BFEF2AB8: B3 B9 6A 66 00 00 00 00-20 2B EF BF 09 00 00 00  *..jf.... +......*       
+  BFEF2AC8: 00 07 22 20 00 00 00 00-00 00 00 00 00 00 00 00  *.." ............*       
+  BFEF2AD8: 10 DB FA BF 09 00 00 00-50 86 6E BF 09 00 00 00  *........P.n.....*       
+  BFEF2AE8: 48 00 BC 7E 09 00 00 00-00 00 00 00 00 00 00 00  *H..~............*       
+  BFEF2AF8: 68 DB FA BF 09 00 00 00-48 2B EF BF 09 00 00 00  *h.......H+......*       
+  BFEF2B08: 50 D9 FA BF 09 00 00 00-04 00 00 00 00 00 00 00  *P...............*       
+  BFEF2B18: 40 E0 6C BE 09 00 00 00-                         *@.l.....*
+
+Valid EFI Header at Address 00000009BFEF2AA8
+---------------------------------------------
+System: Table Structure size 00000078 revision 0002005A
+ConIn (00000009BFFADB10) ConOut (000000097EBC0048) StdErr (00000009BFFADB68)
+Runtime Services 00000009BFEF2B48
+Boot Services    00000009BFFAD950
+SAL System Table 0000000000000000
+ACPI Table       0000000000000000
+ACPI 2.0 Table   0000000000000000
+MPS Table        0000000000000000
+SMBIOS Table     00000009BE6C7000
+Shell> pci
+pci: Protocol - PciRootBridgeIo not found.
+Shell> drivers
+            T   D
+D           Y C I
+R           P F A
+V  VERSION  E G G #D #C DRIVER NAME                         IMAGE NAME
+== ======== = = = == == =================================== ==========
+ 7 FFFFFFFF ? - -  -  - <null string>                       
+Shell> devices
+     T   D
+     Y C I
+     P F A
+CTRL E G G #P #D #C  Device Name
+==== = = = == == === =========================================================
+Shell> devtree
+ Ctrl[01] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)
+ Ctrl[02] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/Uart(0,0,D,D)
+ Ctrl[03] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/UsbClass(0x0,0x0,0x9,0x0,0x3)/UsbClass(0x346d,0x5678,0x0,0x0,0x0)
+ Ctrl[04] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/UsbClass(0x0,0x0,0x9,0x0,0x3)/UsbClass(0x346d,0x5678,0x0,0x0,0x0)/HD(1,GPT,ad9fb413-9895-4e6f-afdf-151f73f95331,0x800,0x32000)
+ Ctrl[05] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/UsbClass(0x0,0x0,0x9,0x0,0x3)/UsbClass(0x346d,0x5678,0x0,0x0,0x0)/HD(2,GPT,4491cc92-efd8-49c5-b6d6-79e30947620c,0x32800,0xcf2f0)
+ Ctrl[06] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/UsbClass(0x0,0x0,0x9,0x0,0x3)/UsbClass(0x346d,0x5678,0x0,0x0,0x0)/HD(3,GPT,90489a78-a00e-4df4-9728-27a0308efe12,0x102000,0x19000)
+ Ctrl[09] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/MAC(5a593e4dbab6,1)
+Shell> dmpstore
+Variable NV+RT+BS 'EFIGlobalVariable:Boot0001' DataSize = 0x8A
+  00000000: 01 00 00 00 70 00 55 00-45 00 46 00 49 00 20 00  *....p.U.E.F.I. .*
+  00000010: 42 00 6F 00 6F 00 74 00-00 00 03 0F 0B 00 00 00  *B.o.o.t.........*
+  00000020: 00 00 09 00 03 03 0F 0B-00 6D 34 78 56 00 00 00  *.........m4xV...*
+  00000030: 04 01 2A 00 01 00 00 00-00 08 00 00 00 00 00 00  *..*.............*
+  00000040: 00 20 03 00 00 00 00 00-13 B4 9F AD 95 98 6F 4E  *. ............oN*
+  00000050: AF DF 15 1F 73 F9 53 31-02 02 04 04 2C 00 45 00  *....s.S1....,.E.*
+  00000060: 46 00 49 00 42 00 4F 00-4F 00 54 00 42 00 4F 00  *F.I.B.O.O.T.B.O.*
+  00000070: 4F 00 54 00 41 00 41 00-36 00 34 00 2E 00 45 00  *O.T.A.A.6.4...E.*
+  00000080: 46 00 49 00 00 00 7F FF-04 00                    *F.I.......*
+Variable RT+BS 'EFIGlobalVariable:SignatureSupport' DataSize = 0x20
+  00000000: 26 16 C4 C1 4C 50 92 40-AC A9 41 F9 36 93 43 28  *&...LP.@..A.6.C(*
+  00000010: A1 59 C0 A5 E4 94 A7 4A-87 B5 AB 15 5C 2B F0 72  *.Y.....J....\+.r*
+Variable RT+BS 'EFIGlobalVariable:OsIndicationsSupported' DataSize = 0x08
+  00000000: 1C 00 00 00 00 00 00 00-                         *........*
+Variable RT+BS 'EFIGlobalVariable:PlatformLangCodes' DataSize = 0x06
+  00000000: 65 6E 2D 55 53 00                                *en-US.*
+Variable RT+BS 'EFIGlobalVariable:VendorKeys' DataSize = 0x01
+  00000000: 00                                               *.*
+Variable RT+BS 'EFIGlobalVariable:DeployedMode' DataSize = 0x01
+  00000000: 00                                               *.*
+Variable RT+BS 'EFIGlobalVariable:AuditMode' DataSize = 0x01
+  00000000: 00                                               *.*
+Variable RT+BS 'EFIGlobalVariable:SetupMode' DataSize = 0x01
+  00000000: 01                                               *.*
+Variable RT+BS 'EFIGlobalVariable:SecureBoot' DataSize = 0x01
+  00000000: 00                                               *.*
+Variable NV+RT+BS 'EFIGlobalVariable:PlatformLang' DataSize = 0x06
+  00000000: 65 6E 2D 55 53 00                                *en-US.*
+Shell> dh -d -v 
+Handle dump
+01: DevicePath(BF6E3C00)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b) DevicePathToText(BFF86BE0) DevicePathUtilities(BFF86BF0) E617D64C-FE08-46DA-F4DC-BBD5870C7300(BFFADC18) UnicodeCollation2(BFF87168) HIIString(BFF86F30) HIIDatabase(BFF86ED8) SimpleTextOut(BFFADB68)   Address: BFFADB68 Attrib 07
+     mode 0: Col 80 Row 25
+     mode 1: Col -1 Row -1
+  *  mode 2: Col 166 Row 42 SimpleTextIn(BFFADB10) SimpleTextInEx(BFFADB28) 
+02: DevicePath(BE6DF040)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/Uart(0,0,D,D) 
+03: DevicePath(BE6DC040)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/UsbClass(0x0,0x0,0x9,0x0,0x3)/UsbClass(0x346d,0x5678,0x0,0x0,0x0) BlockIO(BF6FB888)   Removable MId:1 bsize 200, lblock 752FFFF (62,914,560,000), raw rw !cached 
+04: DevicePath(BE6D9040)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/UsbClass(0x0,0x0,0x9,0x0,0x3)/UsbClass(0x346d,0x5678,0x0,0x0,0x0)/HD(1,GPT,ad9fb413-9895-4e6f-afdf-151f73f95331,0x800,0x32000) BlockIO(BF6FB948)   Removable MId:1 bsize 200, lblock 31FFF (104,857,600), partition rw !cached EFISystemPartition(0) SimpleFileSystem(BF6E9D90) 
+05: DevicePath(BE6D7040)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/UsbClass(0x0,0x0,0x9,0x0,0x3)/UsbClass(0x346d,0x5678,0x0,0x0,0x0)/HD(2,GPT,4491cc92-efd8-49c5-b6d6-79e30947620c,0x32800,0xcf2f0) BlockIO(BF6FBD18)   Removable MId:1 bsize 200, lblock CF2EF (434,495,488), partition rw !cached SimpleFileSystem(BF6E9F90) 
+06: DevicePath(BE6D5040)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/UsbClass(0x0,0x0,0x9,0x0,0x3)/UsbClass(0x346d,0x5678,0x0,0x0,0x0)/HD(3,GPT,90489a78-a00e-4df4-9728-27a0308efe12,0x102000,0x19000) BlockIO(BF6FC0E8)   Removable MId:1 bsize 200, lblock 18FFF (52,428,800), partition rw !cached SimpleFileSystem(BF6EA190) 
+07: DriverBinding(BF6FDB50) 
+   Driver Name [07]   : <Unknown>
+   Driver Image Name  : <Unknown>
+   Driver Version     : FFFFFFFF
+   Driver Type        : <Unknown>
+   Configuration      : NO
+   Diagnostics        : NO
+   Managing           : None
+08: FirmwareManagement(BFF86CD8) 
+09: SimpleNetwork(BF6FDD18) DevicePath(BE6CD040)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/MAC(5a593e4dbab6,1) PXEBaseCode(BF6FE030) 
+0A: ImageDevicePath(BE6BF040)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/UsbClass(0x0,0x0,0x9,0x0,0x3)/UsbClass(0x346d,0x5678,0x0,0x0,0x0)/HD(1,GPT,ad9fb413-9895-4e6f-afdf-151f73f95331,0x800,0x32000)/efi\boot\bootaa64.efi LoadedImage(BF6E8580)   Revision......: 0x00001000
+  ParentHandle..: BF6E3C20
+  SystemTable...: BFEF2AA8
+  DeviceHandle..: BF6FB920
+  FilePath......: /efi\boot\bootaa64.efi
+  PdbFileName...: <null string>
+  OptionsSize...: 0
+  LoadOptions...: 0
+  ImageBase.....: BE5E2000
+  ImageSize.....: DD000
+  CodeType......: EfiLoaderCode
+  DataType......: EfiLoaderData
+  Unload........: 0 
+0B: ImageDevicePath(BE5DF040)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/UsbClass(0x0,0x0,0x9,0x0,0x3)/UsbClass(0x346d,0x5678,0x0,0x0,0x0)/HD(1,GPT,ad9fb413-9895-4e6f-afdf-151f73f95331,0x800,0x32000)/\EFI\BOOT/Shell.efi LoadedImage(BF6FBE30)   Revision......: 0x00001000
+  ParentHandle..: BF6E85F0
+  SystemTable...: BFEF2AA8
+  DeviceHandle..: BF6FB920
+  FilePath......: /\EFI\BOOT/Shell.efi
+  PdbFileName...: <null string>
+  OptionsSize...: 0
+  LoadOptions...: 0
+  ImageBase.....: 7EAB0000
+  ImageSize.....: DA000
+  CodeType......: EfiLoaderCode
+  DataType......: EfiLoaderData
+  Unload........: 0 SimpleTextOut(7EBC0048)   Address: 7EBC0048 Attrib 07
+     mode 0: Col 80 Row 25
+     mode 1: Col -1 Row -1
+  *  mode 2: Col 166 Row 42 ShellParameters(7EB9F040) Shell(7EB76510) 
+Shell> memmap
+Type       Start            End              # Pages          Attributes
+Reserved   0000000005160000-000000000516FFFF 0000000000000010 0000000000000008
+Available  00000008C0000000-00000008C7EFFFFF 0000000000007F00 0000000000000008
+ACPI_Recl  00000008C7F00000-00000008C7F03FFF 0000000000000004 0000000000000008
+Available  00000008C7F04000-000000097EA53FFF 00000000000B6B50 0000000000000008
+BS_Data    000000097EA54000-000000097EAAFFFF 000000000000005C 0000000000000008
+LoaderCode 000000097EAB0000-000000097EB89FFF 00000000000000DA 0000000000000008
+BS_Data    000000097EB8A000-000000097EC64FFF 00000000000000DB 0000000000000008
+LoaderData 000000097EC65000-000000097EC65FFF 0000000000000001 0000000000000008
+LoaderCode 000000097EC66000-00000009BE5DAFFF 000000000003F975 0000000000000008
+BS_Data    00000009BE5DB000-00000009BE5E1FFF 0000000000000007 0000000000000008
+LoaderCode 00000009BE5E2000-00000009BE6BEFFF 00000000000000DD 0000000000000008
+BS_Data    00000009BE6BF000-00000009BE6C6FFF 0000000000000008 0000000000000008
+RT_Data    00000009BE6C7000-00000009BE6C7FFF 0000000000000001 8000000000000008
+BS_Data    00000009BE6C8000-00000009BE6CAFFF 0000000000000003 0000000000000008
+RT_Data    00000009BE6CB000-00000009BE6CBFFF 0000000000000001 8000000000000008
+BS_Data    00000009BE6CC000-00000009BE6CDFFF 0000000000000002 0000000000000008
+RT_Data    00000009BE6CE000-00000009BE6CFFFF 0000000000000002 8000000000000008
+BS_Data    00000009BE6D0000-00000009BE6D0FFF 0000000000000001 0000000000000008
+RT_Data    00000009BE6D1000-00000009BE6D4FFF 0000000000000004 8000000000000008
+BS_Data    00000009BE6D5000-00000009BE6DFFFF 000000000000000B 0000000000000008
+LoaderData 00000009BE6E0000-00000009BFEEFFFF 0000000000001810 0000000000000008
+RT_Code    00000009BFEF0000-00000009BFEFFFFF 0000000000000010 8000000000000008
+LoaderData 00000009BFF00000-00000009BFFFFFFF 0000000000000100 0000000000000008
+ 
+  Reserved  :             16 Pages (65,536 Bytes)
+  LoaderCode:        260,908 Pages (1,068,679,168 Bytes)
+  LoaderData:          6,417 Pages (26,284,032 Bytes)
+  BS_Code   :              0 Pages (0 Bytes)
+  BS_Data   :            343 Pages (1,404,928 Bytes)
+  RT_Code   :             16 Pages (65,536 Bytes)
+  RT_Data   :              8 Pages (32,768 Bytes)
+  ACPI_Recl :              4 Pages (16,384 Bytes)
+  ACPI_NVS  :              0 Pages (0 Bytes)
+  MMIO      :              0 Pages (0 Bytes)
+  MMIO_Port :              0 Pages (0 Bytes)
+  PalCode   :              0 Pages (0 Bytes)
+  Unaccepted:              0 Pages (0 Bytes)
+  Available :        780,880 Pages (3,198,484,480 Bytes)
+  Persistent:              0 Pages (0 Bytes)
+              -------------- 
+Total Memory:          4,096 MB (4,294,967,296 Bytes)
+Shell> smbiosviw
+'smbiosviw' is not recognized as an internal or external command, operable program, or script file.
+Shell> smbiosview
+SMBIOS 3.0 (64-bit) Entry Point Structure:
+Anchor String:        _SM3_
+EPS Checksum:         0x90
+Entry Point Len:      24
+Version:              3.7
+SMBIOS Docrev:        0x0
+Table Max Size:       249
+Table Address:        0x9BE6C7020
+Entry Point revision: 0x1
+
+=========================================================
+Query Structure, conditions are:
+QueryType   = Random 
+QueryHandle = Random
+ShowType    = SHOW_DETAIL
+
+
+=========================================================
+Type=0, Handle=0x0
+Dump Structure as:
+Index=0,Length=0x34,Addr=0x9BE6C7020
+00000000: 00 18 00 00 01 02 00 00-03 00 80 08 01 00 00 00  *................*
+00000010: 00 00 00 0C 16 07 FF FF-55 2D 42 6F 6F 74 00 32  *........U-Boot.2*
+00000020: 30 32 32 2E 30 37 2B 00-30 37 2F 30 31 2F 32 30  *022.07+.07/01/20*
+00000030: 32 32 00 00                                      *22..*
+Structure Type: BIOS Information
+Format part Len : 24
+Structure Handle: 0
+Vendor: U-Boot
+BiosVersion: 2022.07+
+BiosSegment: 0x0
+BiosReleaseDate: 07/01/2022
+BiosSize:  64 KB
+BIOS Characteristics: 
+PCI is supported
+BIOS is Upgradeable(FLASH)
+Selectable Boot is supported
+ Bits 32:47 are reserved for BIOS Vendor
+ Bits 48:64 are reserved for System Vendor
+BIOS Characteristics Extension Byte1:
+BIOS Characteristics Extension Byte2:
+Enable Targeted Content Distribution
+UEFI Specification is supported
+ Bits 5:7 are reserved for future assignment
+SystemBiosMajorRelease: 22
+SystemBiosMinorRelease: 7
+EmbeddedControllerFirmwareMajorRelease: 255
+EmbeddedControllerFirmwareMinorRelease: 255
+
+
+=========================================================
+Type=1, Handle=0x1
+Dump Structure as:
+Index=1,Length=0x34,Addr=0x9BE6C7054
+00000000: 01 1B 01 00 01 02 00 00-00 00 00 00 00 00 00 00  *................*
+00000010: 00 00 00 00 00 00 00 00-00 00 00 55 6E 6B 6E 6F  *...........Unkno*
+00000020: 77 6E 00 55 6E 6B 6E 6F-77 6E 20 50 72 6F 64 75  *wn.Unknown Produ*
+00000030: 63 74 00 00                                      *ct..*
+Structure Type: System Information
+Format part Len : 27
+Structure Handle: 1
+Manufacturer: Unknown
+ProductName: Unknown Product
+Version: 
+SerialNumber: 
+Dump Uuid
+size=16:
+00000000: 00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  *................*
+System Wakeup Type: Reserved
+SKUNumber: 
+Family: 
+
+
+=========================================================
+Type=2, Handle=0x2
+Dump Structure as:
+Index=2,Length=0x27,Addr=0x9BE6C7088
+00000000: 02 0E 02 00 01 02 00 00-00 01 00 00 00 0A 55 6E  *..............Un*
+00000010: 6B 6E 6F 77 6E 00 55 6E-6B 6E 6F 77 6E 20 50 72  *known.Unknown Pr*
+00000020: 6F 64 75 63 74 00 00                             *oduct..*
+Structure Type: Base Board Information
+Format part Len : 14
+Structure Handle: 2
+Manufacturer: Unknown
+ProductName: Unknown Product
+Version: 
+SerialNumber: 
+AssetTag: 
+Base Board Feature Flags: Hosting board
+LocationInChassis: 
+ChassisHandle: 0x0
+Base Board Board Type: Motherboard
+
+
+=========================================================
+Type=3, Handle=0x3
+Dump Structure as:
+Index=3,Length=0x1E,Addr=0x9BE6C70AF
+00000000: 03 15 03 00 01 03 00 00-00 03 03 03 03 00 00 00  *................*
+00000010: 00 00 00 00 00 55 6E 6B-6E 6F 77 6E 00 00        *.....Unknown..*
+Structure Type: System Enclosure
+Format part Len : 21
+Structure Handle: 3
+Manufacturer: Unknown
+Type: 3
+System Enclosure or Chassis Types:  Desktop
+Version: 
+SerialNumber: 
+AssetTag: 
+Bootup state System Enclosure or Chassis Status:  Safe
+Power Supply State System Enclosure or Chassis Status:  Safe
+Thermal state System Enclosure or Chassis Status:  Safe
+Security Status System Enclosure or Chassis Security Status:  None
+Dump OemDefined
+size=4:
+00000000: 00 00 00 00                                      *....*
+Height: 0
+NumberofPowerCords: 0
+ContainedElementCount: 0
+ContainedElementRecordLength: 0
+
+
+=========================================================
+Type=4, Handle=0x4
+Dump Structure as:
+Index=4,Length=0x39,Addr=0x9BE6C70CD
+00000000: 04 30 04 00 00 03 02 01-00 00 00 00 00 00 00 00  *.0..............*
+00000010: 01 00 00 00 00 00 00 00-01 06 FF FF FF FF FF FF  *................*
+00000020: 00 00 00 00 00 00 00 00-02 00 00 00 00 00 00 00  *................*
+00000030: 55 6E 6B 6E 6F 77 6E 00-00                       *Unknown..*
+Structure Type: Processor Information
+Format part Len : 48
+Structure Handle: 4
+SocketDesignation: 
+Processor Type:  Central Processor
+Processor Family: Unknown
+ProcessorManufacturer: Unknown
+Dump ProcessorId
+size=8:
+00000000: 00 00 00 00 00 00 00 00-                         *........*
+ProcessorVersion: Unknown
+Processor Information -  Voltage:
+ExternalClock: 0
+MaxSpeed: 0
+CurrentSpeed: 0
+Processor Status:
+CPU Socket Unpopulated
+CPU Enabled
+Processor Upgrade: None
+L1CacheHandle: 0xFFFF
+L2CacheHandle: 0xFFFF
+L3CacheHandle: 0xFFFF
+SerialNumber: 
+AssetTag: 
+PartNumber: 
+CoreCount: 0
+EnabledCoreCount: 0
+ThreadCount: 0
+Processor Characteristics: No Info
+CoreCount2: 0
+EnabledCoreCount2: 0
+ThreadCount2: 0
+
+
+=========================================================
+Type=32, Handle=0x5
+Dump Structure as:
+Index=5,Length=0xD,Addr=0x9BE6C7106
+00000000: 20 0B 05 00 00 00 00 00-00 00 00 00 00           * ............*
+Structure Type: System Boot Information 
+Format part Len : 11
+Structure Handle: 5
+Dump Reserved
+size=6:
+00000000: 00 00 00 00 00 00                                *......*
+System Boot Status:  No errors detected
+
+=========================================================
+Type=127, Handle=0x6
+Dump Structure as:
+Index=6,Length=0x6,Addr=0x9BE6C7113
+00000000: 7F 04 06 00 00 00                                *......*
+Structure Type: End-of-Table 
+Format part Len : 4
+Structure Handle: 6
+This structure indicates the End-of-table!
+
+
+=========================================================
+Shell> 

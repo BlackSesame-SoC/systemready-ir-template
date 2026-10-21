@@ -1,0 +1,813 @@
+============================================================
+ System Information Collection
+ Start time: Sat Jun 27 12:01:56 AM UTC 2026
+============================================================
+============================================================
+>>> COMMAND: dmesg
+>>> TIME: 2026-06-27 00:01:56
+============================================================
+[    0.000000] Booting Linux on physical CPU 0x0000000000 [0x410fd422]
+[    0.000000] Linux version 7.2.0-0.rc1.15.fc45.aarch64 (mockbuild@6cd71ed1dc3c440cb5ecd2bf829d1896) (gcc (GCC) 16.1.1 20260515 (Red Hat 16.1.1-2), GNU ld version 2.46.50.20260604) #1 SMP PREEMPT_DYNAMIC Sun Jun 28 22:55:08 UTC 2026
+[    0.000000] KASLR disabled due to lack of seed
+[    0.000000] Machine model: BST C1200-96 CDCU1.0 4C2G
+[    0.000000] earlycon: uart8250 at MMIO32 0x0000000020008000 (options '')
+[    0.000000] printk: legacy bootconsole [uart8250] enabled
+[    0.000000] efi: EFI v2.9 by Das U-Boot
+[    0.000000] efi: ESRT=0x9be6c8040 RTPROP=0x9be6ca040 SMBIOS 3.0=0x9be6c6000 MOKvar=0x9be5d2000 INITRD=0x9be592040 MEMRESERVE=0x9a95b9040 
+[    0.000000] esrt: Reserving ESRT space from 0x00000009be6c8040 to 0x00000009be6c8078.
+[    0.000000] secureboot: Secure boot disabled
+[    0.000000] Reserved memory: created DMA memory pool at 0x0000000005160000, size 0 MiB
+[    0.000000] OF: reserved mem: initialized node mmc0-reserved@5160000, compatible id shared-dma-pool
+[    0.000000] OF: reserved mem: 0x0000000005160000..0x000000000516ffff (64 KiB) nomap non-reusable mmc0-reserved@5160000
+[    0.000000] NUMA: Faking a node at [mem 0x0000000005160000-0x00000009bfffffff]
+[    0.000000] NODE_DATA(0) allocated [mem 0x9bf5d0200-0x9bf5e6fff]
+[    0.000000] cma: Failed to reserve 64 MiB
+[    0.000000] psci: probing for conduit method from DT.
+[    0.000000] psci: PSCIv1.1 detected in firmware.
+[    0.000000] psci: Using standard PSCI v0.2 function IDs
+[    0.000000] psci: Trusted OS migration not required
+[    0.000000] psci: SMC Calling Convention v1.2
+[    0.000000] Zone ranges:
+[    0.000000]   DMA      [mem 0x0000000005160000-0x00000000ffffffff]
+[    0.000000]   DMA32    empty
+[    0.000000]   Normal   [mem 0x0000000100000000-0x00000009bfffffff]
+[    0.000000]   Device   empty
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000005160000-0x000000000516ffff]
+[    0.000000]   node   0: [mem 0x00000008c0000000-0x00000009be5d1fff]
+[    0.000000]   node   0: [mem 0x00000009be5d2000-0x00000009be5d3fff]
+[    0.000000]   node   0: [mem 0x00000009be5d4000-0x00000009be6c5fff]
+[    0.000000]   node   0: [mem 0x00000009be6c6000-0x00000009be6c6fff]
+[    0.000000]   node   0: [mem 0x00000009be6c7000-0x00000009be6c9fff]
+[    0.000000]   node   0: [mem 0x00000009be6ca000-0x00000009be6cafff]
+[    0.000000]   node   0: [mem 0x00000009be6cb000-0x00000009be6ccfff]
+[    0.000000]   node   0: [mem 0x00000009be6cd000-0x00000009be6d2fff]
+[    0.000000]   node   0: [mem 0x00000009be6d3000-0x00000009bfeeffff]
+[    0.000000]   node   0: [mem 0x00000009bfef0000-0x00000009bfefffff]
+[    0.000000]   node   0: [mem 0x00000009bff00000-0x00000009bfffffff]
+[    0.000000] Initmem setup node 0 [mem 0x0000000005160000-0x00000009bfffffff]
+[    0.000000] On node 0, zone DMA: 20832 pages in unavailable ranges
+[    0.000000] On node 0, zone Normal: 11920 pages in unavailable ranges
+[    0.000000] percpu: Embedded 58 pages/cpu s112984 r8192 d116392 u237568
+[    0.000000] pcpu-alloc: s112984 r8192 d116392 u237568 alloc=58*4096
+[    0.000000] pcpu-alloc: [0] 0 [0] 1 [0] 2 [0] 3 
+[    0.000000] Detected PIPT I-cache on CPU0
+[    0.000000] CPU features: detected: Address authentication (architected QARMA5 algorithm)
+[    0.000000] CPU features: detected: GICv3 CPU interface
+[    0.000000] CPU features: detected: Virtualization Host Extensions
+[    0.000000] CPU features: detected: Spectre-v4
+[    0.000000] CPU features: detected: Spectre-BHB
+[    0.000000] CPU features: detected: Broken broadcast TLBI completion
+[    0.000000] alternatives: applying boot alternatives
+[    0.000000] Kernel command line: BOOT_IMAGE=(hd0)/boot/aarch64/loader/linux quiet rhgb root=live:CDLABEL=Fedora-WS-Live-rawh rd.live.image earlycon=uart8250,mmio32,0x20008000 console=ttyS0,115200n8 loglevel=8
+[    0.000000] Unknown kernel command line parameters "rhgb", will be passed to user space.
+[    0.000000] printk: log buffer data + meta data: 262144 + 1114112 = 1376256 bytes
+[    0.000000] Dentry cache hash table entries: 524288 (order: 10, 4194304 bytes, linear)
+[    0.000000] Inode-cache hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+[    0.000000] software IO TLB: area num 4.
+[    0.000000] software IO TLB: swiotlb_memblock_alloc: Failed to allocate 67108864 bytes tlb structure
+[    0.000000] software IO TLB: swiotlb_memblock_alloc: Failed to allocate 33554432 bytes tlb structure
+[    0.000000] software IO TLB: swiotlb_memblock_alloc: Failed to allocate 16777216 bytes tlb structure
+[    0.000000] software IO TLB: swiotlb_memblock_alloc: Failed to allocate 8388608 bytes tlb structure
+[    0.000000] software IO TLB: swiotlb_memblock_alloc: Failed to allocate 4194304 bytes tlb structure
+[    0.000000] software IO TLB: swiotlb_memblock_alloc: Failed to allocate 2097152 bytes tlb structure
+[    0.000000] software IO TLB: swiotlb_memblock_alloc: Failed to allocate 1048576 bytes tlb structure
+[    0.000000] Fallback order for Node 0: 0 
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 1048592
+[    0.000000] Policy zone: Normal
+[    0.000000] mem auto-init: stack:all(zero), heap alloc:on, heap free:off
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+[    0.000000] ftrace: allocating 70679 entries in 278 pages
+[    0.000000] ftrace: allocated 278 pages with 4 groups
+[    0.000000] Dynamic Preempt: lazy
+[    0.000000] rcu: Preemptible hierarchical RCU implementation.
+[    0.000000] rcu: 	RCU event tracing is enabled.
+[    0.000000] rcu: 	RCU restricting CPUs from NR_CPUS=4096 to nr_cpu_ids=4.
+[    0.000000] 	Trampoline variant of Tasks RCU enabled.
+[    0.000000] 	Rude variant of Tasks RCU enabled.
+[    0.000000] 	Tracing variant of Tasks RCU enabled.
+[    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 100 jiffies.
+[    0.000000] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=4
+[    0.000000] RCU Tasks: Setting shift to 2 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=4.
+[    0.000000] RCU Tasks Rude: Setting shift to 2 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=4.
+[    0.000000] NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+[    0.000000] GICv3: GIC: Using split EOI/Deactivate mode
+[    0.000000] GICv3: 640 SPIs implemented
+[    0.000000] GICv3: 0 Extended SPIs implemented
+[    0.000000] Root IRQ handler: gic_handle_irq
+[    0.000000] GICv3: GICv3 features: 16 PPIs
+[    0.000000] GICv3: GICD_CTLR.DS=0, SCR_EL3.FIQ=1
+[    0.000000] GICv3: CPU0: found redistributor 0 region 0:0x0000000032880000
+[    0.000000] ITS: No ITS available, not enabling LPIs
+[    0.000000] rcu: srcu_init: Setting srcu_struct sizes based on contention.
+[    0.000000] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1911260446275000 ns
+[    0.000000] arch_timer: [Firmware Bug]: VHE-capable CPU without EL2 virtual timer interrupt
+[    0.000000] arch_timer: cp15 timer running at 200.00MHz (hyp-phys).
+[    0.000000] clocksource: arch_sys_counter: mask: 0x3ffffffffffffff max_cycles: 0x2e2049d3e8, max_idle_ns: 440795210634 ns
+[    0.000000] sched_clock: 58 bits at 200MHz, resolution 5ns, wraps every 4398046511102ns
+[    0.009661] kfence: initialized - using 2097152 bytes for 255 objects at 0x(____ptrval____)-0x(____ptrval____)
+[    0.020856] Console: colour dummy device 80x25
+[    0.026056] Calibrating delay loop (skipped), value calculated using timer frequency.. 400.00 BogoMIPS (lpj=200000)
+[    0.037553] pid_max: default: 32768 minimum: 301
+[    0.045408] Yama: becoming mindful.
+[    0.049249] SELinux:  Initializing.
+[    0.055813] LSM support for eBPF active
+[    0.060109] landlock: Up and running.
+[    0.064706] Mount-cache hash table entries: 8192 (order: 4, 65536 bytes, linear)
+[    0.072859] Mountpoint-cache hash table entries: 8192 (order: 4, 65536 bytes, linear)
+[    0.081910] VFS: Finished mounting rootfs on nullfs
+[    0.089168] rcu: Hierarchical SRCU implementation.
+[    0.094448] rcu: 	Max phase no-delay instances is 400.
+[    0.100186] Timer migration: 1 hierarchy levels; 8 children per group; 1 crossnode level
+[    0.109582] Remapping and enabling EFI services.
+[    0.114809] smp: Bringing up secondary CPUs ...
+[    0.120094] Detected PIPT I-cache on CPU1
+[    0.120147] GICv3: CPU1: found redistributor 100 region 0:0x00000000328a0000
+[    0.120170] CPU1: Booted secondary processor 0x0000000100 [0x410fd422]
+[    0.120531] Detected PIPT I-cache on CPU2
+[    0.120565] GICv3: CPU2: found redistributor 200 region 0:0x00000000328c0000
+[    0.120579] CPU2: Booted secondary processor 0x0000000200 [0x410fd422]
+[    0.120890] Detected PIPT I-cache on CPU3
+[    0.120922] GICv3: CPU3: found redistributor 300 region 0:0x00000000328e0000
+[    0.120934] CPU3: Booted secondary processor 0x0000000300 [0x410fd422]
+[    0.120997] smp: Brought up 1 node, 4 CPUs
+[    0.183528] SMP: Total of 4 processors activated.
+[    0.188701] CPU: All CPU(s) started at EL2
+[    0.193202] CPU features: detected: 32-bit EL0 Support
+[    0.198854] CPU features: detected: Data cache clean to the PoU not required for I/D coherence
+[    0.208330] CPU features: detected: Common not Private translations
+[    0.215224] CPU features: detected: CRC32 instructions
+[    0.220872] CPU features: detected: Data cache clean to Point of Persistence
+[    0.228632] CPU features: detected: Generic authentication (architected QARMA5 algorithm)
+[    0.237635] CPU features: detected: RCpc load-acquire (LDAPR)
+[    0.243956] CPU features: detected: LSE atomic instructions
+[    0.250086] CPU features: detected: Privileged Access Never
+[    0.256216] CPU features: detected: PMUv3
+[    0.260620] CPU features: detected: RAS Extension Support
+[    0.266558] CPU features: detected: XNX
+[    0.270772] CPU features: detected: Speculative Store Bypassing Safe (SSBS)
+[    0.278451] alternatives: applying system-wide alternatives
+[    0.287429] CPU features: detected: ICV_DIR_EL1 trapping
+[    0.293272] CPU features: detected: Hardware dirty bit management on CPU0-3
+[    0.301191] Memory: 3789416K/4194368K available (24000K kernel code, 6422K rwdata, 20780K rodata, 15296K init, 10280K bss, 396468K reserved, 0K cma-reserved)
+[    0.317246] devtmpfs: initialized
+[    0.322182] posixtimers hash table entries: 2048 (order: 3, 32768 bytes, linear)
+[    0.330339] futex hash table entries: 1024 (65536 bytes on 1 NUMA nodes, total 64 KiB, linear).
+[    0.339970] 13488 pages in range for non-PLT usage
+[    0.339972] 505008 pages in range for PLT usage
+[    0.346737] DMI: SMBIOS 3.7.0 present.
+[    0.355842] DMI: Unknown Unknown Product/Unknown Product, BIOS 2022.07+ 07/01/2022
+[    0.364175] DMI: Memory slots populated: 0/0
+[    0.370640] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+[    0.377511] DMA: preallocated 512 KiB GFP_KERNEL pool for atomic allocations
+[    0.385404] audit: initializing netlink subsys (disabled)
+[    0.391412] audit: type=2000 audit(0.066:1): state=initialized audit_enabled=0 res=1
+[    0.410910] thermal_sys: Registered thermal governor 'fair_share'
+[    0.410914] thermal_sys: Registered thermal governor 'step_wise'
+[    0.417625] thermal_sys: Registered thermal governor 'user_space'
+[    0.424271] cpuidle: using governor menu
+[    0.435407] hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+[    0.442917] ASID allocator initialised with 65536 entries
+[    0.449498] Serial: AMBA PL011 UART driver
+[    0.454488] /soc/interrupt-controller@32800000: Fixed dependency cycle(s) with /soc/interrupt-controller@32800000
+[    0.466975] HugeTLB: registered 1.00 GiB page size, pre-allocated 0 pages
+[    0.474454] HugeTLB: 0 KiB vmemmap can be freed for a 1.00 GiB page
+[    0.481353] HugeTLB: registered 32.0 MiB page size, pre-allocated 0 pages
+[    0.488822] HugeTLB: 0 KiB vmemmap can be freed for a 32.0 MiB page
+[    0.495718] HugeTLB: registered 2.00 MiB page size, pre-allocated 0 pages
+[    0.503185] HugeTLB: 0 KiB vmemmap can be freed for a 2.00 MiB page
+[    0.510078] HugeTLB: registered 64.0 KiB page size, pre-allocated 0 pages
+[    0.517543] HugeTLB: 0 KiB vmemmap can be freed for a 64.0 KiB page
+[    0.527043] raid6: using neon recovery algorithm
+[    0.532129] raid6: skipped pq benchmark and selected neonx8
+[    0.538606] ACPI: Interpreter disabled.
+[    0.543190] iommu: Default domain type: Translated
+[    0.548463] iommu: DMA domain TLB invalidation policy: lazy mode
+[    0.555430] SCSI subsystem initialized
+[    0.559617] libata version 3.00 loaded.
+[    0.563886] usbcore: registered new interface driver usbfs
+[    0.569929] usbcore: registered new interface driver hub
+[    0.575782] usbcore: registered new device driver usb
+[    0.581385] pps_core: LinuxPPS API ver. 1 registered
+[    0.586845] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.596901] PTP clock support registered
+[    0.601269] EDAC MC: Ver: 3.0.0
+[    0.604831] scmi_core: SCMI protocol bus registered
+[    0.610220] efivars: Registered efivars operations
+[    0.616054] NetLabel: Initializing
+[    0.619797] NetLabel:  domain hash size = 128
+[    0.624590] NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+[    0.630839] NetLabel:  unlabeled traffic allowed by default
+[    0.636972] mctp: management component transport protocol core
+[    0.643388] NET: Registered PF_MCTP protocol family
+[    0.648910] vgaarb: loaded
+[    0.652047] clocksource: Switched to clocksource arch_sys_counter
+[    0.660173] VFS: Disk quotas dquot_6.6.0
+[    0.664542] VFS: Dquot-cache hash table entries: 512 (4096 bytes)
+[    0.671636] pnp: PnP ACPI: disabled
+[    0.677911] NET: Registered PF_INET protocol family
+[    0.683386] IP idents hash table entries: 65536 (order: 7, 524288 bytes, linear)
+[    0.693267] tcp_listen_portaddr_hash hash table entries: 2048 (order: 3, 32768 bytes, linear)
+[    0.702689] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+[    0.711362] TCP established hash table entries: 32768 (order: 6, 262144 bytes, linear)
+[    0.720192] TCP bind hash table entries: 32768 (order: 8, 1048576 bytes, linear)
+[    0.728433] TCP: Hash tables configured (established 32768 bind 32768)
+[    0.735761] MPTCP token hash table entries: 4096 (order: 5, 98304 bytes, linear)
+[    0.743967] UDP hash table entries: 2048 (order: 5, 131072 bytes, linear)
+[    0.751769] NET: Registered PF_UNIX/PF_LOCAL protocol family
+[    0.758022] NET: Registered PF_XDP protocol family
+[    0.763341] PCI: CLS 0 bytes, default 64
+[    0.767756] Trying to unpack rootfs image as initramfs...
+[    0.778041] kvm [1]: nv: 570 coarse grained trap handlers
+[    0.784119] kvm [1]: nv: 710 fine grained trap handlers
+[    0.790013] kvm [1]: IPA Size Limit: 48 bits
+[    0.794721] kvm [1]: GICv3: no GICV resource entry
+[    0.799992] kvm [1]: disabling GICv2 emulation
+[    0.804911] kvm [1]: GIC system register CPU interface enabled
+[    0.811345] kvm [1]: vgic interrupt IRQ9
+[    0.815678] kvm [1]: VHE mode initialized successfully
+[    0.823194] Initialise system trusted keyrings
+[    0.828135] Key type blacklist registered
+[    0.832654] workingset: timestamp_bits=37 (anon: 32) max_order=20 bucket_order=0 (anon: 0)
+[    0.848128] integrity: Platform Keyring initialized
+[    0.853537] integrity: Machine keyring initialized
+[    0.858923] cryptd: max_cpu_qlen set to 1000
+[    0.863655] NET: Registered PF_ALG protocol family
+[    0.868936] Key type asymmetric registered
+[    0.873438] Asymmetric key parser 'x509' registered
+[    0.879274] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 241)
+[    0.887506] io scheduler mq-deadline registered
+[    0.892496] io scheduler kyber registered
+[    0.897034] io scheduler bfq registered
+[    0.901391] xor: measuring software checksum speed
+[    0.906839]    neon            : 18982 MB/sec
+[    0.911895]    32regs          : 12253 MB/sec
+[    0.916928]    8regs           : 13214 MB/sec
+[    0.921717] xor: using function: neon (18982 MB/sec)
+[    0.929138] atomic64_test: passed
+[    0.935096] ledtrig-cpu: registered to indicate activity on CPUs
+[    0.944777] Serial: 8250/16550 driver, 32 ports, IRQ sharing enabled
+[    0.955157] printk: legacy console [ttyS0] disabled
+[    0.960757] 20008000.serial: ttyS0 at MMIO 0x20008000 (irq = 14, base_baud = 1562500) is a 16550A
+[    0.970567] printk: legacy console [ttyS0] enabled
+[    0.980638] printk: legacy bootconsole [uart8250] disabled
+[    0.992888] msm_serial: driver initialized
+[    0.997176] SuperH (H)SCI(F) driver initialized
+[    1.003871] CAN device driver interface
+[    1.008120] usbcore: registered new interface driver usbserial_generic
+[    1.014680] usbserial: USB Serial support registered for generic
+[    1.020747] mousedev: PS/2 mouse device common for all mice
+[    1.026820] device-mapper: core: CONFIG_IMA_DISABLE_HTABLE is disabled. Duplicate IMA measurements will not be recorded in the IMA log.
+[    1.039078] device-mapper: uevent: version 1.0.3
+[    1.043959] device-mapper: ioctl: 4.50.0-ioctl (2025-04-28) initialised: dm-devel@lists.linux.dev
+[    1.053723] ARM FF-A: FFA_VERSION returned not supported
+[    1.059375] SMCCC: SOC_ID: ARCH_SOC_ID not implemented, skipping ....
+[    1.066098] hid: raw HID events driver (C) Jiri Kosina
+[    1.071344] usbcore: registered new interface driver usbhid
+[    1.076920] usbhid: USB HID core driver
+[    1.081532] drop_monitor: Initializing network drop monitor service
+[    1.087820] watchdog: NMI not fully supported
+[    1.092184] watchdog: Hard watchdog permanently disabled
+[    1.092291] Initializing XFRM netlink socket
+[    1.102114] NET: Registered PF_INET6 protocol family
+[    1.108031] Segment Routing with IPv6
+[    1.111710] RPL Segment Routing with IPv6
+[    1.115734] In-situ OAM (IOAM) with IPv6
+[    1.119704] mip6: Mobile IPv6
+[    1.122679] NET: Registered PF_PACKET protocol family
+[    1.127732] can: controller area network core
+[    1.132214] NET: Registered PF_CAN protocol family
+[    1.142409] registered taskstats version 1
+[    1.148349] Loading compiled-in X.509 certificates
+[    1.155035] Loaded X.509 cert 'Fedora kernel signing key: c335887bcf0437961946cb620a6778e4cb1dbc76'
+[    1.440708] Freeing initrd memory: 233668K
+[    1.468099] Loaded X.509 cert 'Fedora IMA CA: a8a00c31663f853f9c6ff2564872e378af026b28'
+[    1.483138] Demotion targets for Node 0: null
+[    1.487526] page_owner is disabled
+[    1.491117] Key type .fscrypt registered
+[    1.495051] Key type fscrypt-provisioning registered
+[    1.502204] Btrfs loaded, zoned=yes, fsverity=yes
+[    1.506970] Key type big_key registered
+[    1.511062] Key type encrypted registered
+[    1.515107] integrity: secureboot mode disabled
+[    1.519644] ima: No TPM chip found, activating TPM-bypass!
+[    1.525134] Loading compiled-in module X.509 certificates
+[    1.531171] Loaded X.509 cert 'Fedora kernel signing key: c335887bcf0437961946cb620a6778e4cb1dbc76'
+[    1.540411] ima: Allocated hash algorithm: sha256
+[    1.545325] ima: No architecture policies found
+[    1.549897] evm: Initialising EVM extended attributes:
+[    1.555038] evm: security.selinux
+[    1.558355] evm: security.SMACK64 (disabled)
+[    1.562626] evm: security.SMACK64EXEC (disabled)
+[    1.567243] evm: security.SMACK64TRANSMUTE (disabled)
+[    1.572295] evm: security.SMACK64MMAP (disabled)
+[    1.576913] evm: security.apparmor (disabled)
+[    1.581269] evm: security.ima
+[    1.584237] evm: security.capability
+[    1.587812] evm: HMAC attrs: 0x1
+[    1.591269] alg: No test for 842 (842-scomp)
+[    1.615148] clk: Disabling unused clocks
+[    1.619094] PM: genpd: Disabling unused power domains
+[    1.624273] dw-apb-uart 20008000.serial: forbid DMA for kernel console
+[    1.635315] Freeing unused kernel memory: 15296K
+[    1.651980] Checked W+X mappings: passed, no W+X pages found
+[    1.657653] Run /init as init process
+[    1.661316]   with arguments:
+[    1.664283]     /init
+[    1.666556]     rhgb
+[    1.668741]   with environment:
+[    1.671881]     HOME=/
+[    1.674239]     TERM=linux
+[    1.684995] systemd[1]: System time advanced to built-in epoch: Sat 2026-06-27 00:00:00 UTC
+[    1.728766] systemd[1]: Successfully made /usr/ read-only.
+[    1.742087] systemd[1]: systemd 261.1-2.fc45 running in system mode (+PAM +AUDIT +SELINUX -APPARMOR +IMA +IPE +SMACK +SECCOMP -GCRYPT +GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 +KMOD +LIBCRYPTSETUP +LIBCRYPTSETUP_PLUGINS +LIBFDISK +PCRE2 +PWQUALITY +P11KIT +QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD +BPF_FRAMEWORK +BTF +XKBCOMMON +UTMP +LIBARCHIVE)
+[    1.774254] systemd[1]: Detected architecture arm64.
+[    1.779221] systemd[1]: Running in initrd.
+[    1.783635] systemd[1]: Initializing machine ID from random generator.
+[    1.790272] systemd[1]: No hostname configured, using default hostname.
+[    1.796967] systemd[1]: Hostname set to <fedora>.
+[    1.979053] random: crng init done
+[    2.045454] systemd[1]: bpf-restrict-fs: LSM BPF program attached
+[    2.121502] systemd[1]: /usr/lib/systemd/system/systemd-udevd.service:56: System call bpf cannot be resolved as libseccomp is not available, ignoring: Operation not supported
+[    2.164620] systemd[1]: Queued start job for default target initrd.target.
+[    2.180912] systemd[1]: Expecting device dev-mapper-live\x2drw.device - /dev/mapper/live-rw...
+[    2.189679] systemd[1]: Reached target initrd-usr-fs.target - Initrd /usr File System.
+[    2.197657] systemd[1]: Reached target slices.target - Slice Units.
+[    2.203951] systemd[1]: Reached target swap.target - Swaps.
+[    2.209546] systemd[1]: Reached target timers.target - Timer Units.
+[    2.215980] systemd[1]: Listening on dbus.socket - D-Bus System Message Bus Socket.
+[    2.223721] systemd[1]: Listening on iscsid.socket - Open-iSCSI iscsid Socket.
+[    2.231008] systemd[1]: Listening on iscsiuio.socket - Open-iSCSI iscsiuio Socket.
+[    2.238712] systemd[1]: Listening on systemd-journald-dev-log.socket - Journal Socket (/dev/log).
+[    2.247716] systemd[1]: Listening on systemd-journald.socket - Journal Sockets.
+[    2.255158] systemd[1]: Listening on systemd-udevd-control.socket - udev Control Socket.
+[    2.263348] systemd[1]: Listening on systemd-udevd-kernel.socket - udev Kernel Socket.
+[    2.271299] systemd[1]: Reached target sockets.target - Socket Units.
+[    2.279448] systemd[1]: Starting kmod-static-nodes.service - Create List of Static Device Nodes...
+[    2.288573] systemd[1]: memstrack.service - Memstrack Anylazing Service skipped, no trigger condition checks were met.
+[    2.302280] systemd[1]: Starting systemd-journald.service - Journal Service...
+[    2.311009] systemd[1]: Starting systemd-modules-load.service - Load Kernel Modules...
+[    2.317808] systemd-journald[201]: Collecting audit messages is disabled.
+[    2.319160] systemd[1]: systemd-pcrphase-initrd.service - TPM PCR Barrier (initrd) skipped, unmet condition check ConditionSecurity=measured-os
+[    2.338981] i2c_dev: i2c /dev entries driver
+[    2.339948] systemd[1]: Starting systemd-vconsole-setup.service - Virtual Console Setup...
+[    2.352739] systemd[1]: Started systemd-journald.service - Journal Service.
+[    2.354519] fuse: init (API version 7.45)
+[    2.516799] loop: module loaded
+[    2.593914] Loading iSCSI transport class v2.0-870.
+[    2.610993] iscsi: registered transport (tcp)
+[    2.642332] iscsi: registered transport (qla4xxx)
+[    2.647079] QLogic iSCSI HBA Driver
+[    2.662799] libcxgbi:libcxgbi_init_module: Chelsio iSCSI driver library libcxgbi v0.9.1-ko (Apr. 2015)
+[    2.691871] Chelsio T3 iSCSI Driver cxgb3i v2.0.1-ko (Apr. 2015)
+[    2.697984] iscsi: registered transport (cxgb3i)
+[    2.755793] Chelsio T4-T6 iSCSI Driver cxgb4i v0.9.5-ko (Apr. 2015)
+[    2.762138] iscsi: registered transport (cxgb4i)
+[    2.766772] cxgb4i:cxgb4i_init_module: cxgb4i dcb enabled.
+[    2.787449] cnic: QLogic cnicDriver v2.5.22 (July 20, 2015)
+[    2.799456] QLogic NetXtreme II iSCSI Driver bnx2i v2.7.10.1 (Jul 16, 2014)
+[    2.806488] iscsi: registered transport (bnx2i)
+[    2.826624] iscsi: registered transport (be2iscsi)
+[    2.831433] In beiscsi_module_init, tt=00000000cd7ea1d7
+[    3.027738] RPC: Registered named UNIX socket transport module.
+[    3.033691] RPC: Registered udp transport module.
+[    3.038403] RPC: Registered tcp transport module.
+[    3.043112] RPC: Registered tcp-with-tls transport module.
+[    3.048609] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    3.560502] Key type psk registered
+[    3.857877] sdhci-bst 22200000.mmc: assigned reserved memory node mmc0-reserved@5160000
+[    3.857917] mmc0 bounce up to 64 segments into one, max segment size 32768 bytes
+[    3.905052] mmc0: SDHCI controller on 22200000.mmc [22200000.mmc] using DMA
+[    3.910778] mmc0: Got command interrupt 0x00000001 even though no command operation was in progress.
+[    3.910792] mmc0: sdhci: ============ SDHCI REGISTER DUMP ===========
+[    3.910796] mmc0: sdhci: Sys addr:  0x00000000 | Version:  0x00000005
+[    3.910799] mmc0: sdhci: Blk size:  0x00000000 | Blk cnt:  0x00000000
+[    3.910802] mmc0: sdhci: Argument:  0x00000000 | Trn mode: 0x00000000
+[    3.910804] mmc0: sdhci: Present:   0x03f200f0 | Host ctl: 0x00000001
+[    3.910807] mmc0: sdhci: Power:     0x0000000f | Blk gap:  0x00000000
+[    3.910809] mmc0: sdhci: Wake-up:   0x00000000 | Clock:    0x0000f40f
+[    3.910812] mmc0: sdhci: Timeout:   0x00000000 | Int stat: 0x00000000
+[    3.910814] mmc0: sdhci: Int enab:  0x00ff0003 | Sig enab: 0x00ff0003
+[    3.910817] mmc0: sdhci: ACmd stat: 0x00000000 | Slot int: 0x00000000
+[    3.910819] mmc0: sdhci: Caps:      0x276d0181 | Caps_1:   0x08002077
+[    3.910822] mmc0: sdhci: Cmd:       0x00000502 | Max curr: 0x00000000
+[    3.910824] mmc0: sdhci: Resp[0]:   0x00000000 | Resp[1]:  0x00000000
+[    3.910826] mmc0: sdhci: Resp[2]:   0x00000000 | Resp[3]:  0x00000000
+[    3.910828] mmc0: sdhci: Host ctl2: 0x00000000
+[    3.910830] mmc0: sdhci: ============================================
+[    3.954153] mmc0: new HS200 MMC card at address 0001
+[    3.962626] mmcblk0: mmc0:0001 MMC64G 58.2 GiB
+[    3.965492] GPT:Primary header thinks Alt. header is not at the end of the disk.
+[    3.965500] GPT:5367495 != 122142719
+[    3.965503] GPT:Alternate GPT header not at the end of the disk.
+[    3.965505] GPT:5367495 != 122142719
+[    3.965506] GPT: Use GNU Parted to correct GPT errors.
+[    3.965517]  mmcblk0: p1 p2
+[    3.965814] mmcblk0boot0: mmc0:0001 MMC64G 4.00 MiB
+[    3.968497] mmcblk0boot1: mmc0:0001 MMC64G 4.00 MiB
+[    3.969559] mmcblk0rpmb: mmc0:0001 MMC64G 4.00 MiB, chardev (504:0)
+[    4.558328] ISO 9660 Extensions: Microsoft Joliet Level 3
+[    4.558626] ISO 9660 Extensions: RRIP_1991A
+[    4.564150] loop0: detected capacity change from 0 to 4700168
+[    4.595154] erofs (device loop0): mounted with root inode @ nid 37.
+[    5.834868] systemd-journald[201]: Received SIGTERM from PID 1 (systemd).
+[    7.422746] audit: type=1404 audit(1782518405.737:2): enforcing=1 old_enforcing=0 auid=4294967295 ses=4294967295 enabled=1 old-enabled=1 lsm=selinux res=1
+[    7.879973] SELinux:  Permission firmware_load in class system not defined in policy.
+[    7.879982] SELinux:  Permission kexec_image_load in class system not defined in policy.
+[    7.879984] SELinux:  Permission kexec_initramfs_load in class system not defined in policy.
+[    7.879985] SELinux:  Permission policy_load in class system not defined in policy.
+[    7.879986] SELinux:  Permission x509_certificate_load in class system not defined in policy.
+[    7.880086] SELinux:  Permission map_create_as in class bpf not defined in policy.
+[    7.880088] SELinux:  Permission prog_load_as in class bpf not defined in policy.
+[    7.880094] SELinux:  Permission allowed in class io_uring not defined in policy.
+[    7.880096] SELinux:  Class memfd_file not defined in policy.
+[    7.880098] SELinux: the above unknown classes and permissions will be allowed
+[    7.884254] SELinux:  policy capability network_peer_controls=1
+[    7.884262] SELinux:  policy capability open_perms=1
+[    7.884263] SELinux:  policy capability extended_socket_class=1
+[    7.884265] SELinux:  policy capability always_check_network=0
+[    7.884266] SELinux:  policy capability cgroup_seclabel=1
+[    7.884267] SELinux:  policy capability nnp_nosuid_transition=1
+[    7.884269] SELinux:  policy capability genfs_seclabel_symlinks=1
+[    7.884270] SELinux:  policy capability ioctl_skip_cloexec=0
+[    7.884271] SELinux:  policy capability userspace_initial_context=0
+[    7.884272] SELinux:  policy capability netlink_xperm=0
+[    7.884274] SELinux:  policy capability netif_wildcard=0
+[    7.884275] SELinux:  policy capability genfs_seclabel_wildcard=0
+[    7.884276] SELinux:  policy capability functionfs_seclabel=0
+[    7.884277] SELinux:  policy capability memfd_class=0
+[    7.884279] SELinux:  policy capability bpf_token_perms=0
+[    7.933732] audit: type=1403 audit(1782518406.248:3): auid=4294967295 ses=4294967295 lsm=selinux res=1
+[    7.935633] systemd[1]: Successfully loaded SELinux policy in 641.330ms.
+[    8.306508] systemd[1]: Relabeled /dev/, /dev/shm/, /run/ in 26.483ms.
+[    8.985090] systemd[1]: systemd 261.1-2.fc45 running in system mode (+PAM +AUDIT +SELINUX -APPARMOR +IMA +IPE +SMACK +SECCOMP -GCRYPT +GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 +KMOD +LIBCRYPTSETUP +LIBCRYPTSETUP_PLUGINS +LIBFDISK +PCRE2 +PWQUALITY +P11KIT +QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD +BPF_FRAMEWORK +BTF +XKBCOMMON +UTMP +LIBARCHIVE)
+[    9.017274] systemd[1]: Detected architecture arm64.
+[    9.023193] systemd[1]: Detected first boot.
+[    9.606916] systemd[1]: Initializing machine ID from random generator.
+[    9.613490] evm: overlay not supported
+[   10.325661] systemd[1]: bpf-restrict-fs: LSM BPF program attached
+[   14.739876] zram: Added device: zram0
+[   14.742119] systemd[1]: Applying preset policy.
+[   14.813303] systemd[1]: Configuration file /usr/lib/systemd/system/flatpak-add-fedora-repos.service is marked executable. Please remove executable permission bits. Proceeding anyway.
+[   15.192855] systemd[1]: Removed '/etc/systemd/system/default.target'.
+[   15.192870] systemd[1]: Removed '/etc/systemd/system/sockets.target.wants/systemd-resolved-monitor.socket'.
+[   15.192874] systemd[1]: Removed '/etc/systemd/system/sockets.target.wants/systemd-resolved-varlink.socket'.
+[   15.192889] systemd[1]: Created symlink '/etc/systemd/system/multi-user.target.wants/lvm-devices-import.path' → '/usr/lib/systemd/system/lvm-devices-import.path'.
+[   15.192893] systemd[1]: Created symlink '/etc/systemd/system/multi-user.target.wants/lvm-devices-import.service' → '/usr/lib/systemd/system/lvm-devices-import.service'.
+[   15.192896] systemd[1]: Created symlink '/etc/systemd/system/multi-user.target.wants/machines.target' → '/usr/lib/systemd/system/machines.target'.
+[   15.192900] systemd[1]: Unit /usr/lib/systemd/system/qemu-guest-agent.service is added as a dependency to a non-existent unit dev-virtio\x2dports-org.qemu.guest_agent.0.device.
+[   15.192903] systemd[1]: Created symlink '/etc/systemd/system/multi-user.target.wants/remote-integritysetup.target' → '/usr/lib/systemd/system/remote-integritysetup.target'.
+[   15.192906] systemd[1]: Created symlink '/etc/systemd/system/sockets.target.wants/systemd-mountfsd.socket' → '/usr/lib/systemd/system/systemd-mountfsd.socket'.
+[   15.192908] systemd[1]: Created symlink '/etc/systemd/system/sockets.target.wants/systemd-nsresourced.socket' → '/usr/lib/systemd/system/systemd-nsresourced.socket'.
+[   15.192912] systemd[1]: Created symlink '/etc/systemd/system/sockets.target.wants/systemd-resolved-varlink.socket' → '/usr/lib/systemd/system/systemd-resolved-varlink.socket'.
+[   15.192915] systemd[1]: Created symlink '/etc/systemd/system/sockets.target.wants/systemd-resolved-monitor.socket' → '/usr/lib/systemd/system/systemd-resolved-monitor.socket'.
+[   15.192917] systemd[1]: Created symlink '/etc/systemd/system/factory-reset.target.wants/systemd-tpm2-clear.service' → '/usr/lib/systemd/system/systemd-tpm2-clear.service'.
+[   15.192922] systemd[1]: Populated /etc with preset unit settings.
+[   15.292729] systemd[1]: Configuration file /usr/lib/systemd/system/flatpak-add-fedora-repos.service is marked executable. Please remove executable permission bits. Proceeding anyway.
+[   15.637061] systemd[1]: initrd-switch-root.service: Deactivated successfully.
+[   15.637399] systemd[1]: Stopped initrd-switch-root.service - Switch Root.
+[   15.639390] systemd[1]: systemd-journald.service: Scheduled restart job, restart counter is at 1.
+[   15.640315] systemd[1]: Created slice machine.slice - Virtual Machine and Container Slice.
+[   15.641351] systemd[1]: Created slice system-kmsconvt.slice - Slice /system/kmsconvt.
+[   15.642083] systemd[1]: Created slice system-serial\x2dgetty.slice - Slice /system/serial-getty.
+[   15.642808] systemd[1]: Created slice system-systemd\x2dzram\x2dsetup.slice - Slice /system/systemd-zram-setup.
+[   15.643418] systemd[1]: Created slice user.slice - User and Session Slice.
+[   15.643541] systemd[1]: systemd-ask-password-console.path - Dispatch Password Requests to Console Directory Watch skipped, unmet condition check ConditionPathExists=!/run/plymouth/pid
+[   15.643753] systemd[1]: Started systemd-ask-password-wall.path - Forward Password Requests to Wall Directory Watch.
+[   15.644378] systemd[1]: Set up automount proc-sys-fs-binfmt_misc.automount - Arbitrary Executable File Formats File System Automount Point.
+[   15.644446] systemd[1]: Expecting device dev-ttyS0.device - /dev/ttyS0...
+[   15.644485] systemd[1]: Expecting device dev-zram0.device - /dev/zram0...
+[   15.644544] systemd[1]: Reached target imports.target - Image Downloads.
+[   15.644598] systemd[1]: Stopped target initrd-switch-root.target - Switch Root.
+[   15.644648] systemd[1]: Stopped target initrd-fs.target - Initrd File Systems.
+[   15.644682] systemd[1]: Stopped target initrd-root-fs.target - Initrd Root File System.
+[   15.644720] systemd[1]: Reached target integritysetup.target - Local Integrity Protected Volumes.
+[   15.644831] systemd[1]: Reached target rpc_pipefs.target.
+[   15.644872] systemd[1]: Reached target slices.target - Slice Units.
+[   15.644934] systemd[1]: Reached target veritysetup.target - Local Verity Protected Volumes.
+[   15.645416] systemd[1]: Listening on dm-event.socket - Device-mapper event daemon FIFOs.
+[   15.650194] systemd[1]: Listening on lvm2-lvmpolld.socket - LVM2 poll daemon socket.
+[   15.652509] systemd[1]: Listening on systemd-ask-password.socket - Query the User Interactively for a Password.
+[   15.654908] systemd[1]: Listening on systemd-coredump.socket - Process Core Dump Socket.
+[   15.656277] systemd[1]: Listening on systemd-creds.socket - Credential Encryption/Decryption.
+[   15.658359] systemd[1]: Listening on systemd-factory-reset.socket - Factory Reset Management.
+[   15.658998] systemd[1]: Listening on systemd-hostnamed.socket - Hostname Service Socket.
+[   15.660304] systemd[1]: Listening on systemd-journald-audit.socket - Journal Audit Socket.
+[   15.660921] systemd[1]: Listening on systemd-mountfsd.socket - DDI File System Mounter Socket.
+[   15.662865] systemd[1]: Listening on systemd-mute-console.socket - Console Output Muting Service Socket.
+[   15.663630] systemd[1]: Listening on systemd-nsresourced.socket - Namespace Resource Manager Socket.
+[   15.664529] systemd[1]: Listening on systemd-oomd.socket - Userspace Out-Of-Memory (OOM) Killer Socket.
+[   15.664766] systemd[1]: systemd-pcrextend.socket - TPM PCR Measurements skipped, unmet condition check ConditionSecurity=measured-os
+[   15.664805] systemd[1]: systemd-pcrlock.socket - Make TPM PCR Policy skipped, unmet condition check ConditionSecurity=measured-uki
+[   15.666228] systemd[1]: Listening on systemd-repart.socket - Disk Repartitioning Service Socket.
+[   15.668542] systemd[1]: Listening on systemd-report-basic.socket - Report System Basic Metrics Socket.
+[   15.670741] systemd[1]: Listening on systemd-report-cgroup.socket - CGroup Report Varlink Socket.
+[   15.671598] systemd[1]: Listening on systemd-resolved-monitor.socket - Resolve Monitor Varlink Socket.
+[   15.672001] systemd[1]: Listening on systemd-resolved-varlink.socket - Resolve Service Varlink Socket.
+[   15.674704] systemd[1]: Listening on systemd-storage-block.socket - Simple Block Device Backed Storage Provider.
+[   15.676556] systemd[1]: Listening on systemd-storage-fs.socket - Simple File System Backed Storage Provider.
+[   15.677841] systemd[1]: Listening on systemd-udevd-control.socket - udev Control Socket.
+[   15.678470] systemd[1]: Listening on systemd-udevd-varlink.socket - udev Varlink Socket.
+[   15.679186] systemd[1]: Listening on systemd-userdbd.socket - User Database Manager Socket.
+[   15.681401] systemd[1]: Mounting dev-hugepages.mount - Huge Pages File System...
+[   15.683637] systemd[1]: Mounting dev-mqueue.mount - POSIX Message Queue File System...
+[   15.685408] systemd[1]: Mounting sys-kernel-debug.mount - Kernel Debug File System...
+[   15.686940] systemd[1]: Mounting sys-kernel-tracing.mount - Kernel Trace File System...
+[   15.687215] systemd[1]: auth-rpcgss-module.service - Kernel Module supporting RPCSEC_GSS skipped, unmet condition check ConditionPathExists=/etc/krb5.keytab
+[   15.687348] systemd[1]: fips-crypto-policy-overlay.service - Bind-mount FIPS crypto-policy in FIPS mode skipped, unmet condition check ConditionKernelCommandLine=fips=1
+[   15.688336] systemd[1]: iscsi-starter.service skipped, unmet condition check ConditionDirectoryNotEmpty=/var/lib/iscsi/nodes
+[   15.690435] systemd[1]: Starting kmod-static-nodes.service - Create List of Static Device Nodes...
+[   15.692114] systemd[1]: Starting lvm2-monitor.service - Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling...
+[   15.692233] systemd[1]: modprobe@configfs.service - Load Kernel Module configfs skipped, unmet condition check ConditionKernelModuleLoaded=!configfs
+[   15.692291] systemd[1]: modprobe@drm.service - Load Kernel Module drm skipped, unmet condition check ConditionKernelModuleLoaded=!drm
+[   15.692336] systemd[1]: modprobe@efi_pstore.service - Load Kernel Module efi_pstore skipped, unmet condition check ConditionKernelModuleLoaded=!efi_pstore
+[   15.692405] systemd[1]: modprobe@fuse.service - Load Kernel Module fuse skipped, unmet condition check ConditionKernelModuleLoaded=!fuse
+[   15.693958] systemd[1]: Mounting sys-fs-fuse-connections.mount - FUSE Control File System...
+[   15.694091] systemd[1]: plymouth-switch-root.service: Deactivated successfully.
+[   15.694166] systemd[1]: Stopped plymouth-switch-root.service - Plymouth switch root service.
+[   15.694446] systemd[1]: systemd-boot-clear-sysfail.service - Clear SysFail Entry If The Boot Is Successful skipped, unmet condition check ConditionPathExists=/sys/firmware/efi/efivars/LoaderEntrySysFail-4a67b082-0a4c-41cf-b6c7-440b29bb8c4f
+[   15.694514] systemd[1]: systemd-hibernate-clear.service - Clear Stale Hibernate Storage Info skipped, unmet condition check ConditionPathExists=/sys/firmware/efi/efivars/HibernateLocation-8cf2644b-4b0b-428f-9387-6d876050dc67
+[   15.698011] systemd[1]: Starting systemd-journald.service - Journal Service...
+[   15.700230] systemd[1]: Starting systemd-modules-load.service - Load Kernel Modules...
+[   15.702129] systemd[1]: Starting systemd-network-generator.service - Generate Network Units from Kernel Command Line...
+[   15.702227] systemd[1]: systemd-pcrmachine.service - TPM PCR Machine ID Measurement skipped, unmet condition check ConditionSecurity=measured-os
+[   15.702274] systemd[1]: systemd-pcrosseparator.service - TPM PCR OS Separator skipped, unmet condition check ConditionSecurity=measured-os
+[   15.703871] systemd[1]: Starting systemd-remount-fs.service - Remount Root and Kernel File Systems...
+[   15.704013] systemd[1]: systemd-tpm2-setup-early.service - Early TPM SRK Setup skipped, unmet condition check ConditionSecurity=measured-os
+[   15.704073] systemd[1]: systemd-pcrnvdone.service - TPM PCR NvPCR Initialization Separator skipped, unmet condition check ConditionPathExists=/etc/initrd-release
+[   15.704103] systemd[1]: Reached target cryptsetup.target - Local Encrypted Volumes.
+[   15.704157] systemd[1]: systemd-pcrproduct.service - TPM NvPCR Product ID Measurement skipped, unmet condition check ConditionSecurity=measured-os
+[   15.705680] systemd[1]: Starting systemd-udev-load-credentials.service - Load udev Rules from Credentials...
+[   15.707498] systemd[1]: Starting systemd-udev-trigger.service - Coldplug All udev Devices...
+[   15.836777] systemd[1]: Finished kmod-static-nodes.service - Create List of Static Device Nodes.
+[   15.840401] systemd[1]: Starting systemd-tmpfiles-setup-dev-early.service - Create Static Device Nodes in /dev gracefully...
+[   15.879188] systemd-journald[933]: Collecting audit messages is enabled.
+[   15.889653] systemd[1]: Started systemd-journald.service - Journal Service.
+[   15.891070] audit: type=1130 audit(1782518414.205:4): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=systemd-journald comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[   15.972075] audit: type=1130 audit(1782518414.286:5): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=systemd-network-generator comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[   15.973071] audit: type=1130 audit(1782518414.287:6): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=systemd-remount-fs comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[   16.030251] systemd-journald[933]: Received client request to flush runtime journal.
+[   16.047630] audit: type=1130 audit(1782518414.362:7): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=systemd-random-seed comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[   16.059421] audit: type=1130 audit(1782518414.374:8): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=systemd-udev-load-credentials comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[   16.070689] audit: type=1130 audit(1782518414.385:9): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=systemd-journal-flush comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[   16.115839] audit: type=1334 audit(1782518414.430:10): prog-id=57 op=LOAD
+[   16.116478] audit: type=1334 audit(1782518414.431:11): prog-id=58 op=LOAD
+[   16.116777] audit: type=1334 audit(1782518414.431:12): prog-id=59 op=LOAD
+[   16.149903] audit: type=1130 audit(1782518414.464:13): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=systemd-modules-load comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[   16.157357] tun: Universal TUN/TAP device driver, 1.6
+[   17.214495] zram0: detected capacity change from 0 to 8093696
+[   17.600101] Adding 4046844k swap on /dev/zram0.  Priority:100 extents:1 across:4046844k SSDsc
+[   21.327699] NET: Registered PF_QIPCRTR protocol family
+[  100.907097] FAT-fs (mmcblk0p2): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+
+>>> RETURN CODE: 0
+============================================================
+>>> COMMAND: lspci -vvv
+>>> TIME: 2026-06-27 00:01:59
+============================================================
+
+>>> RETURN CODE: 0
+============================================================
+>>> COMMAND: lscpu
+>>> TIME: 2026-06-27 00:01:59
+============================================================
+Architecture:                            aarch64
+CPU op-mode(s):                          32-bit, 64-bit
+Byte Order:                              Little Endian
+CPU(s):                                  4
+On-line CPU(s) list:                     0-3
+Vendor ID:                               ARM
+BIOS Vendor ID:                          Unknown
+Model name:                              Cortex-A78AE
+BIOS Model name:                         Unknown  CPU @ 0.0GHz
+BIOS CPU family:                         2
+Model:                                   2
+Thread(s) per core:                      1
+Core(s) per cluster:                     4
+Socket(s):                               1
+Cluster(s):                              1
+Stepping:                                r0p2
+BogoMIPS:                                400.00
+Flags:                                   fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm lrcpc dcpop asimddp uscat ilrcpc flagm paca pacg
+NUMA node(s):                            1
+NUMA node0 CPU(s):                       0-3
+Vulnerability Gather data sampling:      Not affected
+Vulnerability Ghostwrite:                Not affected
+Vulnerability Indirect target selection: Not affected
+Vulnerability Itlb multihit:             Not affected
+Vulnerability L1tf:                      Not affected
+Vulnerability Mds:                       Not affected
+Vulnerability Meltdown:                  Not affected
+Vulnerability Mmio stale data:           Not affected
+Vulnerability Old microcode:             Not affected
+Vulnerability Reg file data sampling:    Not affected
+Vulnerability Retbleed:                  Not affected
+Vulnerability Spec rstack overflow:      Not affected
+Vulnerability Spec store bypass:         Mitigation; Speculative Store Bypass disabled via prctl
+Vulnerability Spectre v1:                Mitigation; __user pointer sanitization
+Vulnerability Spectre v2:                Mitigation; CSV2, BHB
+Vulnerability Srbds:                     Not affected
+Vulnerability Tsa:                       Not affected
+Vulnerability Tsx async abort:           Not affected
+Vulnerability Vmscape:                   Not affected
+
+>>> RETURN CODE: 0
+============================================================
+>>> COMMAND: lsblk
+>>> TIME: 2026-06-27 00:02:00
+============================================================
+NAME         MAJ:MIN RM  SIZE RO TYPE MOUNTPOINTS
+loop0          7:0    0  2.2G  1 loop /run/rootfsbase
+mmcblk0      179:0    0 58.2G  0 disk 
+├─mmcblk0p1  179:1    0  2.5G  0 part /run/initramfs/live
+└─mmcblk0p2  179:2    0   30M  0 part /mnt
+mmcblk0boot0 179:8    0    4M  1 disk 
+mmcblk0boot1 179:16   0    4M  1 disk 
+zram0        251:0    0  3.9G  0 disk [SWAP]
+
+>>> RETURN CODE: 0
+============================================================
+>>> COMMAND: dmidecode
+>>> TIME: 2026-06-27 00:02:00
+============================================================
+# dmidecode 3.7
+Getting SMBIOS data from sysfs.
+SMBIOS 3.7.0 present.
+Table at 0x9BE6C6020.
+
+Handle 0x0000, DMI type 0, 24 bytes
+Platform Firmware Information
+	Vendor: U-Boot
+	Version: 2022.07+
+	Release Date: 07/01/2022
+	ROM Size: 64 KiB
+	Characteristics:
+		PCI is supported
+		Firmware is upgradeable
+		Selectable boot is supported
+		Targeted content distribution is supported
+		UEFI is supported
+	Platform Firmware Revision: 22.7
+
+Handle 0x0001, DMI type 1, 27 bytes
+System Information
+	Manufacturer: Unknown
+	Product Name: Unknown Product
+	Version: Not Specified
+	Serial Number: Not Specified
+	UUID: Not Settable
+	Wake-up Type: Reserved
+	SKU Number: Not Specified
+	Family: Not Specified
+
+Handle 0x0002, DMI type 2, 14 bytes
+Base Board Information
+	Manufacturer: Unknown
+	Product Name: Unknown Product
+	Version: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Features:
+		Board is a hosting board
+	Location In Chassis: Not Specified
+	Chassis Handle: 0x0000
+	Type: Motherboard
+
+Handle 0x0003, DMI type 3, 21 bytes
+Chassis Information
+	Manufacturer: Unknown
+	Type: Desktop
+	Lock: Not Present
+	Version: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Boot-up State: Safe
+	Power Supply State: Safe
+	Thermal State: Safe
+	Security Status: None
+	OEM Information: 0x00000000
+	Height: Unspecified
+	Number Of Power Cords: Unspecified
+	Contained Elements: 0
+
+Handle 0x0004, DMI type 4, 48 bytes
+Processor Information
+	Socket Designation: Not Specified
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Unknown
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown
+	External Clock: Unknown
+	Max Speed: Unknown
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: None
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0005, DMI type 32, 11 bytes
+System Boot Information
+	Status: No errors detected
+
+Handle 0x0006, DMI type 127, 4 bytes
+End Of Table
+
+
+>>> RETURN CODE: 0
+============================================================
+>>> COMMAND: uname -a
+>>> TIME: 2026-06-27 00:02:00
+============================================================
+Linux localhost-live 7.2.0-0.rc1.15.fc45.aarch64 #1 SMP PREEMPT_DYNAMIC Sun Jun 28 22:55:08 UTC 2026 aarch64 GNU/Linux
+
+>>> RETURN CODE: 0
+============================================================
+>>> COMMAND: cat /etc/os-release
+>>> TIME: 2026-06-27 00:02:00
+============================================================
+NAME="Fedora Linux"
+VERSION="45 (Workstation Edition Prerelease)"
+RELEASE_TYPE=development
+ID=fedora
+VERSION_ID=45
+VERSION_CODENAME=""
+PRETTY_NAME="Fedora Linux 45 (Workstation Edition Prerelease)"
+ANSI_COLOR="0;38;2;60;110;180"
+LOGO=fedora-logo-icon
+CPE_NAME="cpe:/o:fedoraproject:fedora:45"
+DEFAULT_HOSTNAME="fedora"
+HOME_URL="https://fedoraproject.org/"
+DOCUMENTATION_URL="https://docs.fedoraproject.org/en-US/fedora/rawhide/"
+SUPPORT_URL="https://ask.fedoraproject.org/"
+BUG_REPORT_URL="https://bugzilla.redhat.com/"
+REDHAT_BUGZILLA_PRODUCT="Fedora"
+REDHAT_BUGZILLA_PRODUCT_VERSION=rawhide
+REDHAT_SUPPORT_PRODUCT="Fedora"
+REDHAT_SUPPORT_PRODUCT_VERSION=rawhide
+SUPPORT_END=2027-11-24
+VARIANT="Workstation Edition"
+VARIANT_ID=workstation
+
+>>> RETURN CODE: 0
+============================================================
+>>> COMMAND: efibootmgr
+>>> TIME: 2026-06-27 00:02:00
+============================================================
+No BootOrder is set; firmware will attempt recovery
+
+>>> RETURN CODE: 0
+
+============================================================
+>>> COMMAND: cp -r /sys/firmware ~/firmware
+============================================================
+cp: cannot lseek '/sys/firmware/efi/efivars/MokListRT-605dab50-e046-4300-abb6-3dd810dd8b23': Illegal seek
+============================================================
+>>> COMMAND: tar czf "/root/sys-firmware.tar.gz" -C "/root" firmware
+>>> TIME: 2026-06-27 00:02:00
+============================================================
+
+>>> RETURN CODE: 0
+============================================================
+>>> COMMAND: touch "/root/ref"
+>>> TIME: 2026-06-27 00:02:00
+============================================================
+
+>>> RETURN CODE: 0
+
+============================================================
+>>> COMMAND: shred -v -n 1 -s 99M ~/ref
+============================================================
+shred: /root/ref: pass 1/1 (random)...
+============================================================
+>>> COMMAND: md5sum "/root/ref"
+>>> TIME: 2026-06-27 00:02:00
+============================================================
+dede5a2948ca6e05936b922b12127b3d  /root/ref
+
+>>> RETURN CODE: 0
+============================================================
+>>> COMMAND: sudo ./ethtool-test.sh
+>>> TIME: 2026-06-27 00:02:01
+============================================================
+./ethtool-test.sh: line 36: apt-get: command not found
+****************************************************************
+                         Running ethtool
+****************************************************************
+INFO: No ethernet interfaces detected via ip linux command, Exiting ...
+
+>>> RETURN CODE: 1
+>>> WARNING: command failed, continue...
+
+============================================================
+ Collection finished
+ End time: Sat Jun 27 12:02:01 AM UTC 2026
+ Log: /root/console.log
+ Firmware archive: /root/sys-firmware.tar.gz
+============================================================

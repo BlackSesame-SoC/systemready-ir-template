@@ -1,0 +1,812 @@
+============================================================
+ System Information Collection
+ Start time: Tue Jul 28 12:54:14 UTC 2026
+============================================================
+============================================================
+>>> COMMAND: sudo dmesg
+>>> TIME: 2026-07-28 12:54:14
+============================================================
+[    0.000000] Booting Linux on physical CPU 0x0000000000 [0x410fd422]
+[    0.000000] Linux version 7.3.0-5-generic (buildd@bos03-arm64-066) (aarch64-linux-gnu-gcc (Ubuntu 15.3.0-3ubuntu1) 15.3.0, GNU ld (GNU Binutils for Ubuntu) 2.47) #5-Ubuntu SMP PREEMPT_DYNAMIC Mon Sep 14 12:00:01 UTC 2026 (Ubuntu 7.3.0-5.5-generic 7.3.0-rc3)
+[    0.000000] KASLR disabled due to lack of seed
+[    0.000000] Machine model: BST C1200-96 CDCU1.0 4C2G
+[    0.000000] earlycon: uart8250 MMIO32:0x0000000020008000 (options '')
+[    0.000000] printk: legacy bootconsole [uart8250] enabled
+[    0.000000] efi: EFI v2.9 by Das U-Boot
+[    0.000000] efi: ESRT=0x9be6c7040 RTPROP=0x9be6c9040 SMBIOS 3.0=0x9be6c5000 MOKvar=0x9be5da000 INITRD=0x9b80d7040 MEMRESERVE=0x9b80d6040 
+[    0.000000] secureboot: Secure boot disabled
+[    0.000000] esrt: Reserving ESRT space from 0x00000009be6c7040 to 0x00000009be6c7078.
+[    0.000000] Reserved memory: created DMA memory pool at 0x0000000005160000, size 64 KiB
+[    0.000000] OF: reserved mem: initialized node mmc0-reserved@5160000, compatible id shared-dma-pool
+[    0.000000] OF: reserved mem: 0x0000000005160000..0x000000000516ffff (64 KiB) nomap non-reusable mmc0-reserved@5160000
+[    0.000000] NUMA: Faking a node at [mem 0x0000000005160000-0x00000009bfffffff]
+[    0.000000] NODE_DATA(0) allocated [mem 0x9bf7e1a00-0x9bf7e6fff]
+[    0.000000] cma: Failed to reserve 32 MiB
+[    0.000000] psci: probing for conduit method from DT.
+[    0.000000] psci: PSCIv1.1 detected in firmware.
+[    0.000000] psci: Using standard PSCI v0.2 function IDs
+[    0.000000] psci: Trusted OS migration not required
+[    0.000000] psci: SMC Calling Convention v1.2
+[    0.000000] Zone ranges:
+[    0.000000]   DMA      [mem 0x0000000005160000-0x00000000ffffffff]
+[    0.000000]   DMA32    empty
+[    0.000000]   Normal   [mem 0x0000000100000000-0x00000009bfffffff]
+[    0.000000]   Device   empty
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000005160000-0x000000000516ffff]
+[    0.000000]   node   0: [mem 0x00000008c0000000-0x00000009be5d9fff]
+[    0.000000]   node   0: [mem 0x00000009be5da000-0x00000009be5dafff]
+[    0.000000]   node   0: [mem 0x00000009be5db000-0x00000009be6c4fff]
+[    0.000000]   node   0: [mem 0x00000009be6c5000-0x00000009be6c5fff]
+[    0.000000]   node   0: [mem 0x00000009be6c6000-0x00000009be6c8fff]
+[    0.000000]   node   0: [mem 0x00000009be6c9000-0x00000009be6c9fff]
+[    0.000000]   node   0: [mem 0x00000009be6ca000-0x00000009be6cbfff]
+[    0.000000]   node   0: [mem 0x00000009be6cc000-0x00000009be6cdfff]
+[    0.000000]   node   0: [mem 0x00000009be6ce000-0x00000009be6cefff]
+[    0.000000]   node   0: [mem 0x00000009be6cf000-0x00000009be6d2fff]
+[    0.000000]   node   0: [mem 0x00000009be6d3000-0x00000009bfeeffff]
+[    0.000000]   node   0: [mem 0x00000009bfef0000-0x00000009bfefffff]
+[    0.000000]   node   0: [mem 0x00000009bff00000-0x00000009bfffffff]
+[    0.000000] Initmem setup node 0 [mem 0x0000000005160000-0x00000009bfffffff]
+[    0.000000] On node 0, zone DMA: 20832 pages in unavailable ranges
+[    0.000000] On node 0, zone Normal: 11920 pages in unavailable ranges
+[    0.000000] percpu: Embedded 59 pages/cpu s116248 r8192 d117224 u241664
+[    0.000000] pcpu-alloc: s116248 r8192 d117224 u241664 alloc=59*4096
+[    0.000000] pcpu-alloc: [0] 0 [0] 1 [0] 2 [0] 3 
+[    0.000000] Detected PIPT I-cache on CPU0
+[    0.000000] CPU features: detected: Address authentication (architected QARMA5 algorithm)
+[    0.000000] CPU features: detected: GICv3 CPU interface
+[    0.000000] CPU features: detected: Virtualization Host Extensions
+[    0.000000] CPU features: detected: Spectre-v4
+[    0.000000] CPU features: detected: Spectre-BHB
+[    0.000000] CPU features: detected: Broken broadcast TLBI completion
+[    0.000000] alternatives: applying boot alternatives
+[    0.000000] Kernel command line: BOOT_IMAGE=/casper/vmlinuz earlycon=uart8250,mmio32,0x20008000 console=ttyS0,115200n8 loglevel=8
+[    0.000000] printk: log buffer data + meta data: 262144 + 1114112 = 1376256 bytes
+[    0.000000] Dentry cache hash table entries: 524288 (order: 10, 4194304 bytes, linear)
+[    0.000000] Inode-cache hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+[    0.000000] software IO TLB: area num 4.
+[    0.000000] software IO TLB: swiotlb_memblock_alloc: Failed to allocate 67108864 bytes tlb structure
+[    0.000000] software IO TLB: swiotlb_memblock_alloc: Failed to allocate 33554432 bytes tlb structure
+[    0.000000] software IO TLB: swiotlb_memblock_alloc: Failed to allocate 16777216 bytes tlb structure
+[    0.000000] software IO TLB: swiotlb_memblock_alloc: Failed to allocate 8388608 bytes tlb structure
+[    0.000000] software IO TLB: swiotlb_memblock_alloc: Failed to allocate 4194304 bytes tlb structure
+[    0.000000] software IO TLB: swiotlb_memblock_alloc: Failed to allocate 2097152 bytes tlb structure
+[    0.000000] software IO TLB: swiotlb_memblock_alloc: Failed to allocate 1048576 bytes tlb structure
+[    0.000000] Fallback order for Node 0: 0 
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 1048592
+[    0.000000] Policy zone: Normal
+[    0.000000] mem auto-init: stack:all(zero), heap alloc:on, heap free:off
+[    0.000000] KHO: Failed to reserve lowmem scratch buffer
+[    0.000000] KHO: Failed to reserve scratch area, disabling kexec handover
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+[    0.000000] ftrace: allocating 72887 entries in 286 pages
+[    0.000000] ftrace: allocated 286 pages with 5 groups
+[    0.000000] Dynamic Preempt: lazy
+[    0.000000] rcu: Preemptible hierarchical RCU implementation.
+[    0.000000] rcu: 	RCU restricting CPUs from NR_CPUS=512 to nr_cpu_ids=4.
+[    0.000000] 	Trampoline variant of Tasks RCU enabled.
+[    0.000000] 	Rude variant of Tasks RCU enabled.
+[    0.000000] 	Tracing variant of Tasks RCU enabled.
+[    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 100 jiffies.
+[    0.000000] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=4
+[    0.000000] RCU Tasks: Setting shift to 2 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=4.
+[    0.000000] RCU Tasks Rude: Setting shift to 2 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=4.
+[    0.000000] NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+[    0.000000] GICv3: GIC: Using split EOI/Deactivate mode
+[    0.000000] GICv3: 640 SPIs implemented
+[    0.000000] GICv3: 0 Extended SPIs implemented
+[    0.000000] Root IRQ handler: gic_handle_irq
+[    0.000000] GICv3: GICv3 features: 16 PPIs
+[    0.000000] GICv3: GICD_CTLR.DS=0, SCR_EL3.FIQ=1
+[    0.000000] GICv3: CPU0: found redistributor 0 region 0:0x0000000032880000
+[    0.000000] ITS: No ITS available, not enabling LPIs
+[    0.000000] rcu: srcu_init: Setting srcu_struct sizes based on contention.
+[    0.000000] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1911260446275000 ns
+[    0.000000] arch_timer: [Firmware Bug]: VHE-capable CPU without EL2 virtual timer interrupt
+[    0.000000] arch_timer: cp15 timer running at 200.00MHz (hyp-phys).
+[    0.000000] clocksource: arch_sys_counter: mask: 0x3ffffffffffffff max_cycles: 0x2e2049d3e8, max_idle_ns: 440795210634 ns
+[    0.000000] sched_clock: 58 bits at 200MHz, resolution 5ns, wraps every 4398046511102ns
+[    0.009015] Console: colour dummy device 80x25
+[    0.014161] Calibrating delay loop (skipped), value calculated using timer frequency.. 400.00 BogoMIPS (lpj=200000)
+[    0.025656] pid_max: default: 32768 minimum: 301
+[    0.031939] landlock: Up and running.
+[    0.035963] Yama: becoming mindful.
+[    0.040114] AppArmor: AppArmor initialized
+[    0.044621] AppArmor: AppArmor secmark mediation reserved: ready to be enabled
+[    0.053216] Mount-cache hash table entries: 8192 (order: 4, 65536 bytes, linear)
+[    0.061364] Mountpoint-cache hash table entries: 8192 (order: 4, 65536 bytes, linear)
+[    0.070412] VFS: Finished mounting rootfs on nullfs
+[    0.077755] rcu: Hierarchical SRCU implementation.
+[    0.083029] rcu: 	Max phase no-delay instances is 400.
+[    0.088784] Timer migration: 1 hierarchy levels; 8 children per group; 1 crossnode level
+[    0.098200] Remapping and enabling EFI services.
+[    0.103479] smp: Bringing up secondary CPUs ...
+[    0.108835] Detected PIPT I-cache on CPU1
+[    0.108892] GICv3: CPU1: found redistributor 100 region 0:0x00000000328a0000
+[    0.108917] CPU1: Booted secondary processor 0x0000000100 [0x410fd422]
+[    0.109312] Detected PIPT I-cache on CPU2
+[    0.109349] GICv3: CPU2: found redistributor 200 region 0:0x00000000328c0000
+[    0.109364] CPU2: Booted secondary processor 0x0000000200 [0x410fd422]
+[    0.109757] Detected PIPT I-cache on CPU3
+[    0.109790] GICv3: CPU3: found redistributor 300 region 0:0x00000000328e0000
+[    0.109803] CPU3: Booted secondary processor 0x0000000300 [0x410fd422]
+[    0.109869] smp: Brought up 1 node, 4 CPUs
+[    0.172403] SMP: Total of 4 processors activated.
+[    0.177581] CPU: All CPU(s) started at EL2
+[    0.182085] CPU features: detected: 32-bit EL0 Support
+[    0.187741] CPU features: detected: Data cache clean to the PoU not required for I/D coherence
+[    0.197216] CPU features: detected: Common not Private translations
+[    0.204113] CPU features: detected: CRC32 instructions
+[    0.209760] CPU features: detected: Data cache clean to Point of Persistence
+[    0.217516] CPU features: detected: Generic authentication (architected QARMA5 algorithm)
+[    0.226522] CPU features: detected: RCpc load-acquire (LDAPR)
+[    0.232845] CPU features: detected: LSE atomic instructions
+[    0.238975] CPU features: detected: Privileged Access Never
+[    0.245103] CPU features: detected: PMUv3
+[    0.249510] CPU features: detected: RAS Extension Support
+[    0.255447] CPU features: detected: XNX
+[    0.259663] CPU features: detected: Speculative Store Bypassing Safe (SSBS)
+[    0.267349] alternatives: applying system-wide alternatives
+[    0.276360] CPU features: detected: ICV_DIR_EL1 trapping
+[    0.282204] CPU features: detected: Hardware dirty bit management on CPU0-3
+[    0.290147] Memory: 3884984K/4194368K available (28736K kernel code, 6538K rwdata, 21552K rodata, 15936K init, 1288K bss, 300772K reserved, 0K cma-reserved)
+[    0.306114] devtmpfs: initialized
+[    0.311145] posixtimers hash table entries: 2048 (order: 3, 32768 bytes, linear)
+[    0.319332] futex hash table entries: 1024 (65536 bytes on 1 NUMA nodes, total 64 KiB, linear).
+[    0.328975] 14192 pages in range for non-PLT usage
+[    0.328977] 505712 pages in range for PLT usage
+[    0.335689] DMI: SMBIOS 3.7.0 present.
+[    0.344803] DMI: Unknown Unknown Product/Unknown Product, BIOS 2022.07+ 07/01/2022
+[    0.353135] DMI: Memory slots populated: 0/0
+[    0.359514] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+[    0.366400] DMA: preallocated 512 KiB GFP_KERNEL pool for atomic allocations
+[    0.374196] audit: initializing netlink subsys (disabled)
+[    0.380210] audit: type=2000 audit(0.063:1): state=initialized audit_enabled=0 res=1
+[    0.401669] thermal_sys: Registered thermal governor 'fair_share'
+[    0.401674] thermal_sys: Registered thermal governor 'bang_bang'
+[    0.408388] thermal_sys: Registered thermal governor 'step_wise'
+[    0.414994] thermal_sys: Registered thermal governor 'user_space'
+[    0.421599] thermal_sys: Registered thermal governor 'power_allocator'
+[    0.428335] cpuidle: using governor ladder
+[    0.440023] cpuidle: using governor menu
+[    0.444443] hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+[    0.451954] ASID allocator initialised with 65536 entries
+[    0.458757] Serial: AMBA PL011 UART driver
+[    0.463678] /soc/interrupt-controller@32800000: Fixed dependency cycle(s) with /soc/interrupt-controller@32800000
+[    0.476227] HugeTLB: registered 1.00 GiB page size, pre-allocated 0 pages
+[    0.483701] HugeTLB: 0 KiB vmemmap can be freed for a 1.00 GiB page
+[    0.490598] HugeTLB: registered 32.0 MiB page size, pre-allocated 0 pages
+[    0.498066] HugeTLB: 0 KiB vmemmap can be freed for a 32.0 MiB page
+[    0.504959] HugeTLB: registered 2.00 MiB page size, pre-allocated 0 pages
+[    0.512430] HugeTLB: 0 KiB vmemmap can be freed for a 2.00 MiB page
+[    0.519322] HugeTLB: registered 64.0 KiB page size, pre-allocated 0 pages
+[    0.526787] HugeTLB: 0 KiB vmemmap can be freed for a 64.0 KiB page
+[    0.535673] ACPI: Interpreter disabled.
+[    0.540227] iommu: Default domain type: Translated
+[    0.545502] iommu: DMA domain TLB invalidation policy: strict mode
+[    0.552773] SCSI subsystem initialized
+[    0.556964] libata version 3.00 loaded.
+[    0.561253] usbcore: registered new interface driver usbfs
+[    0.567319] usbcore: registered new interface driver hub
+[    0.573170] usbcore: registered new device driver usb
+[    0.578776] pps_core: LinuxPPS API ver. 1 registered
+[    0.584234] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.594288] PTP clock support registered
+[    0.598738] EDAC MC: Ver: 3.0.0
+[    0.602312] scmi_core: SCMI protocol bus registered
+[    0.607704] efivars: Registered efivars operations
+[    0.613567] NetLabel: Initializing
+[    0.617311] NetLabel:  domain hash size = 128
+[    0.622102] NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+[    0.628347] NetLabel:  unlabeled traffic allowed by default
+[    0.634618] mctp: management component transport protocol core
+[    0.641043] NET: Registered PF_MCTP protocol family
+[    0.646498] vgaarb: loaded
+[    0.649629] clocksource: Switched to clocksource arch_sys_counter
+[    0.657395] VFS: Disk quotas dquot_6.6.0
+[    0.661770] VFS: Dquot-cache hash table entries: 512 (4096 bytes)
+[    0.668907] AppArmor: AppArmor Filesystem Enabled
+[    0.674129] pnp: PnP ACPI: disabled
+[    0.680630] NET: Registered PF_INET protocol family
+[    0.686094] IP idents hash table entries: 65536 (order: 7, 524288 bytes, linear)
+[    0.695807] tcp_listen_portaddr_hash hash table entries: 2048 (order: 3, 32768 bytes, linear)
+[    0.705227] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+[    0.713775] TCP established hash table entries: 32768 (order: 6, 262144 bytes, linear)
+[    0.722588] TCP bind hash table entries: 32768 (order: 8, 1048576 bytes, linear)
+[    0.730832] TCP: Hash tables configured (established 32768 bind 32768)
+[    0.738165] MPTCP token hash table entries: 4096 (order: 5, 98304 bytes, linear)
+[    0.746373] UDP hash table entries: 2048 (order: 5, 131072 bytes, linear)
+[    0.753982] NET: Registered PF_UNIX/PF_LOCAL protocol family
+[    0.760231] NET: Registered PF_XDP protocol family
+[    0.765509] PCI: CLS 0 bytes, default 64
+[    0.769956] Trying to unpack rootfs image as initramfs...
+[    0.777677] kvm [1]: nv: 571 coarse grained trap handlers
+[    0.783737] kvm [1]: nv: 710 fine grained trap handlers
+[    0.789641] kvm [1]: IPA Size Limit: 48 bits
+[    0.794354] kvm [1]: GICv3: no GICV resource entry
+[    0.799628] kvm [1]: disabling GICv2 emulation
+[    0.804549] kvm [1]: GIC system register CPU interface enabled
+[    0.810983] kvm [1]: vgic interrupt IRQ9
+[    0.815316] kvm [1]: VHE mode initialized successfully
+[    0.822740] Initialise system trusted keyrings
+[    0.827683] Key type blacklist registered
+[    0.832192] workingset: timestamp_bits=40 (anon: 35) max_order=20 bucket_order=0 (anon: 0)
+[    0.845420] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    0.852923] fuse: init (API version 7.46)
+[    0.857754] integrity: Platform Keyring initialized
+[    0.863137] integrity: Machine keyring initialized
+[    0.882661] Key type asymmetric registered
+[    0.887172] Asymmetric key parser 'x509' registered
+[    0.892578] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 241)
+[    0.900822] io scheduler mq-deadline registered
+[    0.908642] ledtrig-cpu: registered to indicate activity on CPUs
+[    0.920181] Serial: 8250/16550 driver, 32 ports, IRQ sharing enabled
+[    0.930691] printk: console [ttyS0] disabled
+[    0.935595] 20008000.serial: ttyS0 MMIO32:0x0000000020008000 (irq = 14, base_baud = 1562500) is a 16550A
+[    0.946115] printk: console [ttyS0] enabled
+[    0.954921] printk: legacy bootconsole [uart8250] disabled
+[    0.967596] msm_serial: driver initialized
+[    0.967777] SuperH (H)SCI(F) driver initialized
+[    0.974912] loop: module loaded
+[    0.975890] tun: Universal TUN/TAP device driver, 1.6
+[    0.976126] PPP generic driver version 2.4.2
+[    0.976558] mousedev: PS/2 mouse device common for all mice
+[    0.976824] i2c_dev: i2c /dev entries driver
+[    0.977256] device-mapper: core: CONFIG_IMA_DISABLE_HTABLE is disabled. Duplicate IMA measurements will not be recorded in the IMA log.
+[    0.977315] device-mapper: uevent: version 1.0.3
+[    0.977403] device-mapper: ioctl: 4.50.0-ioctl (2025-04-28) initialised: dm-devel@lists.linux.dev
+[    0.978080] SMCCC: SOC_ID: ARCH_SOC_ID not implemented, skipping ....
+[    0.978639] watchdog: NMI not fully supported
+[    0.978641] watchdog: Hard watchdog permanently disabled
+[    0.978889] drop_monitor: Initializing network drop monitor service
+[    0.979355] NET: Registered PF_INET6 protocol family
+[    0.980180] Segment Routing with IPv6
+[    0.980196] In-situ OAM (IOAM) with IPv6
+[    0.980233] NET: Registered PF_PACKET protocol family
+[    0.980312] Key type dns_resolver registered
+[    0.988874] registered taskstats version 1
+[    0.999984] Loading compiled-in X.509 certificates
+[    1.000814] Loaded X.509 cert 'Build time autogenerated kernel key: 0f0dc33ff88f6fa5539081cb899815ad4f7f1560'
+[    1.001388] Loaded X.509 cert 'Canonical Ltd. Live Patch Signing 2025 Kmod: d541cef61dc7e793b7eb7e899970a2eef0b5dc8c'
+[    1.001947] Loaded X.509 cert 'Canonical Ltd. Live Patch Signing: 14df34d1a87cf37625abec039ef2bf521249b969'
+[    1.002500] Loaded X.509 cert 'Canonical Ltd. Kernel Module Signing 2025 Kmod: 4627603d2357a2a3f81006370894c221175893e9'
+[    1.003081] Loaded X.509 cert 'Canonical Ltd. Kernel Module Signing: 88f752e560a1e0737e31163a466ad7b70a850c19'
+[    1.003084] blacklist: Loading compiled-in revocation X.509 certificates
+[    1.003106] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing: 61482aa2830d0ab2ad5af10b7250da9033ddcef0'
+[    1.003123] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2017): 242ade75ac4a15e50d50c84b0d45ff3eae707a03'
+[    1.003137] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (ESM 2018): 365188c1d374d6b07c3c8f240f8ef722433d6a8b'
+[    1.003151] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2019): c0746fd6c5da3ae827864651ad66ae47fe24b3e8'
+[    1.003166] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v1): a8d54bbb3825cfb94fa13c9f8a594a195c107b8d'
+[    1.003189] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v2): 4cf046892d6fd3c9a5b03f98d845f90851dc6a8c'
+[    1.003214] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v3): 100437bb6de6e469b581e61cd66bce3ef4ed53af'
+[    1.003227] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (Ubuntu Core 2019): c1d57b8f6b743f23ee41f4f7ee292f06eecadfb9'
+[    1.010860] Demotion targets for Node 0: null
+[    1.011035] Key type .fscrypt registered
+[    1.011038] Key type fscrypt-provisioning registered
+[    1.011213] Key type big_key registered
+[    1.011243] Key type encrypted registered
+[    1.011246] AppArmor: AppArmor sha256 policy hashing enabled
+[    1.011288] integrity: secureboot mode disabled
+[    1.011292] ima: No TPM chip found, activating TPM-bypass!
+[    1.011298] Loading compiled-in module X.509 certificates
+[    1.011949] Loaded X.509 cert 'Build time autogenerated kernel key: 0f0dc33ff88f6fa5539081cb899815ad4f7f1560'
+[    1.011954] ima: Allocated hash algorithm: sha256
+[    1.015493] ima: No architecture policies found
+[    1.015547] evm: Initialising EVM extended attributes:
+[    1.015548] evm: security.selinux
+[    1.015549] evm: security.SMACK64
+[    1.015550] evm: security.SMACK64EXEC
+[    1.015551] evm: security.SMACK64TRANSMUTE
+[    1.015552] evm: security.SMACK64MMAP
+[    1.015553] evm: security.apparmor
+[    1.015554] evm: security.ima
+[    1.015554] evm: security.capability
+[    1.015555] evm: HMAC attrs: 0x1
+[    1.016664] clk: Disabling unused clocks
+[    1.016674] PM: genpd: Disabling unused power domains
+[    1.095462] Freeing initrd memory: 143232K
+[    1.118497] dw-apb-uart 20008000.serial: forbid DMA for kernel console
+[    1.147651] Freeing unused kernel memory: 15936K
+[    1.161293] Checked W+X mappings: passed, no W+X pages found
+[    1.161307] Run /init as init process
+[    1.161308]   with arguments:
+[    1.161311]     /init
+[    1.161312]   with environment:
+[    1.161313]     HOME=/
+[    1.161314]     TERM=linux
+[    1.707359] sdhci-bst 22200000.mmc: assigned reserved memory node mmc0-reserved@5160000
+[    1.707396] mmc0 bounce up to 64 segments into one, max segment size 32768 bytes
+[    1.772256] mmc0: SDHCI controller on 22200000.mmc [22200000.mmc] using DMA
+[    1.780041] mmc0: Got command interrupt 0x00000001 even though no command operation was in progress.
+[    1.780048] mmc0: sdhci: ============ SDHCI REGISTER DUMP ===========
+[    1.780051] mmc0: sdhci: Sys addr:  0x00000000 | Version:  0x00000005
+[    1.780053] mmc0: sdhci: Blk size:  0x00000000 | Blk cnt:  0x00000000
+[    1.780055] mmc0: sdhci: Argument:  0x80000c08 | Trn mode: 0x00000000
+[    1.780057] mmc0: sdhci: Present:   0x03f200f0 | Host ctl: 0x00000001
+[    1.780059] mmc0: sdhci: Power:     0x0000000f | Blk gap:  0x00000000
+[    1.780061] mmc0: sdhci: Wake-up:   0x00000000 | Clock:    0x0000f40f
+[    1.780063] mmc0: sdhci: Timeout:   0x00000000 | Int stat: 0x00000000
+[    1.780065] mmc0: sdhci: Int enab:  0x00ff0003 | Sig enab: 0x00ff0003
+[    1.780067] mmc0: sdhci: ACmd stat: 0x00000000 | Slot int: 0x00000000
+[    1.780069] mmc0: sdhci: Caps:      0x276d0181 | Caps_1:   0x08002077
+[    1.780071] mmc0: sdhci: Cmd:       0x0000341a | Max curr: 0x00000000
+[    1.780073] mmc0: sdhci: Resp[0]:   0x00000000 | Resp[1]:  0x00000000
+[    1.780075] mmc0: sdhci: Resp[2]:   0x00000000 | Resp[3]:  0x00000000
+[    1.780077] mmc0: sdhci: Host ctl2: 0x00000000
+[    1.780078] mmc0: sdhci: ============================================
+[    1.909609] mmc0: new HS200 MMC card at address 0001
+[    1.918004] mmcblk0: mmc0:0001 MMC64G 58.2 GiB
+[    1.925403]  mmcblk0: p1 p2 p3 p4
+[    1.925898] mmcblk0boot0: mmc0:0001 MMC64G 4.00 MiB
+[    1.928944] mmcblk0boot1: mmc0:0001 MMC64G 4.00 MiB
+[    1.930343] mmcblk0rpmb: mmc0:0001 MMC64G 4.00 MiB, chardev (235:0)
+[    2.872822] Key type psk registered
+[    2.898058] hid: raw HID events driver (C) Jiri Kosina
+[    2.919570] NET: Registered PF_QIPCRTR protocol family
+[    3.105120] usbcore: registered new interface driver usb-storage
+[    3.112244] usbcore: registered new interface driver uas
+[    3.266336] raid6: using neon recovery algorithm
+[    3.273849] raid6: int64x1  gen()  3497 MB/s
+[    3.279980] raid6: int64x2  gen()  4278 MB/s
+[    3.284753] raid6: int64x4  gen()  5494 MB/s
+[    3.289595] raid6: int64x8  gen()  5414 MB/s
+[    3.293184] raid6: neonx1   gen()  7307 MB/s
+[    3.296181] raid6: neonx2   gen()  8750 MB/s
+[    3.298928] raid6: neonx4   gen()  9544 MB/s
+[    3.301674] raid6: neonx8   gen()  9550 MB/s
+[    3.301675] raid6: using algorithm neonx8 gen() 9550 MB/s
+[    3.303296] raid6: .... xor() 8095 MB/s, rmw enabled
+[    3.321726] xor: measuring software checksum speed
+[    3.322072]    neon            : 38629 MB/sec
+[    3.322774]    32regs          : 18746 MB/sec
+[    3.323463]    8regs           : 19061 MB/sec
+[    3.323464] xor: using function: neon (38629 MB/sec)
+[    3.332060] async_tx: api initialized (async)
+[    3.491138] ISO 9660 Extensions: Microsoft Joliet Level 3
+[    3.491458] ISO 9660 Extensions: RRIP_1991A
+[    3.503826] ISO 9660 Extensions: Microsoft Joliet Level 3
+[    3.504101] ISO 9660 Extensions: RRIP_1991A
+[    3.533071] loop0: detected capacity change from 0 to 6573424
+[    3.571565] loop1: detected capacity change from 0 to 1009888
+[    4.799295] loop2: detected capacity change from 0 to 275536
+[    4.811688] overlayfs: null uuid in non-single lower fs '/', falling back to xino=off,index=off,nfs_export=off.
+[    4.861121] EXT4-fs (mmcblk0p4): recovery complete
+[    4.861495] EXT4-fs (mmcblk0p4): mounted filesystem 66719dee-97a0-45ef-99b7-b63eda0f56d5 r/w with ordered data mode. Quota mode: none.
+[    5.416645] random: crng init done
+[    5.649485] evm: overlay not supported
+[   12.727874] systemd[1]: System time advanced to built-in epoch: Tue 2026-07-28 12:48:53 UTC
+[   12.828915] systemd[1]: Inserted module 'autofs4'
+[   12.902675] systemd[1]: systemd 261.2-1ubuntu1 running in system mode (+PAM +AUDIT +SELINUX +APPARMOR +IMA +IPE +SMACK +SECCOMP +GCRYPT -GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 +KMOD +LIBCRYPTSETUP +LIBCRYPTSETUP_PLUGINS +LIBFDISK +PCRE2 +PWQUALITY +P11KIT +QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD +BPF_FRAMEWORK +BTF -XKBCOMMON -UTMP +LIBARCHIVE)
+[   12.902703] systemd[1]: Detected architecture arm64.
+[   12.967773] systemd[1]: Initializing machine ID from random generator.
+[   12.967963] systemd[1]: Hostname set to <ubuntu>.
+[   13.104330] systemd[1]: bpf-restrict-fs: BPF LSM hook not enabled in the kernel, BPF LSM not supported.
+[   13.466562] systemd[1]: /usr/lib/systemd/system/xfs_scrub_all.service:26: Support for option CPUAccounting= has been removed and it is ignored
+[   13.466825] systemd[1]: /usr/lib/systemd/system/system-xfs_scrub.slice:15: Support for option CPUAccounting= has been removed and it is ignored
+[   13.619086] systemd[1]: Queued start job for default target graphical.target.
+[   13.634334] systemd[1]: Created slice system-cups.slice - CUPS Slice.
+[   13.648823] systemd[1]: Created slice system-modprobe.slice - Slice /system/modprobe.
+[   13.665862] systemd[1]: Created slice system-serial\x2dgetty.slice - Slice /system/serial-getty.
+[   13.686352] systemd[1]: Created slice system-xfs_scrub.slice - xfs_scrub background service slice.
+[   13.707102] systemd[1]: Created slice user.slice - User and Session Slice.
+[   13.721673] systemd[1]: Started systemd-ask-password-wall.path - Forward Password Requests to Wall Directory Watch.
+[   13.743578] systemd[1]: Set up automount proc-sys-fs-binfmt_misc.automount - Arbitrary Executable File Formats File System Automount Point.
+[   13.769697] systemd[1]: Expecting device dev-ttyS0.device - /dev/ttyS0...
+[   13.783018] systemd[1]: Reached target imports.target - Image Downloads.
+[   13.797091] systemd[1]: Reached target integritysetup.target - Local Integrity Protected Volumes.
+[   13.815538] systemd[1]: Reached target remote-fs.target - Remote File Systems.
+[   13.830653] systemd[1]: Reached target slices.target - Slice Units.
+[   13.843876] systemd[1]: Reached target swap.target - Swaps.
+[   13.855695] systemd[1]: Reached target time-set.target - System Time Set.
+[   13.869977] systemd[1]: Reached target veritysetup.target - Local Verity Protected Volumes.
+[   13.887520] systemd[1]: Listening on dm-event.socket - Device-mapper event daemon FIFOs.
+[   13.904507] systemd[1]: Listening on lvm2-lvmpolld.socket - LVM2 poll daemon socket.
+[   13.920834] systemd[1]: Listening on syslog.socket - Syslog Socket.
+[   13.937126] systemd[1]: Listening on systemd-ask-password.socket - Query the User Interactively for a Password.
+[   13.958999] systemd[1]: Listening on systemd-creds.socket - Credential Encryption/Decryption.
+[   13.978047] systemd[1]: Listening on systemd-factory-reset.socket - Factory Reset Management.
+[   13.995891] systemd[1]: Listening on systemd-hostnamed.socket - Hostname Service Socket.
+[   14.012868] systemd[1]: Listening on systemd-journald-dev-log.socket - Journal Socket (/dev/log).
+[   14.031456] systemd[1]: Listening on systemd-journald.socket - Journal Sockets.
+[   14.048254] systemd[1]: Listening on systemd-mute-console.socket - Console Output Muting Service Socket.
+[   14.069884] systemd[1]: Listening on systemd-oomd.socket - Userspace Out-Of-Memory (OOM) Killer Socket.
+[   14.089461] systemd[1]: Listening on systemd-resolved-monitor.socket - Resolve Monitor Varlink Socket.
+[   14.109767] systemd[1]: Listening on systemd-resolved-varlink.socket - Resolve Service Varlink Socket.
+[   14.129164] systemd[1]: Listening on systemd-udevd-control.socket - udev Control Socket.
+[   14.146097] systemd[1]: Listening on systemd-udevd-kernel.socket - udev Kernel Socket.
+[   14.162718] systemd[1]: Listening on systemd-udevd-varlink.socket - udev Varlink Socket.
+[   14.186105] systemd[1]: Mounting dev-hugepages.mount - Huge Pages File System...
+[   14.204874] systemd[1]: Mounting dev-mqueue.mount - POSIX Message Queue File System...
+[   14.222184] systemd[1]: Mounting sys-kernel-debug.mount - Kernel Debug File System...
+[   14.239305] systemd[1]: Mounting sys-kernel-tracing.mount - Kernel Trace File System...
+[   14.259814] systemd[1]: Starting systemd-journald.service - Journal Service...
+[   14.276658] systemd[1]: Starting blk-availability.service - Availability of block devices...
+[   14.295490] systemd[1]: Starting keyboard-setup.service - Set the console keyboard layout...
+[   14.328789] systemd[1]: Starting kmod-static-nodes.service - Create List of Static Device Nodes...
+[   14.352858] systemd[1]: Starting lvm2-monitor.service - Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling...
+[   14.378614] systemd[1]: modprobe@configfs.service - Load Kernel Module configfs skipped, unmet condition check ConditionKernelModuleLoaded=!configfs
+[   14.381820] systemd[1]: Mounting sys-kernel-config.mount - Kernel Configuration File System...
+[   14.413766] systemd[1]: modprobe@drm.service - Load Kernel Module drm skipped, unmet condition check ConditionKernelModuleLoaded=!drm
+[   14.415747] systemd[1]: Starting modprobe@efi_pstore.service - Load Kernel Module efi_pstore...
+[   14.444812] systemd[1]: modprobe@fuse.service - Load Kernel Module fuse skipped, unmet condition check ConditionKernelModuleLoaded=!fuse
+[   14.448778] systemd[1]: Mounting sys-fs-fuse-connections.mount - FUSE Control File System...
+[   14.477043] systemd[1]: systemd-hibernate-clear.service - Clear Stale Hibernate Storage Info skipped, unmet condition check ConditionPathExists=/sys/firmware/efi/efivars/HibernateLocation-8cf2644b-4b0b-428f-9387-6d876050dc67
+[   14.508997] systemd-journald[832]: Collecting audit messages is disabled.
+[   14.523942] systemd[1]: Starting systemd-modules-load.service - Load Kernel Modules...
+[   14.544936] systemd[1]: Starting systemd-remount-fs.service - Remount Root and Kernel File Systems...
+[   14.566632] systemd[1]: Starting systemd-udev-load-credentials.service - Load udev Rules from Credentials...
+[   14.589732] systemd[1]: Starting systemd-udev-trigger.service - Coldplug All udev Devices...
+[   14.610913] systemd[1]: Started systemd-journald.service - Journal Service.
+[   14.833403] systemd-journald[832]: Received client request to flush runtime journal.
+[   16.963810] spl: loading out-of-tree module taints kernel.
+[   17.074584] zfs: module license 'CDDL' taints kernel.
+[   17.074596] Disabling lock debugging due to kernel taint
+[   17.074652] zfs: module license taints kernel.
+[   17.213944] ZFS: Loaded module v2.4.4-1ubuntu2, ZFS pool version 5000, ZFS filesystem version 5
+[   17.341093] loop3: detected capacity change from 0 to 8
+[   17.344445] loop4: detected capacity change from 0 to 126640
+[   17.378718] loop5: detected capacity change from 0 to 40672
+[   17.388189] loop6: detected capacity change from 0 to 511288
+[   17.431464] loop7: detected capacity change from 0 to 1132440
+[   17.471489] loop8: detected capacity change from 0 to 187776
+[   17.472387] loop10: detected capacity change from 0 to 35872
+[   17.472401] loop9: detected capacity change from 0 to 385528
+[   17.663413] loop11: detected capacity change from 0 to 150920
+[   17.903492] loop12: detected capacity change from 0 to 89112
+[   18.861755] audit: type=1400 audit(1785242939.129:2): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap-update-ns.mesa-2404" pid=1149 comm="apparmor_parser"
+[   19.129523] audit: type=1400 audit(1785242939.400:3): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/snap/snapd/27740/usr/lib/snapd/snap-confine" pid=1146 comm="apparmor_parser"
+[   19.931927] audit: type=1400 audit(1785242940.203:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap-update-ns.prompting-client" pid=1154 comm="apparmor_parser"
+[   20.207399] audit: type=1400 audit(1785242940.478:5): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap-update-ns.firefox" pid=1148 comm="apparmor_parser"
+[   20.506648] audit: type=1400 audit(1785242940.777:6): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap-update-ns.desktop-security-center" pid=1147 comm="apparmor_parser"
+[   20.506671] audit: type=1400 audit(1785242940.777:7): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap-update-ns.snap-store" pid=1158 comm="apparmor_parser"
+[   20.536884] audit: type=1400 audit(1785242940.808:8): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap-update-ns.ubuntu-desktop-bootstrap" pid=1174 comm="apparmor_parser"
+[   21.077107] audit: type=1400 audit(1785242941.348:9): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.desktop-security-center.hook.configure" pid=1176 comm="apparmor_parser"
+[   21.143655] audit: type=1400 audit(1785242941.414:10): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap-update-ns.snapd-desktop-integration" pid=1168 comm="apparmor_parser"
+[   21.325794] audit: type=1400 audit(1785242941.597:11): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap-update-ns.thunderbird" pid=1172 comm="apparmor_parser"
+[   23.883354] kauditd_printk_skb: 15 callbacks suppressed
+[   23.883365] audit: type=1400 audit(1785242944.154:27): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.prompting-client.logging-level" pid=1191 comm="apparmor_parser"
+[   23.951470] audit: type=1400 audit(1785242944.222:28): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.snap-store.hook.configure" pid=1193 comm="apparmor_parser"
+[   24.301124] audit: type=1400 audit(1785242944.572:29): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.prompting-client.scripted" pid=1192 comm="apparmor_parser"
+[   24.743139] audit: type=1400 audit(1785242945.014:30): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.snapd-desktop-integration.hook.configure" pid=1197 comm="apparmor_parser"
+[   24.758880] audit: type=1400 audit(1785242945.030:31): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.snap-store.show-updates" pid=1195 comm="apparmor_parser"
+[   24.835483] audit: type=1400 audit(1785242945.106:32): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.snap-store.packagekit-session-installer" pid=1194 comm="apparmor_parser"
+[   25.024648] audit: type=1400 audit(1785242945.295:33): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.snap-store.snap-store" pid=1196 comm="apparmor_parser"
+[   25.084942] audit: type=1400 audit(1785242945.356:34): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.thunderbird.hook.install" pid=1200 comm="apparmor_parser"
+[   25.185855] audit: type=1400 audit(1785242945.457:35): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.thunderbird.hook.configure" pid=1199 comm="apparmor_parser"
+[   25.207659] audit: type=1400 audit(1785242945.478:36): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.ubuntu-desktop-bootstrap.curtin" pid=1203 comm="apparmor_parser"
+[   29.484143] kauditd_printk_skb: 9 callbacks suppressed
+[   29.484153] audit: type=1400 audit(1785242949.755:46): apparmor="STATUS" operation="profile_load" profile="unconfined" name="rsyslogd" pid=1237 comm="apparmor_parser"
+[   30.354850] cfg80211: Loading compiled-in X.509 certificates for regulatory database
+[   30.355242] Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+[   30.355430] Loaded X.509 cert 'wens: 61c038651aabdcf94bd0ac7ff06c7248db18c600'
+[   32.229415] set_capacity_and_notify: 3 callbacks suppressed
+[   32.229424] loop16: detected capacity change from 0 to 8
+[   32.663537] audit: type=1400 audit(1785242952.934:47): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/snapd/snap-confine" pid=1544 comm="apparmor_parser"
+[   32.820587] audit: type=1400 audit(1785242953.091:48): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="/snap/snapd/27740/usr/lib/snapd/snap-confine" pid=1556 comm="apparmor_parser"
+[   33.292088] audit: type=1400 audit(1785242953.563:49): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap.snap-store.hook.configure" pid=1559 comm="apparmor_parser"
+[   33.623105] audit: type=1400 audit(1785242953.894:50): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap-update-ns.snap-store" pid=1558 comm="apparmor_parser"
+[   34.074292] audit: type=1400 audit(1785242954.345:51): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap.snap-store.packagekit-session-installer" pid=1560 comm="apparmor_parser"
+[   34.351884] audit: type=1400 audit(1785242954.623:52): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap.snap-store.show-updates" pid=1561 comm="apparmor_parser"
+[   34.375713] audit: type=1400 audit(1785242954.647:53): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap-update-ns.ubuntu-desktop-bootstrap" pid=1569 comm="apparmor_parser"
+[   34.822520] audit: type=1400 audit(1785242955.093:54): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap.snap-store.snap-store" pid=1562 comm="apparmor_parser"
+[   35.103056] audit: type=1400 audit(1785242955.374:55): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap-update-ns.firefox" pid=1570 comm="apparmor_parser"
+[   36.234535] audit: type=1400 audit(1785242956.505:56): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap.firefox.firefox" pid=1571 comm="apparmor_parser"
+[   36.532312] audit: type=1400 audit(1785242956.803:57): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap.firefox.hook.configure" pid=1573 comm="apparmor_parser"
+[   36.552263] audit: type=1400 audit(1785242956.823:58): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap.firefox.geckodriver" pid=1572 comm="apparmor_parser"
+[   36.734598] audit: type=1400 audit(1785242957.005:59): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap.firefox.hook.disconnect-plug-host-hunspell" pid=1574 comm="apparmor_parser"
+[   36.757396] audit: type=1400 audit(1785242957.028:60): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap.firefox.hook.install" pid=1575 comm="apparmor_parser"
+[   36.776802] audit: type=1400 audit(1785242957.048:61): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap-update-ns.mesa-2404" pid=1577 comm="apparmor_parser"
+[   36.932720] audit: type=1400 audit(1785242957.204:62): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap.firefox.hook.post-refresh" pid=1576 comm="apparmor_parser"
+[   36.945372] audit: type=1400 audit(1785242957.216:63): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap.mesa-2404.component-monitor" pid=1578 comm="apparmor_parser"
+[   39.893705] kauditd_printk_skb: 12 callbacks suppressed
+[   39.893716] audit: type=1400 audit(1785242960.165:76): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap.thunderbird.thunderbird" pid=1590 comm="apparmor_parser"
+[   40.330111] audit: type=1400 audit(1785242960.601:77): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap.prompting-client.daemon" pid=1592 comm="apparmor_parser"
+[   40.513159] audit: type=1400 audit(1785242960.784:78): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap.prompting-client.echo" pid=1593 comm="apparmor_parser"
+[   40.644693] audit: type=1400 audit(1785242960.916:79): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap.prompting-client.hook.configure" pid=1594 comm="apparmor_parser"
+[   41.107867] audit: type=1400 audit(1785242961.379:80): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap.prompting-client.logging-level" pid=1595 comm="apparmor_parser"
+[   41.276077] audit: type=1400 audit(1785242961.547:81): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap.prompting-client.scripted" pid=1596 comm="apparmor_parser"
+[   41.889285] audit: type=1400 audit(1785242962.160:82): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap-update-ns.desktop-security-center" pid=1597 comm="apparmor_parser"
+[   42.092201] audit: type=1400 audit(1785242962.363:83): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap.desktop-security-center.desktop-security-center" pid=1598 comm="apparmor_parser"
+[   42.207371] audit: type=1400 audit(1785242962.478:84): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap.desktop-security-center.hook.configure" pid=1600 comm="apparmor_parser"
+[   42.217021] audit: type=1400 audit(1785242962.488:85): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap.ubuntu-desktop-bootstrap.curtin" pid=1602 comm="apparmor_parser"
+[   51.256540] kauditd_printk_skb: 7 callbacks suppressed
+[   51.256549] audit: type=1400 audit(1785242971.527:93): apparmor="DENIED" operation="mount" class="mount" profile="/usr/lib/snapd/snap-confine" pid=1661 comm="snap-confine" flags="rw, rbind"
+[   53.755808] audit: type=1400 audit(1785242974.027:94): apparmor="DENIED" operation="mount" class="mount" profile="/usr/lib/snapd/snap-confine" pid=1932 comm="snap-confine" flags="rw, rbind"
+[   55.073289] audit: type=1400 audit(1785242975.344:95): apparmor="DENIED" operation="mount" class="mount" profile="/usr/lib/snapd/snap-confine" pid=2033 comm="snap-confine" flags="rw, rbind"
+[   56.962480] audit: type=1400 audit(1785242977.233:96): apparmor="DENIED" operation="mount" class="mount" profile="/usr/lib/snapd/snap-confine" pid=2063 comm="snap-confine" flags="rw, rbind"
+[   58.862169] audit: type=1400 audit(1785242979.133:97): apparmor="DENIED" operation="mount" class="mount" profile="/usr/lib/snapd/snap-confine" pid=2093 comm="snap-confine" flags="rw, rbind"
+[   60.704818] audit: type=1400 audit(1785242980.976:98): apparmor="DENIED" operation="mount" class="mount" profile="/usr/lib/snapd/snap-confine" pid=2130 comm="snap-confine" flags="rw, rbind"
+[   61.079703] audit: type=1400 audit(1785242981.351:99): apparmor="DENIED" operation="open" class="file" profile="snap.thunderbird.hook.install" name="/var/lib/snapd/hostfs/usr/share/hunspell/" pid=2157 comm="find" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[   63.948093] iso9660: Corrupted directory entry in block 11 of inode 8384
+[   63.948125] iso9660: Corrupted directory entry in block 11 of inode 8384
+[   63.948146] iso9660: Corrupted directory entry in block 11 of inode 8384
+[   63.948167] iso9660: Corrupted directory entry in block 11 of inode 8384
+[   63.948187] iso9660: Corrupted directory entry in block 11 of inode 8384
+[   63.948213] iso9660: Corrupted directory entry in block 11 of inode 8384
+[   63.948238] iso9660: Corrupted directory entry in block 11 of inode 8384
+[   63.948258] iso9660: Corrupted directory entry in block 11 of inode 8384
+[   63.948280] iso9660: Corrupted directory entry in block 11 of inode 8384
+[   63.948300] iso9660: Corrupted directory entry in block 11 of inode 8384
+[   63.948321] iso9660: Corrupted directory entry in block 11 of inode 8384
+[   63.948341] iso9660: Corrupted directory entry in block 11 of inode 8384
+[   63.948361] iso9660: Corrupted directory entry in block 11 of inode 8384
+[   63.948381] iso9660: Corrupted directory entry in block 11 of inode 8384
+[   63.948402] iso9660: Corrupted directory entry in block 11 of inode 8384
+[   63.948422] iso9660: Corrupted directory entry in block 11 of inode 8384
+[   63.948445] iso9660: Corrupted directory entry in block 11 of inode 8384
+[   63.948465] iso9660: Corrupted directory entry in block 11 of inode 8384
+[   63.948485] iso9660: Corrupted directory entry in block 11 of inode 8384
+[   63.948505] iso9660: Corrupted directory entry in block 11 of inode 8384
+[   63.948549] iso9660: Corrupted directory entry in block 11 of inode 8384
+[   63.948571] iso9660: Corrupted directory entry in block 11 of inode 8384
+[   63.948593] iso9660: Corrupted directory entry in block 11 of inode 8384
+[   63.948613] iso9660: Corrupted directory entry in block 11 of inode 8384
+[   63.948663] iso9660: Corrupted directory entry in block 11 of inode 8384
+[   63.948686] iso9660: Corrupted directory entry in block 11 of inode 8384
+[   63.948707] iso9660: Corrupted directory entry in block 11 of inode 8384
+[   63.948728] iso9660: Corrupted directory entry in block 11 of inode 8384
+[   63.948748] iso9660: Corrupted directory entry in block 11 of inode 8384
+[   63.948769] iso9660: Corrupted directory entry in block 11 of inode 8384
+[   63.948790] iso9660: Corrupted directory entry in block 11 of inode 8384
+[   63.948810] iso9660: Corrupted directory entry in block 11 of inode 8384
+[   63.948830] iso9660: Corrupted directory entry in block 11 of inode 8384
+[   63.948851] iso9660: Corrupted directory entry in block 11 of inode 8384
+[   63.948871] iso9660: Corrupted directory entry in block 11 of inode 8384
+[   63.948891] iso9660: Corrupted directory entry in block 11 of inode 8384
+[   63.948916] iso9660: Corrupted directory entry in block 11 of inode 8384
+[   63.948936] iso9660: Corrupted directory entry in block 11 of inode 8384
+[   63.948956] iso9660: Corrupted directory entry in block 11 of inode 8384
+[   63.948976] iso9660: Corrupted directory entry in block 11 of inode 8384
+[   63.948996] iso9660: Corrupted directory entry in block 11 of inode 8384
+[   63.949016] iso9660: Corrupted directory entry in block 11 of inode 8384
+[   63.949037] iso9660: Corrupted directory entry in block 11 of inode 8384
+[   63.949057] iso9660: Corrupted directory entry in block 11 of inode 8384
+[   63.949077] iso9660: Corrupted directory entry in block 11 of inode 8384
+[   63.949098] iso9660: Corrupted directory entry in block 11 of inode 8384
+[   63.949121] iso9660: Corrupted directory entry in block 11 of inode 8384
+[   63.949141] iso9660: Corrupted directory entry in block 11 of inode 8384
+[   63.949162] iso9660: Corrupted directory entry in block 11 of inode 8384
+[   63.949183] iso9660: Corrupted directory entry in block 11 of inode 8384
+[   63.949204] iso9660: Corrupted directory entry in block 11 of inode 8384
+[   63.949224] iso9660: Corrupted directory entry in block 11 of inode 8384
+[   63.949245] iso9660: Corrupted directory entry in block 11 of inode 8384
+[   63.949265] iso9660: Corrupted directory entry in block 11 of inode 8384
+[   63.949285] iso9660: Corrupted directory entry in block 11 of inode 8384
+[   63.949306] iso9660: Corrupted directory entry in block 11 of inode 8384
+[   63.949326] iso9660: Corrupted directory entry in block 11 of inode 8384
+[   63.949346] iso9660: Corrupted directory entry in block 11 of inode 8384
+[   63.949366] iso9660: Corrupted directory entry in block 11 of inode 8384
+[   63.949386] iso9660: Corrupted directory entry in block 11 of inode 8384
+[   63.949407] iso9660: Corrupted directory entry in block 11 of inode 8384
+[   63.949427] iso9660: Corrupted directory entry in block 11 of inode 8384
+[   63.949447] iso9660: Corrupted directory entry in block 11 of inode 8384
+[   63.949467] iso9660: Corrupted directory entry in block 11 of inode 8384
+[   63.949487] iso9660: Corrupted directory entry in block 11 of inode 8384
+[   63.949515] iso9660: Corrupted directory entry in block 11 of inode 8384
+[   72.963038] audit: type=1400 audit(1785242993.234:100): apparmor="ALLOWED" operation="getattr" class="posix_mqueue" profile="snap.ubuntu-desktop-bootstrap.subiquity-server" name="/" pid=2506 comm="pvscan" requested="getattr" denied="getattr" class="posix_mqueue" fsuid=0 ouid=0 olabel="unconfined"
+[   72.963052] audit: type=1400 audit(1785242993.234:101): apparmor="ALLOWED" operation="getattr" class="posix_mqueue" profile="snap.ubuntu-desktop-bootstrap.subiquity-server" name="/" pid=2506 comm="pvscan" requested="getattr" denied="getattr" class="posix_mqueue" fsuid=0 ouid=0 olabel="unconfined"
+[   72.963056] audit: type=1400 audit(1785242993.234:102): apparmor="ALLOWED" operation="getattr" class="posix_mqueue" profile="snap.ubuntu-desktop-bootstrap.subiquity-server" name="/" pid=2506 comm="pvscan" requested="getattr" denied="getattr" class="posix_mqueue" fsuid=0 ouid=0 olabel="unconfined"
+[   72.963059] audit: type=1400 audit(1785242993.234:103): apparmor="ALLOWED" operation="getattr" class="posix_mqueue" profile="snap.ubuntu-desktop-bootstrap.subiquity-server" name="/" pid=2506 comm="pvscan" requested="getattr" denied="getattr" class="posix_mqueue" fsuid=0 ouid=0 olabel="unconfined"
+[   73.002787] audit: type=1400 audit(1785242993.274:104): apparmor="ALLOWED" operation="getattr" class="posix_mqueue" profile="snap.ubuntu-desktop-bootstrap.subiquity-server" name="/" pid=2507 comm="vgscan" requested="getattr" denied="getattr" class="posix_mqueue" fsuid=0 ouid=0 olabel="unconfined"
+[   73.002801] audit: type=1400 audit(1785242993.274:105): apparmor="ALLOWED" operation="getattr" class="posix_mqueue" profile="snap.ubuntu-desktop-bootstrap.subiquity-server" name="/" pid=2507 comm="vgscan" requested="getattr" denied="getattr" class="posix_mqueue" fsuid=0 ouid=0 olabel="unconfined"
+[   73.002808] audit: type=1400 audit(1785242993.274:106): apparmor="ALLOWED" operation="getattr" class="posix_mqueue" profile="snap.ubuntu-desktop-bootstrap.subiquity-server" name="/" pid=2507 comm="vgscan" requested="getattr" denied="getattr" class="posix_mqueue" fsuid=0 ouid=0 olabel="unconfined"
+[   73.002811] audit: type=1400 audit(1785242993.274:107): apparmor="ALLOWED" operation="getattr" class="posix_mqueue" profile="snap.ubuntu-desktop-bootstrap.subiquity-server" name="/" pid=2507 comm="vgscan" requested="getattr" denied="getattr" class="posix_mqueue" fsuid=0 ouid=0 olabel="unconfined"
+[   73.045237] audit: type=1400 audit(1785242993.316:108): apparmor="ALLOWED" operation="getattr" class="posix_mqueue" profile="snap.ubuntu-desktop-bootstrap.subiquity-server" name="/" pid=2508 comm="vgchange" requested="getattr" denied="getattr" class="posix_mqueue" fsuid=0 ouid=0 olabel="unconfined"
+[   73.045253] audit: type=1400 audit(1785242993.316:109): apparmor="ALLOWED" operation="getattr" class="posix_mqueue" profile="snap.ubuntu-desktop-bootstrap.subiquity-server" name="/" pid=2508 comm="vgchange" requested="getattr" denied="getattr" class="posix_mqueue" fsuid=0 ouid=0 olabel="unconfined"
+[   73.143207] block mmcblk0: the capability attribute has been deprecated.
+[  124.092496] FAT-fs (mmcblk0p2): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+
+>>> RETURN CODE: 0
+============================================================
+>>> COMMAND: lspci -vvv
+>>> TIME: 2026-07-28 12:54:19
+============================================================
+
+>>> RETURN CODE: 0
+============================================================
+>>> COMMAND: lscpu
+>>> TIME: 2026-07-28 12:54:19
+============================================================
+Architecture:                            aarch64
+CPU op-mode(s):                          32-bit, 64-bit
+Byte Order:                              Little Endian
+CPU(s):                                  4
+On-line CPU(s) list:                     0-3
+Vendor ID:                               ARM
+Model name:                              Cortex-A78AE
+Model:                                   2
+Thread(s) per core:                      1
+Core(s) per cluster:                     4
+Socket(s):                               -
+Cluster(s):                              1
+Stepping:                                r0p2
+BogoMIPS:                                400.00
+Flags:                                   fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm lrcpc dcpop asimddp uscat ilrcpc flagm paca pacg
+NUMA node(s):                            1
+NUMA node0 CPU(s):                       0-3
+Vulnerability Gather data sampling:      Not affected
+Vulnerability Ghostwrite:                Not affected
+Vulnerability Indirect target selection: Not affected
+Vulnerability Itlb multihit:             Not affected
+Vulnerability L1tf:                      Not affected
+Vulnerability Mds:                       Not affected
+Vulnerability Meltdown:                  Not affected
+Vulnerability Mmio stale data:           Not affected
+Vulnerability Old microcode:             Not affected
+Vulnerability Reg file data sampling:    Not affected
+Vulnerability Retbleed:                  Not affected
+Vulnerability Spec rstack overflow:      Not affected
+Vulnerability Spec store bypass:         Mitigation; Speculative Store Bypass disabled via prctl
+Vulnerability Spectre v1:                Mitigation; __user pointer sanitization
+Vulnerability Spectre v2:                Mitigation; CSV2, BHB
+Vulnerability Srbds:                     Not affected
+Vulnerability Tsa:                       Not affected
+Vulnerability Tsx async abort:           Not affected
+Vulnerability Vmscape:                   Not affected
+
+>>> RETURN CODE: 0
+============================================================
+>>> COMMAND: lsblk
+>>> TIME: 2026-07-28 12:54:19
+============================================================
+NAME         MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
+loop0          7:0    0   3.1G  1 loop /rofs
+loop1          7:1    0 493.1M  1 loop 
+loop2          7:2    0 134.5M  1 loop 
+loop3          7:3    0     4K  1 loop /snap/bare/5
+loop4          7:4    0  61.8M  1 loop /snap/core24/2125
+loop5          7:5    0  19.9M  1 loop /snap/desktop-security-center/152
+loop6          7:6    0 249.7M  1 loop /snap/firefox/8926
+loop7          7:7    0 552.9M  1 loop /snap/gnome-46-2404/154
+loop8          7:8    0  91.7M  1 loop /snap/gtk-common-themes/1535
+loop9          7:9    0 188.2M  1 loop /snap/mesa-2404/1836
+loop10         7:10   0  17.5M  1 loop /snap/prompting-client/221
+loop11         7:11   0  73.7M  1 loop /snap/snap-store/1420
+loop12         7:12   0  43.5M  1 loop /snap/snapd/27740
+loop13         7:13   0   804K  1 loop /snap/snapd-desktop-integration/396
+loop14         7:14   0 215.2M  1 loop /snap/thunderbird/1261
+loop15         7:15   0   106M  1 loop /snap/ubuntu-desktop-bootstrap/676
+mmcblk0      179:0    0  58.2G  0 disk 
+├─mmcblk0p1  179:1    0   4.1G  0 part /cdrom
+├─mmcblk0p2  179:2    0     6M  0 part /mnt
+├─mmcblk0p3  179:3    0   300K  0 part 
+└─mmcblk0p4  179:4    0  54.1G  0 part /var/crash
+                                       /var/log
+mmcblk0boot0 179:8    0     4M  1 disk 
+mmcblk0boot1 179:16   0     4M  1 disk 
+
+>>> RETURN CODE: 0
+============================================================
+>>> COMMAND: dmidecode
+>>> TIME: 2026-07-28 12:54:19
+============================================================
+# dmidecode 3.7
+/sys/firmware/dmi/tables/smbios_entry_point: Permission denied
+# No SMBIOS nor DMI entry point found, sorry.
+
+>>> RETURN CODE: 0
+============================================================
+>>> COMMAND: uname -a
+>>> TIME: 2026-07-28 12:54:19
+============================================================
+Linux ubuntu 7.3.0-5-generic #5-Ubuntu SMP PREEMPT_DYNAMIC Mon Sep 14 12:00:01 UTC 2026 aarch64 GNU/Linux
+
+>>> RETURN CODE: 0
+============================================================
+>>> COMMAND: cat /etc/os-release
+>>> TIME: 2026-07-28 12:54:19
+============================================================
+PRETTY_NAME="Ubuntu Stonking Stingray (development branch)"
+NAME="Ubuntu"
+VERSION_ID="26.10"
+VERSION="26.10 (Stonking Stingray)"
+VERSION_CODENAME=stonking
+RELEASE_TYPE=development
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+DOCUMENTATION_URL="https://docs.ubuntu.com"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+LOGO=ubuntu-logo
+VENDOR_NAME="Canonical"
+VENDOR_URL="https://canonical.com/"
+UBUNTU_CODENAME=stonking
+
+>>> RETURN CODE: 0
+============================================================
+>>> COMMAND: efibootmgr
+>>> TIME: 2026-07-28 12:54:19
+============================================================
+collect_system_info.sh: line 30: efibootmgr: command not found
+
+>>> RETURN CODE: 127
+>>> WARNING: command failed, continue...
+
+============================================================
+>>> COMMAND: cp -r /sys/firmware ~/firmware
+============================================================
+cp: '/sys/firmware/dmi/entries/1-0/handle' -> '/home/ubuntu/firmware/dmi/entries/1-0/handle': Permission denied
+cp: '/sys/firmware/fdt' -> '/home/ubuntu/firmware/fdt': Permission denied
+cp: '/sys/firmware/efi/mok-variables/SbatLevelRT' -> '/home/ubuntu/firmware/efi/mok-variables/SbatLevelRT': Permission denied
+cp: '/sys/firmware/efi/mok-variables/SbatLevelRT' -> '/home/ubuntu/firmware/efi/SbatLevelRT': Permission denied
+cp: '/sys/firmware/efi/mok-variables/MokListRT' -> '/home/ubuntu/firmware/efi/MokListRT': Permission denied
+cp: '/sys/firmware/efi/mok-variables/MokListTrustedRT' -> '/home/ubuntu/firmware/efi/MokListTrustedRT': Permission denied
+cp: '/sys/firmware/efi/mok-variables/MokListXRT' -> '/home/ubuntu/firmware/efi/MokListXRT': Permission denied
+cp: '/sys/firmware/efi/systab' -> '/home/ubuntu/firmware/efi/systab': Permission denied
+cp: '/sys/firmware/efi/esrt/fw_resource_count_max' -> '/home/ubuntu/firmware/efi/esrt/fw_resource_count_max': Permission denied
+cp: '/sys/firmware/efi/esrt/fw_resource_count_max' -> '/home/ubuntu/firmware/efi/fw_resource_count_max': Permission denied
+cp: '/sys/firmware/efi/esrt/fw_resource_count' -> '/home/ubuntu/firmware/efi/fw_resource_count': Permission denied
+cp: '/sys/firmware/efi/esrt/entries/entry0/fw_class' -> '/home/ubuntu/firmware/efi/entries/entry0/fw_class': Permission denied
+cp: '/sys/firmware/efi/esrt/entries/entry0/fw_class' -> '/home/ubuntu/firmware/efi/entry0/fw_class': Permission denied
+cp: '/sys/firmware/efi/esrt/entries/entry0/fw_class' -> '/home/ubuntu/firmware/efi/fw_class': Permission denied
+cp: '/sys/firmware/efi/esrt/entries/entry0/lowest_supported_fw_version' -> '/home/ubuntu/firmware/efi/lowest_supported_fw_version': Permission denied
+cp: '/sys/firmware/efi/esrt/entries/entry0/last_attempt_version' -> '/home/ubuntu/firmware/efi/last_attempt_version': Permission denied
+cp: '/sys/firmware/efi/esrt/entries/entry0/last_attempt_status' -> '/home/ubuntu/firmware/efi/last_attempt_status': Permission denied
+cp: '/sys/firmware/efi/esrt/entries/entry0/fw_type' -> '/home/ubuntu/firmware/efi/fw_type': Permission denied
+cp: '/sys/firmware/efi/esrt/entries/entry0/fw_version' -> '/home/ubuntu/firmware/efi/fw_version': Permission denied
+cp: '/sys/firmware/efi/esrt/entries/entry0/capsule_flags' -> '/home/ubuntu/firmware/efi/capsule_flags': Permission denied
+cp: '/sys/firmware/efi/esrt/fw_resource_version' -> '/home/ubuntu/firmware/efi/fw_resource_version': Permission denied
+============================================================
+>>> COMMAND: tar czf "/home/ubuntu/sys-firmware.tar.gz" -C "/home/ubuntu" firmware
+>>> TIME: 2026-07-28 12:54:20
+============================================================
+
+>>> RETURN CODE: 0
+============================================================
+>>> COMMAND: touch "/home/ubuntu/ref"
+>>> TIME: 2026-07-28 12:54:20
+============================================================
+
+>>> RETURN CODE: 0
+
+============================================================
+>>> COMMAND: shred -v -n 1 -s 99M ~/ref
+============================================================
+shred: /home/ubuntu/ref: pass 1/1 (random)...
+============================================================
+>>> COMMAND: md5sum "/home/ubuntu/ref"
+>>> TIME: 2026-07-28 12:54:20
+============================================================
+4624951d2fc2c3e598c4587c907ab35b  /home/ubuntu/ref
+
+>>> RETURN CODE: 0
+============================================================
+>>> COMMAND: sudo ./ethtool-test.sh
+>>> TIME: 2026-07-28 12:54:20
+============================================================
+Reading package lists...
+Building dependency tree...
+Reading state information...
+ethtool is already the newest version (1:7.1-1).
+ethtool set to manually installed.
+Solving dependencies...
+The following NEW packages will be installed:
+  net-tools
+0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
+Need to get 155 kB of archives.
+After this operation, 1098 kB of additional disk space will be used.
+Do you want to continue? [Y/n] Ign:1 http://archive.ubuntu.com/ubuntu stonking/main arm64 net-tools arm64 2.10-2ubuntu1
+Ign:1 http://archive.ubuntu.com/ubuntu stonking/main arm64 net-tools arm64 2.10-2ubuntu1
+Ign:1 http://archive.ubuntu.com/ubuntu stonking/main arm64 net-tools arm64 2.10-2ubuntu1
+Err:1 http://archive.ubuntu.com/ubuntu stonking/main arm64 net-tools arm64 2.10-2ubuntu1
+  Temporary failure resolving 'archive.ubuntu.com'
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/n/net-tools/net-tools_2.10-2ubuntu1_arm64.deb  Temporary failure resolving 'archive.ubuntu.com'
+E: Unable to fetch some archives, maybe run apt update or try with --fix-missing?
+****************************************************************
+                         Running ethtool
+****************************************************************
+INFO: No ethernet interfaces detected via ip linux command, Exiting ...
+
+>>> RETURN CODE: 1
+>>> WARNING: command failed, continue...
+
+============================================================
+ Collection finished
+ End time: Tue Jul 28 12:54:31 UTC 2026
+ Log: /home/ubuntu/console.log
+ Firmware archive: /home/ubuntu/sys-firmware.tar.gz
+============================================================

@@ -1,0 +1,15 @@
+           CPU0       CPU1       CPU2       CPU3       
+  9:          0          0          0          0     GICv3  25 Level     vgic
+ 11:          0          0          0          0     GICv3  30 Level     kvm guest ptimer
+ 12:          0          0          0          0     GICv3  27 Level     kvm guest vtimer
+ 13:       3225       2895       3213       3128     GICv3  26 Level     arch_timer
+ 14:        226          0          0          0     GICv3 243 Level     ttyS0
+ 15:       4885          0          0          0     GICv3 176 Level     mmc0
+IPI0:       250        476        483        431       Rescheduling interrupts
+IPI1:       545        785       1002        862       Function call interrupts
+IPI2:         0          0          0          0       CPU stop interrupts
+IPI3:         0          0          0          0       CPU stop (for crash dump) interrupts
+IPI4:         0          0          0          0       Timer broadcast interrupts
+IPI5:         0          0          0          0       IRQ work interrupts
+IPI6:         0          0          0          0       CPU wake-up interrupts
+Err:          0
