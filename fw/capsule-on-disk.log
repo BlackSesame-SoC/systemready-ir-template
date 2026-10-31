@@ -1,172 +1,116 @@
-UEFI Interactive Shell v2.2                                                                                                                                                       
-EDK II                                                                                                                                                                            
-UEFI v2.90 (Das U-Boot, 0x20220700)                                                                                                                                               
-Mapping table                                                                                                                                                                     
-      FS0: Alias(s):HD0b:;BLK1:                                                                                                                                                   
-          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/UsbClass(0x0,0x0,0x9,0x0,0x3)/UsbClass(0x346d,0x5678,0x0,0x0,0x0)/HD(1,GPT,ad9fb413-9895-4e6f-afdf-151f73f95331,0x800,0x32000)                                                                                                                                                                               
-      FS1: Alias(s):HD0c:;BLK2:                                                                                                                                                   
-          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/UsbClass(0x0,0x0,0x9,0x0,0x3)/UsbClass(0x346d,0x5678,0x0,0x0,0x0)/HD(2,GPT,4491cc92-efd8-49c5-b6d6-79e30947620c,0x32800,0xcf2f0)                                                                                                                                                                             
-      FS2: Alias(s):HD0d:;BLK3:                                                                                                                                                   
-          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/UsbClass(0x0,0x0,0x9,0x0,0x3)/UsbClass(0x346d,0x5678,0x0,0x0,0x0)/HD(3,GPT,90489a78-a00e-4df4-9728-27a0308efe12,0x102000,0x19000)                                                                                                                                                                            
-     BLK0: Alias(s):                                                                                                                                                              
-          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/UsbClass(0x0,0x0,0x9,0x0,0x3)/UsbClass(0x346d,0x5678,0x0,0x0,0x0)                                                          
-No SimpleTextInputEx was found. CTRL-based features are not usable.                                                                                                               
-No SimpleTextInputEx was found. CTRL-based features are not usable.                                                                                                               
-Press ESC in 5 seconds to skip startup.nsh or any other key to continue.                                                                                                          
-Shell>                                                                                                                                                                            
 
 
-
-�warning: phy_calibration=0xffffffff 
+warning: phy_calibration=0xffffffff 
 warning: phy_calibration=0xffffffff 
 
 BL2-NOTICE  :BL2: Built : 00:03:05, Nov  6 2025
 Hit ctrl+x to stop autoboot: 0
-BL2-NOTICE  :BL2: Booting BL31 [3648102]
-E/TC:0 0 bst_get_huk:1399 R5 HUK is not ready.
+BL2-NOTICE  :BL2: Booting BL31 [3679961]
 host->align_buffer:0000000005170000
-dwmmc0@22200000: 0
+host->align_buffer:0000000005170000
+dwmmc0@22200000: 0, dwmmc1@22300000: 1
 Net:   
 Warning: xgmac@32400000 MAC addresses don't match:
 Address in ROM is               ff:ff:ff:ff:ff:ff
-Address in environment is       5a:59:3e:4d:ba:b6
+Address in environment is       4a:57:de:60:22:5a
 eth0: xgmac@32400000
 
 
-U-Boot 2022.07+ (Oct 11 2026 - 11:35:47 +0800)BST C1200 ADAS
+U-Boot 2022.07+ (Oct 29 2026 - 19:28:43 +0800)BST C1200 ADAS
 
 Autoboot in 3 seconds, hit ctrl+c to stop
-starting USB...
-Bus usbhost@0x022100000: Using usb cmn_offset: 0x1000000000
-dwc3_hsphy_mode_setup 388 REG 102407
-Register 2000140 NbrPorts 2
-Starting the controller
-USB XHCI 1.20
-Bus usbhost@0x022000000: Using usb cmn_offset: 0x1000000000
-dwc3_hsphy_mode_setup 388 REG 102407
-Register 2000140 NbrPorts 2
-Starting the controller
-USB XHCI 1.20
-scanning bus usbhost@0x022100000 for devices... 2 USB Device(s) found
-scanning bus usbhost@0x022000000 for devices... 1 USB Device(s) found
-       scanning usb for storage devices... 1 Storage Device(s) found
-** Unable to read file ubootefi.var **
-Failed to load EFI variables
+uhs_en:0
+trying mode HS200 (200MHz) width 8 (at 200 MHz)
+tuning best:20 fffff
 Booting /efi\boot\bootaa64.efi
 Welcome to GRUB!
 
-error: no such device: ((hd0,gpt1)/efi/boot)/EFI/BOOT/grub.cfg.
+error: no such device: ((hd1,gpt1)/efi/boot)/EFI/BOOT/grub.cfg.
 error: serial port `com0' isn't found.
-                                                                                                                                                                                  
-                                                                              GNU GRUB  version 2.06                                                                              
-                                                                                                                                                                                  
- ┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐ 
- │ Linux Boot                                                                                                                                                                   │ 
- │*bbr/bsa                                                                                                                                                                      │ 
- │ SCT for Security Interface Extension (optional)                                                                                                                              │ 
- │ Linux Boot for Security Interface Extension (optional)                                                                                                                       │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘ 
-                                                                                                                                                                                  
-      Use the ▲ and ▼ keys to select which entry is highlighted.                                                                                                                  
-      Press enter to boot the selected OS, `e' to edit the commands before booting or `c' for a command-line.                                                                     
-                                                                                                                                                                                  
-                                                                                                                                                                                  
-/EndEntire                                                                                                                                                                        
-file path: /HardwareVendor(e61d73b9-a384-4acc-aeab-82e828f3628b)[0: ]/USBClass(0,0,9,0,3)/USBClass(346d,5678,0,0,0)/HD(1,800,32000,13b49fad95986f4e,2,2)/File(\EFI\BOOT)          
-/File(Shell.efi)/EndEntire                                                                                                                                                        
-UEFI Interactive Shell v2.2                                                                                                                                                       
-EDK II                                                                                                                                                                            
-UEFI v2.90 (Das U-Boot, 0x20220700)                                                                                                                                               
-Mapping table                                                                                                                                                                     
-      FS0: Alias(s):HD0b:;BLK1:                                                                                                                                                   
-          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/UsbClass(0x0,0x0,0x9,0x0,0x3)/UsbClass(0x346d,0x5678,0x0,0x0,0x0)/HD(1,GPT,ad9fb413-9895-4e6f-afdf-151f73f95331,0x800,0x32000)                                                                                                                                                                               
-      FS1: Alias(s):HD0c:;BLK2:                                                                                                                                                   
-          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/UsbClass(0x0,0x0,0x9,0x0,0x3)/UsbClass(0x346d,0x5678,0x0,0x0,0x0)/HD(2,GPT,4491cc92-efd8-49c5-b6d6-79e30947620c,0x32800,0xcf2f0)                                                                                                                                                                             
-      FS2: Alias(s):HD0d:;BLK3:                                                                                                                                                   
-          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/UsbClass(0x0,0x0,0x9,0x0,0x3)/UsbClass(0x346d,0x5678,0x0,0x0,0x0)/HD(3,GPT,90489a78-a00e-4df4-9728-27a0308efe12,0x102000,0x19000)                                                                                                                                                                            
-     BLK0: Alias(s):                                                                                                                                                              
-          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/UsbClass(0x0,0x0,0x9,0x0,0x3)/UsbClass(0x346d,0x5678,0x0,0x0,0x0)                                                          
-No SimpleTextInputEx was found. CTRL-based features are not usable.                                                                                                               
-No SimpleTextInputEx was found. CTRL-based features are not usable.                                                                                                               
-Press ESC in 5 seconds to skip startup.nsh or any other key to continue.                                                                                                          
-Shell> FS0:                                                                                                                                                                       
-FS0:\> EFI\BOOT\app\CapsuleApp.efi -D unauth.bin                                                                                                                                  
-                                                                                                                                                                                  
-ASSERT_EFI_ERROR (Status = Not Found)                                                                                                                                             
-ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdeModulePkg/Library/UefiHiiServicesLib/UefiHiiServicesLib.c(94): !(((INTN)(RETURN_STAT                                                                                                     
-ASSERT_EFI_ERROR (Status = Not Found)                                                                                                                                             
-ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeServicesTableLib/DxeServicesTableLib.c(58): !(((INTN)(RETURN_STATUS)(ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeServicesTableLib/DxeServicesTableLib.c(59): gDS != ((void *) 0)                              
-                                                                                                                                                                                  
-ASSERT_EFI_ERROR (Status = Not Found)                                                                                                                                             
-ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/build/Build/MdeModule/RELEASE_GCC5/AARCH64/MdeModulePkg/Application/CapsuleApp/CapsuleApp/DE                                                                                                     
-ASSERT_EFI_ERROR (Status = Not Found)                                                                                                                                             
-ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeHobLib/HobLib.c(48): !(((INTN)(RETURN_STATUS)(Status)) < 0)                                                                                                               
-ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeHobLib/HobLib.c(49): mHobList != ((void *) 0)                                                                                                                             
-[FmpCapsule]                                                                                                                                                                      
-CapsuleHeader:                                                                                                                                                                    
-  CapsuleGuid      - 6DCBD5ED-E82D-4C44-BDA1-7194199AD92A                                                                                                                         
-  HeaderSize       - 0x1C                                                                                                                                                         
-  Flags            - 0x10000                                                                                                                                                      
-  CapsuleImageSize - 0xDA4E8
-FmpHeader:
-  Version             - 0x1
-  EmbeddedDriverCount - 0x0
-  PayloadItemCount    - 0x1
-  Offset[0]           - 0x10
-FmpPayload[0] ImageHeader:
-  Version                - 0x3
-  UpdateImageTypeId      - 63CC9A90-C296-49FE-BBBF-6AFB42C4E385
-  UpdateImageIndex       - 0x1
-  UpdateImageSize        - 0xDA48C
-  UpdateVendorCodeSize   - 0x0
-  UpdateHardwareInstance - 0x0
-  ImageCapsuleSupport    - 0x0
-FS0:\> EFI\BOOT\app\CapsuleApp.efi  unauth.bin  
-
-ASSERT_EFI_ERROR (Status = Not Found)
-ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdeModulePkg/Library/UefiHiiServicesLib/UefiHiiServicesLib.c(94): !(((INTN)(RETURN_STAT
-ASSERT_EFI_ERROR (Status = Not Found)
-ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeServicesTableLib/DxeServicesTableLib.c(58): !(((INTN)(RETURN_STATUS)(ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeServicesTableLib/DxeServicesTableLib.c(59): gDS != ((void *) 0)
-
-ASSERT_EFI_ERROR (Status = Not Found)
-ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/build/Build/MdeModule/RELEASE_GCC5/AARCH64/MdeModulePkg/Application/CapsuleApp/CapsuleApp/DE
-ASSERT_EFI_ERROR (Status = Not Found)
-ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeHobLib/HobLib.c(48): !(((INTN)(RETURN_STATUS)(Status)) < 0)
-ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeHobLib/HobLib.c(49): mHobList != ((void *) 0)
-CapsuleApp: creating capsule descriptors at 0x7EA15040
-CapsuleApp: capsule data starts          at 0x7E8FC040 with size 0xDA4E8
-CapsuleApp: capsule block/size              0x7E8FC040/0xDA4E8
-CapsuleApp: failed to update capsule - Security Violation
-FS0:\> EFI\BOOT\app\CapsuleApp.efi -D tampered.bin
-
-ASSERT_EFI_ERROR (Status = Not Found)
+                                                                                                                                                                                                                
+                                                                                             GNU GRUB  version 2.06                                                                                             
+                                                                                                                                                                                                                
+ ┌────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐ 
+ │ Linux Boot                                                                                                                                                                                                 │ 
+ │*bbr/bsa                                                                                                                                                                                                    │ 
+ │ SCT for Security Interface Extension (optional)                                                                                                                                                            │ 
+ │ Linux Boot for Security Interface Extension (optional)                                                                                                                                                     │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ └────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘ 
+                                                                                                                                                                                                                
+      Use the ▲ and ▼ keys to select which entry is highlighted.                                                                                                                                                
+      Press enter to boot the selected OS, `e' to edit the commands before booting or `c' for a command-line.                                                                                                   
+                                                                                                                                                                                                                
+                                                                                                                                                                                                                
+/EndEntire                                                                                                                                                                                                      
+file path: /HardwareVendor(e61d73b9-a384-4acc-aeab-82e828f3628b)[0: ]/UnknownMessaging(1d)/UnknownMessaging(1d)/HD(1,800,32000,13b49fad95986f4e,2,2)/File(\EFI\BOOT)/File(Shell.efi)/EndEntire                  
+UEFI Interactive Shell v2.2                                                                                                                                                                                     
+EDK II                                                                                                                                                                                                          
+UEFI v2.90 (Das U-Boot, 0x20220700)                                                                                                                                                                             
+Mapping table                                                                                                                                                                                                   
+      FS3: Alias(s):HD0a6b:;BLK5:                                                                                                                                                                               
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/Scsi(0,6)/HD(1,GPT,ad7983c0-71e1-4ffc-bcbc-178ecc8b3563,0x100,0x10000)                                                                                   
+      FS5: Alias(s):HD0a6c:;BLK7:                                                                                                                                                                               
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/Scsi(0,6)/HD(2,GPT,a8d9a4d5-79db-49e4-a939-de6ef487cc92,0x10100,0x10000)                                                                                 
+      FS6: Alias(s):HD0a6d:;BLK8:                                                                                                                                                                               
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/Scsi(0,6)/HD(3,GPT,8b451855-a5e7-4d05-8715-65316b1a1528,0x20100,0x10000)                                                                                 
+      FS7: Alias(s):HD0a6e:;BLK9:                                                                                                                                                                               
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/Scsi(0,6)/HD(4,GPT,f1ea96e8-c5bb-4973-935a-9535fedf2eb4,0x30100,0x10000)                                                                                 
+      FS8: Alias(s):HD0a6f:;BLK10:                                                                                                                                                                              
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/Scsi(0,6)/HD(5,GPT,20c96dc4-7d60-4736-adea-bf61ad2cf64a,0x40100,0x8000)                                                                                  
+      FS9: Alias(s):HD0a6g:;BLK11:                                                                                                                                                                              
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/Scsi(0,6)/HD(6,GPT,27a73e6d-ac02-4af7-ba00-f5a0eb4068fd,0x48100,0x20000)                                                                                 
+     FS10: Alias(s):HD0a6h:;BLK12:                                                                                                                                                                              
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/Scsi(0,6)/HD(7,GPT,62ba6d4d-82dc-42ac-980f-11608bdc11a2,0x68100,0xc0000)                                                                                 
+     FS11: Alias(s):HD0a6i:;BLK13:                                                                                                                                                                              
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/Scsi(0,6)/HD(8,GPT,8546fee3-b4f8-43fb-bcca-57ce4d80bcc9,0x128100,0x5dc00)                                                                                
+     FS12: Alias(s):HD0a6j:;BLK14:                                                                                                                                                                              
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/Scsi(0,6)/HD(9,GPT,9244ebd5-720f-4b0e-b541-5ce363e0119e,0x185d00,0x8000)                                                                                 
+      FS4: Alias(s):HD0a6k:;BLK6:                                                                                                                                                                               
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/Scsi(0,6)/HD(10,GPT,d086107c-16df-4e5e-933f-8863c3a02f2b,0x18dd00,0x8722fb)                                                                              
+      FS0: Alias(s):HD0b:;BLK1:                                                                                                                                                                                 
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(1,GPT,ad9fb413-9895-4e6f-afdf-151f73f95331,0x800,0x32000)                                                                             
+      FS1: Alias(s):HD0c:;BLK2:                                                                                                                                                                                 
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(2,GPT,4491cc92-efd8-49c5-b6d6-79e30947620c,0x32800,0xcf2f0)                                                                           
+      FS2: Alias(s):HD0d:;BLK3:                                                                                                                                                                                 
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(3,GPT,90489a78-a00e-4df4-9728-27a0308efe12,0x102000,0x19000)                                                                          
+     BLK4: Alias(s):                                                                                                                                                                                            
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/Scsi(0,6)                                                                                                                                                
+     BLK0: Alias(s):                                                                                                                                                                                            
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)                                                                                                                                          
+No SimpleTextInputEx was found. CTRL-based features are not usable.                                                                                                                                             
+No SimpleTextInputEx was found. CTRL-based features are not usable.                                                                                                                                             
+Press ESC in 5 seconds to skip startup.nsh or any other key to continue.                                                                                                                                        
+Shell> FS0:                                                                                                                                                                                                     
+FS0:\> \EFI\BOOT\app\CapsuleApp.efi -D capsule1.bin                                                                                                                                                             
+                                                                                                                                                                                                                
+ASSERT_EFI_ERROR (Status = Not Found)                                                                                                                                                                           
 ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdeModulePkg/Library/UefiHiiServicesLib/UefiHiiServicesLib.c(94): !(((INTN)(RETURN_STAT
 ASSERT_EFI_ERROR (Status = Not Found)
 ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeServicesTableLib/DxeServicesTableLib.c(58): !(((INTN)(RETURN_STATUS)(ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeServicesTableLib/DxeServicesTableLib.c(59): gDS != ((void *) 0)
@@ -181,7 +125,7 @@ CapsuleHeader:
   CapsuleGuid      - 6DCBD5ED-E82D-4C44-BDA1-7194199AD92A
   HeaderSize       - 0x1C
   Flags            - 0x10000
-  CapsuleImageSize - 0xDAA01
+  CapsuleImageSize - 0xDAB81
 FmpHeader:
   Version             - 0x1
   EmbeddedDriverCount - 0x0
@@ -191,11 +135,11 @@ FmpPayload[0] ImageHeader:
   Version                - 0x3
   UpdateImageTypeId      - 63CC9A90-C296-49FE-BBBF-6AFB42C4E385
   UpdateImageIndex       - 0x1
-  UpdateImageSize        - 0xDA9A5
+  UpdateImageSize        - 0xDAB25
   UpdateVendorCodeSize   - 0x0
   UpdateHardwareInstance - 0x0
   ImageCapsuleSupport    - 0x1
-FS0:\> EFI\BOOT\app\CapsuleApp.efi  tampered.bin  
+FS0:\> \EFI\BOOT\app\CapsuleApp.efi capsule1.bin -OD
 
 ASSERT_EFI_ERROR (Status = Not Found)
 ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdeModulePkg/Library/UefiHiiServicesLib/UefiHiiServicesLib.c(94): !(((INTN)(RETURN_STAT
@@ -207,371 +151,149 @@ ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-syst
 ASSERT_EFI_ERROR (Status = Not Found)
 ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeHobLib/HobLib.c(48): !(((INTN)(RETURN_STATUS)(Status)) < 0)
 ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeHobLib/HobLib.c(49): mHobList != ((void *) 0)
-CapsuleApp: creating capsule descriptors at 0x7E9D0040
-CapsuleApp: capsule data starts          at 0x7E8CB040 with size 0xDAA01
-CapsuleApp: capsule block/size              0x7E8CB040/0xDAA01
-Capsule authentication check failed. Aborting update
-Firmware update failed: <NULL>
-CapsuleApp: failed to update capsule - Security Violation
-FS0:\> EFI\BOOT\app\CapsuleApp.efi -D capsule1.bin
-
-ASSERT_EFI_ERROR (Status = Not Found)
-ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdeModulePkg/Library/UefiHiiServicesLib/UefiHiiServicesLib.c(94): !(((INTN)(RETURN_STAT
-ASSERT_EFI_ERROR (Status = Not Found)
-ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeServicesTableLib/DxeServicesTableLib.c(58): !(((INTN)(RETURN_STATUS)(ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeServicesTableLib/DxeServicesTableLib.c(59): gDS != ((void *) 0)
-
-ASSERT_EFI_ERROR (Status = Not Found)
-ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/build/Build/MdeModule/RELEASE_GCC5/AARCH64/MdeModulePkg/Application/CapsuleApp/CapsuleApp/DE
-ASSERT_EFI_ERROR (Status = Not Found)
-ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeHobLib/HobLib.c(48): !(((INTN)(RETURN_STATUS)(Status)) < 0)
-ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeHobLib/HobLib.c(49): mHobList != ((void *) 0)
-[FmpCapsule]
-CapsuleHeader:
-  CapsuleGuid      - 6DCBD5ED-E82D-4C44-BDA1-7194199AD92A
-  HeaderSize       - 0x1C
-  Flags            - 0x10000
-  CapsuleImageSize - 0xDAA01
-FmpHeader:
-  Version             - 0x1
-  EmbeddedDriverCount - 0x0
-  PayloadItemCount    - 0x1
-  Offset[0]           - 0x10
-FmpPayload[0] ImageHeader:
-  Version                - 0x3
-  UpdateImageTypeId      - 63CC9A90-C296-49FE-BBBF-6AFB42C4E385
-  UpdateImageIndex       - 0x1
-  UpdateImageSize        - 0xDA9A5
-  UpdateVendorCodeSize   - 0x0
-  UpdateHardwareInstance - 0x0
-  ImageCapsuleSupport    - 0x1
-FS0:\> EFI\BOOT\app\CapsuleApp.efi capsule1.bin   
-
-ASSERT_EFI_ERROR (Status = Not Found)
-ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdeModulePkg/Library/UefiHiiServicesLib/UefiHiiServicesLib.c(94): !(((INTN)(RETURN_STAT
-ASSERT_EFI_ERROR (Status = Not Found)
-ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeServicesTableLib/DxeServicesTableLib.c(58): !(((INTN)(RETURN_STATUS)(ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeServicesTableLib/DxeServicesTableLib.c(59): gDS != ((void *) 0)
-
-ASSERT_EFI_ERROR (Status = Not Found)
-ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/build/Build/MdeModule/RELEASE_GCC5/AARCH64/MdeModulePkg/Application/CapsuleApp/CapsuleApp/DE
-ASSERT_EFI_ERROR (Status = Not Found)
-ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeHobLib/HobLib.c(48): !(((INTN)(RETURN_STATUS)(Status)) < 0)
-ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeHobLib/HobLib.c(49): mHobList != ((void *) 0)
-CapsuleApp: creating capsule descriptors at 0x7E99B040
-CapsuleApp: capsule data starts          at 0x7E89A040 with size 0xDAA01
-CapsuleApp: capsule block/size              0x7E89A040/0xDAA01
-Processing update 'u-boot.bin' :sha1+ 
-Flash proxy probe bus 0
-##########################################################################################################################################################################################################################
-resetting ...
-
-BL2-NOTICE  :BL2: Built : 00:03:05, Nov  6 2025
-BL2-NOTICE  :BL2: Booting BL31 [26512]
-E/TC:0 0 bst_get_huk:1399 R5 HUK is not ready.
-host->align_buffer:0000000005170000
-dwmmc0@22200000: 0
-Net:   eth0: xgmac@32400000
-
-
-U-Boot 2022.07+ (Oct 10 2026 - 20:37:49 +0800)BST C1200 ADAS
-
-Autoboot in 3 seconds, hit ctrl+c to stop
-starting USB...
-Bus usbhost@0x022100000: Using usb cmn_offset: 0x1000000000
-dwc3_hsphy_mode_setup 388 REG 102407
-Register 2000140 NbrPorts 2
-Starting the controller
-USB XHCI 1.20
-Bus usbhost@0x022000000: Using usb cmn_offset: 0x1000000000
-dwc3_hsphy_mode_setup 388 REG 102407
-Register 2000140 NbrPorts 2
-Starting the controller
-USB XHCI 1.20
-scanning bus usbhost@0x022100000 for devices... 2 USB Device(s) found
-scanning bus usbhost@0x022000000 for devices... 1 USB Device(s) found
-       scanning usb for storage devices... 1 Storage Device(s) found
-** Unable to read file ubootefi.var **
-Failed to load EFI variables
-Booting /efi\boot\bootaa64.efi
-Welcome to GRUB!
-
-error: no such device: ((hd0,gpt1)/efi/boot)/EFI/BOOT/grub.cfg.
-error: serial port `com0' isn't found.
-                                                                                                                                                                                  
-                                                                              GNU GRUB  version 2.06                                                                              
-                                                                                                                                                                                  
- ┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐ 
- │ Linux Boot                                                                                                                                                                   │ 
- │*bbr/bsa                                                                                                                                                                      │ 
- │ SCT for Security Interface Extension (optional)                                                                                                                              │ 
- │ Linux Boot for Security Interface Extension (optional)                                                                                                                       │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘ 
-                                                                                                                                                                                  
-      Use the ▲ and ▼ keys to select which entry is highlighted.                                                                                                                  
-      Press enter to boot the selected OS, `e' to edit the commands before booting or `c' for a command-line.                                                                     
-                                                                                                                                                                                  
-                                                                                                                                                                                  
-/EndEntire                                                                                                                                                                        
-file path: /HardwareVendor(e61d73b9-a384-4acc-aeab-82e828f3628b)[0: ]/USBClass(0,0,9,0,3)/USBClass(346d,5678,0,0,0)/HD(1,800,32000,13b49fad95986f4e,2,2)/File(\EFI\BOOT)          
-/File(Shell.efi)/EndEntire                                                                                                                                                        
-UEFI Interactive Shell v2.2                                                                                                                                                       
-EDK II                                                                                                                                                                            
-UEFI v2.90 (Das U-Boot, 0x20220700)                                                                                                                                               
-Mapping table                                                                                                                                                                     
-      FS0: Alias(s):HD0b:;BLK1:                                                                                                                                                   
-          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/UsbClass(0x0,0x0,0x9,0x0,0x3)/UsbClass(0x346d,0x5678,0x0,0x0,0x0)/HD(1,GPT,ad9fb413-9895-4e6f-afdf-151f73f95331,0x800,0x32000)                                                                                                                                                                               
-      FS1: Alias(s):HD0c:;BLK2:                                                                                                                                                   
-          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/UsbClass(0x0,0x0,0x9,0x0,0x3)/UsbClass(0x346d,0x5678,0x0,0x0,0x0)/HD(2,GPT,4491cc92-efd8-49c5-b6d6-79e30947620c,0x32800,0xcf2f0)                                                                                                                                                                             
-      FS2: Alias(s):HD0d:;BLK3:                                                                                                                                                   
-          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/UsbClass(0x0,0x0,0x9,0x0,0x3)/UsbClass(0x346d,0x5678,0x0,0x0,0x0)/HD(3,GPT,90489a78-a00e-4df4-9728-27a0308efe12,0x102000,0x19000)                                                                                                                                                                            
-     BLK0: Alias(s):                                                                                                                                                              
-          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/UsbClass(0x0,0x0,0x9,0x0,0x3)/UsbClass(0x346d,0x5678,0x0,0x0,0x0)                                                          
-No SimpleTextInputEx was found. CTRL-based features are not usable.                                                                                                               
-No SimpleTextInputEx was found. CTRL-based features are not usable.                                                                                                               
-Press ESC in 5 seconds to skip startup.nsh or any other key to continue.                                                                                                          
-Shell> FS0:                                                                                                                                                                       
-FS0:\> \EFI\BOOT\app\CapsuleApp.efi -E                                                                                                                                            
-                                                                                                                                                                                  
-ASSERT_EFI_ERROR (Status = Not Found)                                                                                                                                             
-ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdeModulePkg/Library/UefiHiiServicesLib/UefiHiiServicesLib.c(94): !(((INTN)(RETURN_STAT                                                                                                     
-ASSERT_EFI_ERROR (Status = Not Found)                                                                                                                                             
-ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeServicesTableLib/DxeServicesTableLib.c(58): !(((INTN)(RETURN_STATUS)(ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeServicesTableLib/DxeServicesTableLib.c(59): gDS != ((void *) 0)                              
-                                                                                                                                                                                  
-ASSERT_EFI_ERROR (Status = Not Found)                                                                                                                                             
-ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/build/Build/MdeModule/RELEASE_GCC5/AARCH64/MdeModulePkg/Application/CapsuleApp/CapsuleApp/DE                                                                                                     
-ASSERT_EFI_ERROR (Status = Not Found)                                                                                                                                             
-ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeHobLib/HobLib.c(48): !(((INTN)(RETURN_STATUS)(Status)) < 0)                                                                                                               
-ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeHobLib/HobLib.c(49): mHobList != ((void *) 0)                                                                                                                             
-##############                                                                                                                                                                    
-# ESRT TABLE #                                                                                                                                                                    
-##############                                                                                                                                                                    
-EFI_SYSTEM_RESOURCE_TABLE:                                                                                                                                                        
-FwResourceCount    - 0x1                                                                                                                                                          
-FwResourceCountMax - 0x1
-FwResourceVersion  - 0x1
-EFI_SYSTEM_RESOURCE_ENTRY (0):
-  FwClass                  - 63CC9A90-C296-49FE-BBBF-6AFB42C4E385
-  FwType                   - 0x0 (Unknown)
-  FwVersion                - 0x0
-  LowestSupportedFwVersion - 0x0
-  CapsuleFlags             - 0x0
-  LastAttemptVersion       - 0x0
-  LastAttemptStatus        - 0x0 (Success)
-
-FS0:\> \EFI\BOOT\app\CapsuleApp.efi -D capsule1.bin
-
-ASSERT_EFI_ERROR (Status = Not Found)
-ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdeModulePkg/Library/UefiHiiServicesLib/UefiHiiServicesLib.c(94): !(((INTN)(RETURN_STAT
-ASSERT_EFI_ERROR (Status = Not Found)
-ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeServicesTableLib/DxeServicesTableLib.c(58): !(((INTN)(RETURN_STATUS)(ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeServicesTableLib/DxeServicesTableLib.c(59): gDS != ((void *) 0)
-
-ASSERT_EFI_ERROR (Status = Not Found)
-ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/build/Build/MdeModule/RELEASE_GCC5/AARCH64/MdeModulePkg/Application/CapsuleApp/CapsuleApp/DE
-ASSERT_EFI_ERROR (Status = Not Found)
-ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeHobLib/HobLib.c(48): !(((INTN)(RETURN_STATUS)(Status)) < 0)
-ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeHobLib/HobLib.c(49): mHobList != ((void *) 0)
-[FmpCapsule]
-CapsuleHeader:
-  CapsuleGuid      - 6DCBD5ED-E82D-4C44-BDA1-7194199AD92A
-  HeaderSize       - 0x1C
-  Flags            - 0x10000
-  CapsuleImageSize - 0xDAA01
-FmpHeader:
-  Version             - 0x1
-  EmbeddedDriverCount - 0x0
-  PayloadItemCount    - 0x1
-  Offset[0]           - 0x10
-FmpPayload[0] ImageHeader:
-  Version                - 0x3
-  UpdateImageTypeId      - 63CC9A90-C296-49FE-BBBF-6AFB42C4E385
-  UpdateImageIndex       - 0x1
-  UpdateImageSize        - 0xDA9A5
-  UpdateVendorCodeSize   - 0x0
-  UpdateHardwareInstance - 0x0
-  ImageCapsuleSupport    - 0x1
-FS0:\> \EFI\BOOT\app\CapsuleApp.efi  capsule1.bin -OD
-
-ASSERT_EFI_ERROR (Status = Not Found)
-ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdeModulePkg/Library/UefiHiiServicesLib/UefiHiiServicesLib.c(94): !(((INTN)(RETURN_STAT
-ASSERT_EFI_ERROR (Status = Not Found)
-ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeServicesTableLib/DxeServicesTableLib.c(58): !(((INTN)(RETURN_STATUS)(ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeServicesTableLib/DxeServicesTableLib.c(59): gDS != ((void *) 0)
-
-ASSERT_EFI_ERROR (Status = Not Found)
-ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/build/Build/MdeModule/RELEASE_GCC5/AARCH64/MdeModulePkg/Application/CapsuleApp/CapsuleApp/DE
-ASSERT_EFI_ERROR (Status = Not Found)
-ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeHobLib/HobLib.c(48): !(((INTN)(RETURN_STATUS)(Status)) < 0)
-ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeHobLib/HobLib.c(49): mHobList != ((void *) 0)
-CapsuleApp: creating capsule descriptors at 0x7E9F0040
-CapsuleApp: capsule data starts          at 0x7E8E4040 with size 0xDAA01
-CapsuleApp: capsule block/size              0x7E8E4040/0xDAA01
+CapsuleApp: creating capsule descriptors at 0x7E99D040
+CapsuleApp: capsule data starts          at 0x7E86F040 with size 0xDAB81
+CapsuleApp: capsule block/size              0x7E86F040/0xDAB81
 Create Boot option for capsule on disk:
-  Boot0000: VenHw(E61D73B9-A384-4ACC-AEAB-82E828F3628B)/UsbHub(0x0,0x0,0x0,0x3)/UsbClass(0x346D,0x5678,0x0,0x0,0x0)/HD(1,GPT,AD9FB413-9895-4E6F-AFDF-151F73F95331,0x800,0x32000)
+  Boot0000: VenHw(E61D73B9-A384-4ACC-AEAB-82E828F3628B)/eMMC(0x0)/eMMC(0x0)/HD(1,GPT,AD9FB413-9895-4E6F-AFDF-151F73F95331,0x800,0x32000)
 Succeed to write capsule1.bin
 resetting ...
 
 BL2-NOTICE  :BL2: Built : 00:03:05, Nov  6 2025
-BL2-NOTICE  :BL2: Booting BL31 [26609]
-E/TC:0 0 bst_get_huk:1399 R5 HUK is not ready.
+BL2-NOTICE  :BL2: Booting BL31 [28313]
 host->align_buffer:0000000005170000
-dwmmc0@22200000: 0
+host->align_buffer:0000000005170000
+dwmmc0@22200000: 0, dwmmc1@22300000: 1
 Net:   eth0: xgmac@32400000
 
 
-U-Boot 2022.07+ (Oct 10 2026 - 20:37:49 +0800)BST C1200 ADAS
+U-Boot 2022.07+ (Oct 29 2026 - 19:28:43 +0800)BST C1200 ADAS
 
 Autoboot in 3 seconds, hit ctrl+c to stop
-starting USB...
-Bus usbhost@0x022100000: Using usb cmn_offset: 0x1000000000
-dwc3_hsphy_mode_setup 388 REG 102407
-Register 2000140 NbrPorts 2
-Starting the controller
-USB XHCI 1.20
-Bus usbhost@0x022000000: Using usb cmn_offset: 0x1000000000
-dwc3_hsphy_mode_setup 388 REG 102407
-Register 2000140 NbrPorts 2
-Starting the controller
-USB XHCI 1.20
-scanning bus usbhost@0x022100000 for devices... 2 USB Device(s) found
-scanning bus usbhost@0x022000000 for devices... 1 USB Device(s) found
-       scanning usb for storage devices... 1 Storage Device(s) found
-Capsule authentication check failed. Aborting update
-Firmware update failed: <NULL>
-Applying capsule capsule1.bin failed.
+uhs_en:0
+trying mode HS200 (200MHz) width 8 (at 200 MHz)
+tuning best:20 fffff
+Processing update 'u-boot.bin' :sha1+ 
+Flash proxy probe bus 0
+###########################################################################################################################################################################################################################
+Applying capsule capsule1.bin succeeded.
 Reboot after firmware update.
 
 BL2-NOTICE  :BL2: Built : 00:03:05, Nov  6 2025
-BL2-NOTICE  :BL2: Booting BL31 [26617]
-E/TC:0 0 bst_get_huk:1399 R5 HUK is not ready.
+BL2-NOTICE  :BL2: Booting BL31 [28209]
 host->align_buffer:0000000005170000
-dwmmc0@22200000: 0
+host->align_buffer:0000000005170000
+dwmmc0@22200000: 0, dwmmc1@22300000: 1
 Net:   eth0: xgmac@32400000
 
 
-U-Boot 2022.07+ (Oct 10 2026 - 20:37:49 +0800)BST C1200 ADAS
+U-Boot 2022.07+ (Oct 29 2026 - 19:32:08 +0800)BST C1200 ADAS update
 
 Autoboot in 3 seconds, hit ctrl+c to stop
-starting USB...
-Bus usbhost@0x022100000: Using usb cmn_offset: 0x1000000000
-dwc3_hsphy_mode_setup 388 REG 102407
-Register 2000140 NbrPorts 2
-Starting the controller
-USB XHCI 1.20
-Bus usbhost@0x022000000: Using usb cmn_offset: 0x1000000000
-dwc3_hsphy_mode_setup 388 REG 102407
-Register 2000140 NbrPorts 2
-Starting the controller
-USB XHCI 1.20
-scanning bus usbhost@0x022100000 for devices... 2 USB Device(s) found
-scanning bus usbhost@0x022000000 for devices... 1 USB Device(s) found
-       scanning usb for storage devices... 1 Storage Device(s) found
+uhs_en:0
+trying mode HS200 (200MHz) width 8 (at 200 MHz)
+tuning best:20 fffff
 Booting /efi\boot\bootaa64.efi
 Welcome to GRUB!
 
-error: no such device: ((hd0,gpt1)/efi/boot)/EFI/BOOT/grub.cfg.
+error: no such device: ((hd1,gpt1)/efi/boot)/EFI/BOOT/grub.cfg.
 error: serial port `com0' isn't found.
-                                                                                                                                                                                  
-                                                                              GNU GRUB  version 2.06                                                                              
-                                                                                                                                                                                  
- ┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐ 
- │ Linux Boot                                                                                                                                                                   │ 
- │*bbr/bsa                                                                                                                                                                      │ 
- │ SCT for Security Interface Extension (optional)                                                                                                                              │ 
- │ Linux Boot for Security Interface Extension (optional)                                                                                                                       │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- │                                                                                                                                                                              │ 
- └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘ 
-                                                                                                                                                                                  
-      Use the ▲ and ▼ keys to select which entry is highlighted.                                                                                                                  
-      Press enter to boot the selected OS, `e' to edit the commands before booting or `c' for a command-line.                                                                     
-                                                                                                                                                                                  
-                                                                                                                                                                                  
-/EndEntire                                                                                                                                                                        
-file path: /HardwareVendor(e61d73b9-a384-4acc-aeab-82e828f3628b)[0: ]/USBClass(0,0,9,0,3)/USBClass(346d,5678,0,0,0)/HD(1,800,32000,13b49fad95986f4e,2,2)/File(\EFI\BOOT)          
-/File(Shell.efi)/EndEntire                                                                                                                                                        
-UEFI Interactive Shell v2.2                                                                                                                                                       
-EDK II                                                                                                                                                                            
-UEFI v2.90 (Das U-Boot, 0x20220700)                                                                                                                                               
-Mapping table                                                                                                                                                                     
-      FS0: Alias(s):HD0b:;BLK1:                                                                                                                                                   
-          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/UsbClass(0x0,0x0,0x9,0x0,0x3)/UsbClass(0x346d,0x5678,0x0,0x0,0x0)/HD(1,GPT,ad9fb413-9895-4e6f-afdf-151f73f95331,0x800,0x32000)                                                                                                                                                                               
-      FS1: Alias(s):HD0c:;BLK2:                                                                                                                                                   
-          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/UsbClass(0x0,0x0,0x9,0x0,0x3)/UsbClass(0x346d,0x5678,0x0,0x0,0x0)/HD(2,GPT,4491cc92-efd8-49c5-b6d6-79e30947620c,0x32800,0xcf2f0)                                                                                                                                                                             
-      FS2: Alias(s):HD0d:;BLK3:                                                                                                                                                   
-          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/UsbClass(0x0,0x0,0x9,0x0,0x3)/UsbClass(0x346d,0x5678,0x0,0x0,0x0)/HD(3,GPT,90489a78-a00e-4df4-9728-27a0308efe12,0x102000,0x19000)                                                                                                                                                                            
-     BLK0: Alias(s):                                                                                                                                                              
-          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/UsbClass(0x0,0x0,0x9,0x0,0x3)/UsbClass(0x346d,0x5678,0x0,0x0,0x0)                                                          
-No SimpleTextInputEx was found. CTRL-based features are not usable.                                                                                                               
-No SimpleTextInputEx was found. CTRL-based features are not usable.                                                                                                               
-Press ESC in 5 seconds to skip startup.nsh or any other key to continue.                                                                                                          
-Shell> FS0:                                                                                                                                                                       
-FS0:\>                                                                                                                                                                            
-FS0:\>                                                                                                                                                                            
-FS0:\> \EFI\BOOT\app\CapsuleApp.efi -E                                                                                                                                            
-                                                                                                                                                                                  
-ASSERT_EFI_ERROR (Status = Not Found)                                                                                                                                             
-ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdeModulePkg/Library/UefiHiiServicesLib/UefiHiiServicesLib.c(94): !(((INTN)(RETURN_STAT                                                                                                     
-ASSERT_EFI_ERROR (Status = Not Found)                                                                                                                                             
-ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeServicesTableLib/DxeServicesTableLib.c(58): !(((INTN)(RETURN_STATUS)(ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeServicesTableLib/DxeServicesTableLib.c(59): gDS != ((void *) 0)                              
-                                                                                                                                                                                  
-ASSERT_EFI_ERROR (Status = Not Found)                                                                                                                                             
-ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/build/Build/MdeModule/RELEASE_GCC5/AARCH64/MdeModulePkg/Application/CapsuleApp/CapsuleApp/DE                                                                                                     
-ASSERT_EFI_ERROR (Status = Not Found)                                                                                                                                             
-ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeHobLib/HobLib.c(48): !(((INTN)(RETURN_STATUS)(Status)) < 0)                                                                                                               
-ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeHobLib/HobLib.c(49): mHobList != ((void *) 0)                                                                                                                             
-##############                                                                                                                                                                    
-# ESRT TABLE #                                                                                                                                                                    
-##############                                                                                                                                                                    
+                                                                                                                                                                                                                
+                                                                                             GNU GRUB  version 2.06                                                                                             
+                                                                                                                                                                                                                
+ ┌────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐ 
+ │ Linux Boot                                                                                                                                                                                                 │ 
+ │*bbr/bsa                                                                                                                                                                                                    │ 
+ │ SCT for Security Interface Extension (optional)                                                                                                                                                            │ 
+ │ Linux Boot for Security Interface Extension (optional)                                                                                                                                                     │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ └────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘ 
+                                                                                                                                                                                                                
+      Use the ▲ and ▼ keys to select which entry is highlighted.                                                                                                                                                
+      Press enter to boot the selected OS, `e' to edit the commands before booting or `c' for a command-line.                                                                                                   
+                                                                                                                                                                                                                
+                                                                                                                                                                                                                
+/EndEntire                                                                                                                                                                                                      
+file path: /HardwareVendor(e61d73b9-a384-4acc-aeab-82e828f3628b)[0: ]/UnknownMessaging(1d)/UnknownMessaging(1d)/HD(1,800,32000,13b49fad95986f4e,2,2)/File(\EFI\BOOT)/File(Shell.efi)/EndEntire                  
+UEFI Interactive Shell v2.2                                                                                                                                                                                     
+EDK II                                                                                                                                                                                                          
+UEFI v2.90 (Das U-Boot, 0x20220700)                                                                                                                                                                             
+Mapping table                                                                                                                                                                                                   
+      FS3: Alias(s):HD0a6b:;BLK5:                                                                                                                                                                               
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/Scsi(0,6)/HD(1,GPT,ad7983c0-71e1-4ffc-bcbc-178ecc8b3563,0x100,0x10000)                                                                                   
+      FS5: Alias(s):HD0a6c:;BLK7:                                                                                                                                                                               
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/Scsi(0,6)/HD(2,GPT,a8d9a4d5-79db-49e4-a939-de6ef487cc92,0x10100,0x10000)                                                                                 
+      FS6: Alias(s):HD0a6d:;BLK8:                                                                                                                                                                               
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/Scsi(0,6)/HD(3,GPT,8b451855-a5e7-4d05-8715-65316b1a1528,0x20100,0x10000)                                                                                 
+      FS7: Alias(s):HD0a6e:;BLK9:                                                                                                                                                                               
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/Scsi(0,6)/HD(4,GPT,f1ea96e8-c5bb-4973-935a-9535fedf2eb4,0x30100,0x10000)                                                                                 
+      FS8: Alias(s):HD0a6f:;BLK10:                                                                                                                                                                              
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/Scsi(0,6)/HD(5,GPT,20c96dc4-7d60-4736-adea-bf61ad2cf64a,0x40100,0x8000)                                                                                  
+      FS9: Alias(s):HD0a6g:;BLK11:                                                                                                                                                                              
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/Scsi(0,6)/HD(6,GPT,27a73e6d-ac02-4af7-ba00-f5a0eb4068fd,0x48100,0x20000)                                                                                 
+     FS10: Alias(s):HD0a6h:;BLK12:                                                                                                                                                                              
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/Scsi(0,6)/HD(7,GPT,62ba6d4d-82dc-42ac-980f-11608bdc11a2,0x68100,0xc0000)                                                                                 
+     FS11: Alias(s):HD0a6i:;BLK13:                                                                                                                                                                              
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/Scsi(0,6)/HD(8,GPT,8546fee3-b4f8-43fb-bcca-57ce4d80bcc9,0x128100,0x5dc00)                                                                                
+     FS12: Alias(s):HD0a6j:;BLK14:                                                                                                                                                                              
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/Scsi(0,6)/HD(9,GPT,9244ebd5-720f-4b0e-b541-5ce363e0119e,0x185d00,0x8000)                                                                                 
+      FS4: Alias(s):HD0a6k:;BLK6:                                                                                                                                                                               
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/Scsi(0,6)/HD(10,GPT,d086107c-16df-4e5e-933f-8863c3a02f2b,0x18dd00,0x8722fb)                                                                              
+      FS0: Alias(s):HD0b:;BLK1:                                                                                                                                                                                 
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(1,GPT,ad9fb413-9895-4e6f-afdf-151f73f95331,0x800,0x32000)                                                                             
+      FS1: Alias(s):HD0c:;BLK2:                                                                                                                                                                                 
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(2,GPT,4491cc92-efd8-49c5-b6d6-79e30947620c,0x32800,0xcf2f0)                                                                           
+      FS2: Alias(s):HD0d:;BLK3:                                                                                                                                                                                 
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(3,GPT,90489a78-a00e-4df4-9728-27a0308efe12,0x102000,0x19000)                                                                          
+     BLK4: Alias(s):                                                                                                                                                                                            
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/Scsi(0,6)                                                                                                                                                
+     BLK0: Alias(s):                                                                                                                                                                                            
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)                                                                                                                                          
+No SimpleTextInputEx was found. CTRL-based features are not usable.                                                                                                                                             
+No SimpleTextInputEx was found. CTRL-based features are not usable.                                                                                                                                             
+Press ESC in 5 seconds to skip startup.nsh or any other key to continue.                                                                                                                                        
+Shell> FS0:                                                                                                                                                                                                     
+FS0:\> \EFI\BOOT\app\CapsuleApp.efi -E                                                                                                                                                                          
+                                                                                                                                                                                                                
+ASSERT_EFI_ERROR (Status = Not Found)                                                                                                                                                                           
+ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdeModulePkg/Library/UefiHiiServicesLib/UefiHiiServicesLib.c(94): !(((INTN)(RETURN_STAT
+ASSERT_EFI_ERROR (Status = Not Found)
+ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeServicesTableLib/DxeServicesTableLib.c(58): !(((INTN)(RETURN_STATUS)(ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeServicesTableLib/DxeServicesTableLib.c(59): gDS != ((void *) 0)
+
+ASSERT_EFI_ERROR (Status = Not Found)
+ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/build/Build/MdeModule/RELEASE_GCC5/AARCH64/MdeModulePkg/Application/CapsuleApp/CapsuleApp/DE
+ASSERT_EFI_ERROR (Status = Not Found)
+ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeHobLib/HobLib.c(48): !(((INTN)(RETURN_STATUS)(Status)) < 0)
+ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeHobLib/HobLib.c(49): mHobList != ((void *) 0)
+##############
+# ESRT TABLE #
+##############
 EFI_SYSTEM_RESOURCE_TABLE:
 FwResourceCount    - 0x1
 FwResourceCountMax - 0x1

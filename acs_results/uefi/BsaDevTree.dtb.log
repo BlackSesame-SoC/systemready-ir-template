@@ -3,8 +3,8 @@
 + END
 + meta-data
 + ---------
-+ command-line: ./check-sr-results.py --dir ../IR2.0 --all --force-regen
-+ date: Mon Oct 12 09:42:31 2026 UTC
++ command-line: ./check-sr-results.py --dir /home/bst/android/github_linux/systemready-ir-template/ --all --force-regen
++ date: Sat Oct 31 04:18:43 2026 UTC
 + dt-validate-version: 2026.9
 + dtc-version: DTC 1.6.1
 + git-commit: ir2.0-2024.04-26-gfea6d1b7a28d-dirty

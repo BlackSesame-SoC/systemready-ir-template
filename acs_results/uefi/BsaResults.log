@@ -31,7 +31,7 @@ Operating System View:
    8 : Check EL1 and EL0 implementation           : Result:  PASS 
    9 : Check for PMU and PMU counters             : Result:  PASS 
   10 : Check PMU Overflow signal             
-       Invalid Interrupt ID number 0x2E0069 
+       Invalid Interrupt ID number 0x5C0054 
        GIC Install Handler Failed...
        Failed on PE -    0
        Checkpoint --  1                           : Result:  FAIL 

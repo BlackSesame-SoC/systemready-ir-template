@@ -2,170 +2,193 @@
 drwxr-xr-x    3 root     root             0 Nov  8 14:00 devicetree
 drwxr-xr-x    4 root     root             0 Nov  8 14:00 dmi
 drwxr-xr-x    4 root     root             0 Nov  8 14:00 efi
--r--------    1 root     root          2944 Nov  8 14:00 fdt
+-r--------    1 root     root          3249 Nov  8 14:07 fdt
 
 /sys/firmware/devicetree:
 drwxr-xr-x   10 root     root             0 Nov  8 14:00 base
 
 /sys/firmware/devicetree/base:
--r--r--r--    1 root     root             4 Nov  8 14:00 #address-cells
--r--r--r--    1 root     root             4 Nov  8 14:00 #size-cells
-drwxr-xr-x    2 root     root             0 Nov  8 14:00 chosen
-drwxr-xr-x    2 root     root             0 Nov  8 14:00 clock-4000000
--r--r--r--    1 root     root            38 Nov  8 14:00 compatible
-drwxr-xr-x    7 root     root             0 Nov  8 14:00 cpus
-drwxr-xr-x    2 root     root             0 Nov  8 14:00 memory@810000000
--r--r--r--    1 root     root            26 Nov  8 14:00 model
--r--r--r--    1 root     root             1 Nov  8 14:00 name
-drwxr-xr-x    2 root     root             0 Nov  8 14:00 psci
-drwxr-xr-x    3 root     root             0 Nov  8 14:00 reserved-memory
-drwxr-xr-x    5 root     root             0 Nov  8 14:00 soc
-drwxr-xr-x    2 root     root             0 Nov  8 14:00 timer
+-r--r--r--    1 root     root             4 Nov  8 14:07 #address-cells
+-r--r--r--    1 root     root             4 Nov  8 14:07 #size-cells
+drwxr-xr-x    2 root     root             0 Nov  8 14:07 chosen
+drwxr-xr-x    2 root     root             0 Nov  8 14:07 clock-4000000
+-r--r--r--    1 root     root            38 Nov  8 14:07 compatible
+drwxr-xr-x    7 root     root             0 Nov  8 14:07 cpus
+drwxr-xr-x    2 root     root             0 Nov  8 14:07 memory@810000000
+-r--r--r--    1 root     root            26 Nov  8 14:07 model
+-r--r--r--    1 root     root             1 Nov  8 14:07 name
+drwxr-xr-x    2 root     root             0 Nov  8 14:07 psci
+drwxr-xr-x    4 root     root             0 Nov  8 14:07 reserved-memory
+drwxr-xr-x    6 root     root             0 Nov  8 14:07 soc
+drwxr-xr-x    2 root     root             0 Nov  8 14:07 timer
 
 /sys/firmware/devicetree/base/chosen:
--r--r--r--    1 root     root           164 Nov  8 14:00 bootargs
--r--r--r--    1 root     root             4 Nov  8 14:00 linux,uefi-mmap-desc-size
--r--r--r--    1 root     root             4 Nov  8 14:00 linux,uefi-mmap-desc-ver
--r--r--r--    1 root     root             4 Nov  8 14:00 linux,uefi-mmap-size
--r--r--r--    1 root     root             8 Nov  8 14:00 linux,uefi-mmap-start
--r--r--r--    1 root     root             8 Nov  8 14:00 linux,uefi-system-table
--r--r--r--    1 root     root             7 Nov  8 14:00 name
--r--r--r--    1 root     root            17 Nov  8 14:00 stdout-path
--r--r--r--    1 root     root             9 Nov  8 14:00 u-boot,version
+-r--r--r--    1 root     root            94 Nov  8 14:07 bootargs
+-r--r--r--    1 root     root             4 Nov  8 14:07 linux,uefi-mmap-desc-size
+-r--r--r--    1 root     root             4 Nov  8 14:07 linux,uefi-mmap-desc-ver
+-r--r--r--    1 root     root             4 Nov  8 14:07 linux,uefi-mmap-size
+-r--r--r--    1 root     root             8 Nov  8 14:07 linux,uefi-mmap-start
+-r--r--r--    1 root     root             8 Nov  8 14:07 linux,uefi-system-table
+-r--r--r--    1 root     root             7 Nov  8 14:07 name
+-r--r--r--    1 root     root            17 Nov  8 14:07 stdout-path
+-r--r--r--    1 root     root             9 Nov  8 14:07 u-boot,version
 
 /sys/firmware/devicetree/base/clock-4000000:
--r--r--r--    1 root     root             4 Nov  8 14:00 #clock-cells
--r--r--r--    1 root     root             4 Nov  8 14:00 clock-frequency
--r--r--r--    1 root     root            12 Nov  8 14:00 compatible
--r--r--r--    1 root     root            14 Nov  8 14:00 name
--r--r--r--    1 root     root             4 Nov  8 14:00 phandle
+-r--r--r--    1 root     root             4 Nov  8 14:07 #clock-cells
+-r--r--r--    1 root     root             4 Nov  8 14:07 clock-frequency
+-r--r--r--    1 root     root            12 Nov  8 14:07 compatible
+-r--r--r--    1 root     root            14 Nov  8 14:07 name
+-r--r--r--    1 root     root             4 Nov  8 14:07 phandle
 
 /sys/firmware/devicetree/base/cpus:
--r--r--r--    1 root     root             4 Nov  8 14:00 #address-cells
--r--r--r--    1 root     root             4 Nov  8 14:00 #size-cells
-drwxr-xr-x    2 root     root             0 Nov  8 14:00 cpu@0
-drwxr-xr-x    2 root     root             0 Nov  8 14:00 cpu@1
-drwxr-xr-x    2 root     root             0 Nov  8 14:00 cpu@2
-drwxr-xr-x    2 root     root             0 Nov  8 14:00 cpu@3
-drwxr-xr-x    2 root     root             0 Nov  8 14:00 l2-cache
--r--r--r--    1 root     root             5 Nov  8 14:00 name
+-r--r--r--    1 root     root             4 Nov  8 14:07 #address-cells
+-r--r--r--    1 root     root             4 Nov  8 14:07 #size-cells
+drwxr-xr-x    2 root     root             0 Nov  8 14:07 cpu@0
+drwxr-xr-x    2 root     root             0 Nov  8 14:07 cpu@1
+drwxr-xr-x    2 root     root             0 Nov  8 14:07 cpu@2
+drwxr-xr-x    2 root     root             0 Nov  8 14:07 cpu@3
+drwxr-xr-x    2 root     root             0 Nov  8 14:07 l2-cache
+-r--r--r--    1 root     root             5 Nov  8 14:07 name
 
 /sys/firmware/devicetree/base/cpus/cpu@0:
--r--r--r--    1 root     root            15 Nov  8 14:00 compatible
--r--r--r--    1 root     root             4 Nov  8 14:00 device_type
--r--r--r--    1 root     root             5 Nov  8 14:00 enable-method
--r--r--r--    1 root     root             4 Nov  8 14:00 name
--r--r--r--    1 root     root             4 Nov  8 14:00 next-level-cache
--r--r--r--    1 root     root             4 Nov  8 14:00 reg
+-r--r--r--    1 root     root            15 Nov  8 14:07 compatible
+-r--r--r--    1 root     root             4 Nov  8 14:07 device_type
+-r--r--r--    1 root     root             5 Nov  8 14:07 enable-method
+-r--r--r--    1 root     root             4 Nov  8 14:07 name
+-r--r--r--    1 root     root             4 Nov  8 14:07 next-level-cache
+-r--r--r--    1 root     root             4 Nov  8 14:07 reg
 
 /sys/firmware/devicetree/base/cpus/cpu@1:
--r--r--r--    1 root     root            15 Nov  8 14:00 compatible
--r--r--r--    1 root     root             4 Nov  8 14:00 device_type
--r--r--r--    1 root     root             5 Nov  8 14:00 enable-method
--r--r--r--    1 root     root             4 Nov  8 14:00 name
--r--r--r--    1 root     root             4 Nov  8 14:00 next-level-cache
--r--r--r--    1 root     root             4 Nov  8 14:00 reg
+-r--r--r--    1 root     root            15 Nov  8 14:07 compatible
+-r--r--r--    1 root     root             4 Nov  8 14:07 device_type
+-r--r--r--    1 root     root             5 Nov  8 14:07 enable-method
+-r--r--r--    1 root     root             4 Nov  8 14:07 name
+-r--r--r--    1 root     root             4 Nov  8 14:07 next-level-cache
+-r--r--r--    1 root     root             4 Nov  8 14:07 reg
 
 /sys/firmware/devicetree/base/cpus/cpu@2:
--r--r--r--    1 root     root            15 Nov  8 14:00 compatible
--r--r--r--    1 root     root             4 Nov  8 14:00 device_type
--r--r--r--    1 root     root             5 Nov  8 14:00 enable-method
--r--r--r--    1 root     root             4 Nov  8 14:00 name
--r--r--r--    1 root     root             4 Nov  8 14:00 next-level-cache
--r--r--r--    1 root     root             4 Nov  8 14:00 reg
+-r--r--r--    1 root     root            15 Nov  8 14:07 compatible
+-r--r--r--    1 root     root             4 Nov  8 14:07 device_type
+-r--r--r--    1 root     root             5 Nov  8 14:07 enable-method
+-r--r--r--    1 root     root             4 Nov  8 14:07 name
+-r--r--r--    1 root     root             4 Nov  8 14:07 next-level-cache
+-r--r--r--    1 root     root             4 Nov  8 14:07 reg
 
 /sys/firmware/devicetree/base/cpus/cpu@3:
--r--r--r--    1 root     root            15 Nov  8 14:00 compatible
--r--r--r--    1 root     root             4 Nov  8 14:00 device_type
--r--r--r--    1 root     root             5 Nov  8 14:00 enable-method
--r--r--r--    1 root     root             4 Nov  8 14:00 name
--r--r--r--    1 root     root             4 Nov  8 14:00 next-level-cache
--r--r--r--    1 root     root             4 Nov  8 14:00 reg
+-r--r--r--    1 root     root            15 Nov  8 14:07 compatible
+-r--r--r--    1 root     root             4 Nov  8 14:07 device_type
+-r--r--r--    1 root     root             5 Nov  8 14:07 enable-method
+-r--r--r--    1 root     root             4 Nov  8 14:07 name
+-r--r--r--    1 root     root             4 Nov  8 14:07 next-level-cache
+-r--r--r--    1 root     root             4 Nov  8 14:07 reg
 
 /sys/firmware/devicetree/base/cpus/l2-cache:
--r--r--r--    1 root     root             4 Nov  8 14:00 cache-level
--r--r--r--    1 root     root             0 Nov  8 14:00 cache-unified
--r--r--r--    1 root     root             6 Nov  8 14:00 compatible
--r--r--r--    1 root     root             9 Nov  8 14:00 name
--r--r--r--    1 root     root             4 Nov  8 14:00 phandle
+-r--r--r--    1 root     root             4 Nov  8 14:07 cache-level
+-r--r--r--    1 root     root             0 Nov  8 14:07 cache-unified
+-r--r--r--    1 root     root             6 Nov  8 14:07 compatible
+-r--r--r--    1 root     root             9 Nov  8 14:07 name
+-r--r--r--    1 root     root             4 Nov  8 14:07 phandle
 
 /sys/firmware/devicetree/base/memory@810000000:
--r--r--r--    1 root     root             7 Nov  8 14:00 device_type
--r--r--r--    1 root     root             7 Nov  8 14:00 name
--r--r--r--    1 root     root            48 Nov  8 14:00 reg
+-r--r--r--    1 root     root             7 Nov  8 14:07 device_type
+-r--r--r--    1 root     root             7 Nov  8 14:07 name
+-r--r--r--    1 root     root            48 Nov  8 14:07 reg
 
 /sys/firmware/devicetree/base/psci:
--r--r--r--    1 root     root            13 Nov  8 14:00 compatible
--r--r--r--    1 root     root             4 Nov  8 14:00 method
--r--r--r--    1 root     root             5 Nov  8 14:00 name
+-r--r--r--    1 root     root            13 Nov  8 14:07 compatible
+-r--r--r--    1 root     root             4 Nov  8 14:07 method
+-r--r--r--    1 root     root             5 Nov  8 14:07 name
 
 /sys/firmware/devicetree/base/reserved-memory:
--r--r--r--    1 root     root             4 Nov  8 14:00 #address-cells
--r--r--r--    1 root     root             4 Nov  8 14:00 #size-cells
-drwxr-xr-x    2 root     root             0 Nov  8 14:00 mmc0-reserved@5160000
--r--r--r--    1 root     root            16 Nov  8 14:00 name
--r--r--r--    1 root     root             0 Nov  8 14:00 ranges
+-r--r--r--    1 root     root             4 Nov  8 14:07 #address-cells
+-r--r--r--    1 root     root             4 Nov  8 14:07 #size-cells
+drwxr-xr-x    2 root     root             0 Nov  8 14:07 mmc0-reserved@5160000
+drwxr-xr-x    2 root     root             0 Nov  8 14:07 mmc1-reserved@5170000
+-r--r--r--    1 root     root            16 Nov  8 14:07 name
+-r--r--r--    1 root     root             0 Nov  8 14:07 ranges
 
 /sys/firmware/devicetree/base/reserved-memory/mmc0-reserved@5160000:
--r--r--r--    1 root     root            16 Nov  8 14:00 compatible
--r--r--r--    1 root     root            14 Nov  8 14:00 name
--r--r--r--    1 root     root             0 Nov  8 14:00 no-map
--r--r--r--    1 root     root             4 Nov  8 14:00 phandle
--r--r--r--    1 root     root            16 Nov  8 14:00 reg
+-r--r--r--    1 root     root            16 Nov  8 14:07 compatible
+-r--r--r--    1 root     root            14 Nov  8 14:07 name
+-r--r--r--    1 root     root             0 Nov  8 14:07 no-map
+-r--r--r--    1 root     root             4 Nov  8 14:07 phandle
+-r--r--r--    1 root     root            16 Nov  8 14:07 reg
+
+/sys/firmware/devicetree/base/reserved-memory/mmc1-reserved@5170000:
+-r--r--r--    1 root     root            16 Nov  8 14:07 compatible
+-r--r--r--    1 root     root            14 Nov  8 14:07 name
+-r--r--r--    1 root     root             0 Nov  8 14:07 no-map
+-r--r--r--    1 root     root             4 Nov  8 14:07 phandle
+-r--r--r--    1 root     root            16 Nov  8 14:07 reg
 
 /sys/firmware/devicetree/base/soc:
--r--r--r--    1 root     root             4 Nov  8 14:00 #address-cells
--r--r--r--    1 root     root             4 Nov  8 14:00 #size-cells
--r--r--r--    1 root     root            11 Nov  8 14:00 compatible
-drwxr-xr-x    2 root     root             0 Nov  8 14:00 interrupt-controller@32800000
--r--r--r--    1 root     root             4 Nov  8 14:00 interrupt-parent
-drwxr-xr-x    2 root     root             0 Nov  8 14:00 mmc@22200000
--r--r--r--    1 root     root             4 Nov  8 14:00 name
--r--r--r--    1 root     root             0 Nov  8 14:00 ranges
-drwxr-xr-x    2 root     root             0 Nov  8 14:00 serial@20008000
+-r--r--r--    1 root     root             4 Nov  8 14:07 #address-cells
+-r--r--r--    1 root     root             4 Nov  8 14:07 #size-cells
+-r--r--r--    1 root     root            11 Nov  8 14:07 compatible
+drwxr-xr-x    2 root     root             0 Nov  8 14:07 interrupt-controller@32800000
+-r--r--r--    1 root     root             4 Nov  8 14:07 interrupt-parent
+drwxr-xr-x    2 root     root             0 Nov  8 14:07 mmc@22200000
+drwxr-xr-x    2 root     root             0 Nov  8 14:07 mmc@22300000
+-r--r--r--    1 root     root             4 Nov  8 14:07 name
+-r--r--r--    1 root     root             0 Nov  8 14:07 ranges
+drwxr-xr-x    2 root     root             0 Nov  8 14:07 serial@20008000
 
 /sys/firmware/devicetree/base/soc/interrupt-controller@32800000:
--r--r--r--    1 root     root             4 Nov  8 14:00 #address-cells
--r--r--r--    1 root     root             4 Nov  8 14:00 #interrupt-cells
--r--r--r--    1 root     root             4 Nov  8 14:00 #size-cells
--r--r--r--    1 root     root            11 Nov  8 14:00 compatible
--r--r--r--    1 root     root             0 Nov  8 14:00 interrupt-controller
--r--r--r--    1 root     root            12 Nov  8 14:00 interrupts
--r--r--r--    1 root     root            21 Nov  8 14:00 name
--r--r--r--    1 root     root             4 Nov  8 14:00 phandle
--r--r--r--    1 root     root             0 Nov  8 14:00 ranges
--r--r--r--    1 root     root            32 Nov  8 14:00 reg
+-r--r--r--    1 root     root             4 Nov  8 14:07 #address-cells
+-r--r--r--    1 root     root             4 Nov  8 14:07 #interrupt-cells
+-r--r--r--    1 root     root             4 Nov  8 14:07 #size-cells
+-r--r--r--    1 root     root            11 Nov  8 14:07 compatible
+-r--r--r--    1 root     root             0 Nov  8 14:07 interrupt-controller
+-r--r--r--    1 root     root            12 Nov  8 14:07 interrupts
+-r--r--r--    1 root     root            21 Nov  8 14:07 name
+-r--r--r--    1 root     root             4 Nov  8 14:07 phandle
+-r--r--r--    1 root     root             0 Nov  8 14:07 ranges
+-r--r--r--    1 root     root            32 Nov  8 14:07 reg
 
 /sys/firmware/devicetree/base/soc/mmc@22200000:
--r--r--r--    1 root     root             4 Nov  8 14:00 bus-width
--r--r--r--    1 root     root             5 Nov  8 14:00 clock-names
--r--r--r--    1 root     root             4 Nov  8 14:00 clocks
--r--r--r--    1 root     root            16 Nov  8 14:00 compatible
--r--r--r--    1 root     root             0 Nov  8 14:00 dma-coherent
--r--r--r--    1 root     root            12 Nov  8 14:00 interrupts
--r--r--r--    1 root     root             4 Nov  8 14:00 max-frequency
--r--r--r--    1 root     root             4 Nov  8 14:00 memory-region
--r--r--r--    1 root     root             4 Nov  8 14:00 name
--r--r--r--    1 root     root             0 Nov  8 14:00 non-removable
--r--r--r--    1 root     root            32 Nov  8 14:00 reg
--r--r--r--    1 root     root             5 Nov  8 14:00 status
+-r--r--r--    1 root     root             4 Nov  8 14:07 bus-width
+-r--r--r--    1 root     root             5 Nov  8 14:07 clock-names
+-r--r--r--    1 root     root             4 Nov  8 14:07 clocks
+-r--r--r--    1 root     root            16 Nov  8 14:07 compatible
+-r--r--r--    1 root     root             0 Nov  8 14:07 dma-coherent
+-r--r--r--    1 root     root            12 Nov  8 14:07 interrupts
+-r--r--r--    1 root     root             4 Nov  8 14:07 max-frequency
+-r--r--r--    1 root     root             4 Nov  8 14:07 memory-region
+-r--r--r--    1 root     root             4 Nov  8 14:07 name
+-r--r--r--    1 root     root             0 Nov  8 14:07 non-removable
+-r--r--r--    1 root     root            32 Nov  8 14:07 reg
+-r--r--r--    1 root     root             5 Nov  8 14:07 status
+
+/sys/firmware/devicetree/base/soc/mmc@22300000:
+-r--r--r--    1 root     root             4 Nov  8 14:07 bus-width
+-r--r--r--    1 root     root             5 Nov  8 14:07 clock-names
+-r--r--r--    1 root     root             4 Nov  8 14:07 clocks
+-r--r--r--    1 root     root            16 Nov  8 14:07 compatible
+-r--r--r--    1 root     root             0 Nov  8 14:07 dma-coherent
+-r--r--r--    1 root     root            12 Nov  8 14:07 interrupts
+-r--r--r--    1 root     root             4 Nov  8 14:07 max-frequency
+-r--r--r--    1 root     root             4 Nov  8 14:07 memory-region
+-r--r--r--    1 root     root             4 Nov  8 14:07 name
+-r--r--r--    1 root     root             0 Nov  8 14:07 no-1-8-v
+-r--r--r--    1 root     root            32 Nov  8 14:07 reg
+-r--r--r--    1 root     root             5 Nov  8 14:07 status
 
 /sys/firmware/devicetree/base/soc/serial@20008000:
--r--r--r--    1 root     root             4 Nov  8 14:00 clock-frequency
--r--r--r--    1 root     root            17 Nov  8 14:00 compatible
--r--r--r--    1 root     root            12 Nov  8 14:00 interrupts
--r--r--r--    1 root     root             7 Nov  8 14:00 name
--r--r--r--    1 root     root            16 Nov  8 14:00 reg
--r--r--r--    1 root     root             4 Nov  8 14:00 reg-io-width
--r--r--r--    1 root     root             4 Nov  8 14:00 reg-shift
--r--r--r--    1 root     root             5 Nov  8 14:00 status
+-r--r--r--    1 root     root             4 Nov  8 14:07 clock-frequency
+-r--r--r--    1 root     root            17 Nov  8 14:07 compatible
+-r--r--r--    1 root     root            12 Nov  8 14:07 interrupts
+-r--r--r--    1 root     root             7 Nov  8 14:07 name
+-r--r--r--    1 root     root            16 Nov  8 14:07 reg
+-r--r--r--    1 root     root             4 Nov  8 14:07 reg-io-width
+-r--r--r--    1 root     root             4 Nov  8 14:07 reg-shift
+-r--r--r--    1 root     root             5 Nov  8 14:07 status
 
 /sys/firmware/devicetree/base/timer:
--r--r--r--    1 root     root             0 Nov  8 14:00 always-on
--r--r--r--    1 root     root            16 Nov  8 14:00 compatible
--r--r--r--    1 root     root             4 Nov  8 14:00 interrupt-parent
--r--r--r--    1 root     root            48 Nov  8 14:00 interrupts
--r--r--r--    1 root     root             6 Nov  8 14:00 name
+-r--r--r--    1 root     root             0 Nov  8 14:07 always-on
+-r--r--r--    1 root     root            16 Nov  8 14:07 compatible
+-r--r--r--    1 root     root             4 Nov  8 14:07 interrupt-parent
+-r--r--r--    1 root     root            48 Nov  8 14:07 interrupts
+-r--r--r--    1 root     root             6 Nov  8 14:07 name
 
 /sys/firmware/dmi:
 drwxr-xr-x    9 root     root             0 Nov  8 14:00 entries
@@ -173,105 +196,105 @@ drwxr-xr-x    2 root     root             0 Nov  8 14:00 tables
 
 /sys/firmware/dmi/entries:
 drwxr-xr-x    2 root     root             0 Nov  8 14:00 0-0
-drwxr-xr-x    2 root     root             0 Nov  8 14:00 1-0
-drwxr-xr-x    2 root     root             0 Nov  8 14:00 127-0
-drwxr-xr-x    2 root     root             0 Nov  8 14:00 2-0
-drwxr-xr-x    2 root     root             0 Nov  8 14:00 3-0
-drwxr-xr-x    2 root     root             0 Nov  8 14:00 32-0
-drwxr-xr-x    2 root     root             0 Nov  8 14:00 4-0
+drwxr-xr-x    2 root     root             0 Nov  8 14:07 1-0
+drwxr-xr-x    2 root     root             0 Nov  8 14:07 127-0
+drwxr-xr-x    2 root     root             0 Nov  8 14:07 2-0
+drwxr-xr-x    2 root     root             0 Nov  8 14:07 3-0
+drwxr-xr-x    2 root     root             0 Nov  8 14:07 32-0
+drwxr-xr-x    2 root     root             0 Nov  8 14:07 4-0
 
 /sys/firmware/dmi/entries/0-0:
--r--------    1 root     root          4096 Nov  8 14:00 handle
--r--------    1 root     root          4096 Nov  8 14:00 instance
--r--------    1 root     root          4096 Nov  8 14:00 length
--r--------    1 root     root          4096 Nov  8 14:00 position
+-r--------    1 root     root          4096 Nov  8 14:07 handle
+-r--------    1 root     root          4096 Nov  8 14:07 instance
+-r--------    1 root     root          4096 Nov  8 14:07 length
+-r--------    1 root     root          4096 Nov  8 14:07 position
 -r--------    1 root     root             0 Nov  8 14:00 raw
--r--------    1 root     root          4096 Nov  8 14:00 type
+-r--------    1 root     root          4096 Nov  8 14:07 type
 
 /sys/firmware/dmi/entries/1-0:
--r--------    1 root     root          4096 Nov  8 14:00 handle
--r--------    1 root     root          4096 Nov  8 14:00 instance
--r--------    1 root     root          4096 Nov  8 14:00 length
--r--------    1 root     root          4096 Nov  8 14:00 position
--r--------    1 root     root             0 Nov  8 14:00 raw
--r--------    1 root     root          4096 Nov  8 14:00 type
+-r--------    1 root     root          4096 Nov  8 14:07 handle
+-r--------    1 root     root          4096 Nov  8 14:07 instance
+-r--------    1 root     root          4096 Nov  8 14:07 length
+-r--------    1 root     root          4096 Nov  8 14:07 position
+-r--------    1 root     root             0 Nov  8 14:07 raw
+-r--------    1 root     root          4096 Nov  8 14:07 type
 
 /sys/firmware/dmi/entries/127-0:
--r--------    1 root     root          4096 Nov  8 14:00 handle
--r--------    1 root     root          4096 Nov  8 14:00 instance
--r--------    1 root     root          4096 Nov  8 14:00 length
--r--------    1 root     root          4096 Nov  8 14:00 position
--r--------    1 root     root             0 Nov  8 14:00 raw
--r--------    1 root     root          4096 Nov  8 14:00 type
+-r--------    1 root     root          4096 Nov  8 14:07 handle
+-r--------    1 root     root          4096 Nov  8 14:07 instance
+-r--------    1 root     root          4096 Nov  8 14:07 length
+-r--------    1 root     root          4096 Nov  8 14:07 position
+-r--------    1 root     root             0 Nov  8 14:07 raw
+-r--------    1 root     root          4096 Nov  8 14:07 type
 
 /sys/firmware/dmi/entries/2-0:
--r--------    1 root     root          4096 Nov  8 14:00 handle
--r--------    1 root     root          4096 Nov  8 14:00 instance
--r--------    1 root     root          4096 Nov  8 14:00 length
--r--------    1 root     root          4096 Nov  8 14:00 position
--r--------    1 root     root             0 Nov  8 14:00 raw
--r--------    1 root     root          4096 Nov  8 14:00 type
+-r--------    1 root     root          4096 Nov  8 14:07 handle
+-r--------    1 root     root          4096 Nov  8 14:07 instance
+-r--------    1 root     root          4096 Nov  8 14:07 length
+-r--------    1 root     root          4096 Nov  8 14:07 position
+-r--------    1 root     root             0 Nov  8 14:07 raw
+-r--------    1 root     root          4096 Nov  8 14:07 type
 
 /sys/firmware/dmi/entries/3-0:
--r--------    1 root     root          4096 Nov  8 14:00 handle
--r--------    1 root     root          4096 Nov  8 14:00 instance
--r--------    1 root     root          4096 Nov  8 14:00 length
--r--------    1 root     root          4096 Nov  8 14:00 position
--r--------    1 root     root             0 Nov  8 14:00 raw
--r--------    1 root     root          4096 Nov  8 14:00 type
+-r--------    1 root     root          4096 Nov  8 14:07 handle
+-r--------    1 root     root          4096 Nov  8 14:07 instance
+-r--------    1 root     root          4096 Nov  8 14:07 length
+-r--------    1 root     root          4096 Nov  8 14:07 position
+-r--------    1 root     root             0 Nov  8 14:07 raw
+-r--------    1 root     root          4096 Nov  8 14:07 type
 
 /sys/firmware/dmi/entries/32-0:
--r--------    1 root     root          4096 Nov  8 14:00 handle
--r--------    1 root     root          4096 Nov  8 14:00 instance
--r--------    1 root     root          4096 Nov  8 14:00 length
--r--------    1 root     root          4096 Nov  8 14:00 position
--r--------    1 root     root             0 Nov  8 14:00 raw
--r--------    1 root     root          4096 Nov  8 14:00 type
+-r--------    1 root     root          4096 Nov  8 14:07 handle
+-r--------    1 root     root          4096 Nov  8 14:07 instance
+-r--------    1 root     root          4096 Nov  8 14:07 length
+-r--------    1 root     root          4096 Nov  8 14:07 position
+-r--------    1 root     root             0 Nov  8 14:07 raw
+-r--------    1 root     root          4096 Nov  8 14:07 type
 
 /sys/firmware/dmi/entries/4-0:
--r--------    1 root     root          4096 Nov  8 14:00 handle
--r--------    1 root     root          4096 Nov  8 14:00 instance
--r--------    1 root     root          4096 Nov  8 14:00 length
--r--------    1 root     root          4096 Nov  8 14:00 position
--r--------    1 root     root             0 Nov  8 14:00 raw
--r--------    1 root     root          4096 Nov  8 14:00 type
+-r--------    1 root     root          4096 Nov  8 14:07 handle
+-r--------    1 root     root          4096 Nov  8 14:07 instance
+-r--------    1 root     root          4096 Nov  8 14:07 length
+-r--------    1 root     root          4096 Nov  8 14:07 position
+-r--------    1 root     root             0 Nov  8 14:07 raw
+-r--------    1 root     root          4096 Nov  8 14:07 type
 
 /sys/firmware/dmi/tables:
 -r--------    1 root     root           249 Nov  8 14:00 DMI
 -r--------    1 root     root            24 Nov  8 14:00 smbios_entry_point
 
 /sys/firmware/efi:
-drwxr-xr-x    2 root     root             0 Nov  8 14:00 efivars
-drwxr-xr-x    3 root     root             0 Nov  8 14:00 esrt
--r--r--r--    1 root     root          4096 Nov  8 14:00 fw_platform_size
--r--------    1 root     root          4096 Nov  8 14:00 systab
+drwxr-xr-x    2 root     root             0 Nov  8 14:07 efivars
+drwxr-xr-x    3 root     root             0 Nov  8 14:07 esrt
+-r--r--r--    1 root     root          4096 Nov  8 14:07 fw_platform_size
+-r--------    1 root     root          4096 Nov  8 14:07 systab
 
 /sys/firmware/efi/efivars:
--rw-r--r--    1 root     root             5 Nov  8 14:00 AuditMode-8be4df61-93ca-11d2-aa0d-00e098032b8c
--rw-r--r--    1 root     root             5 Nov  8 14:00 DeployedMode-8be4df61-93ca-11d2-aa0d-00e098032b8c
--rw-r--r--    1 root     root            12 Nov  8 14:00 ExitBootServicesTestVariable-f6fab04f-acaf-4af3-b9fa-dcf97fb4426f
--rw-r--r--    1 root     root            12 Nov  8 14:00 OsIndicationsSupported-8be4df61-93ca-11d2-aa0d-00e098032b8c
--rw-r--r--    1 root     root            10 Nov  8 14:00 PlatformLang-8be4df61-93ca-11d2-aa0d-00e098032b8c
--rw-r--r--    1 root     root            10 Nov  8 14:00 PlatformLangCodes-8be4df61-93ca-11d2-aa0d-00e098032b8c
--rw-r--r--    1 root     root             5 Nov  8 14:00 SecureBoot-8be4df61-93ca-11d2-aa0d-00e098032b8c
--rw-r--r--    1 root     root             5 Nov  8 14:00 SetupMode-8be4df61-93ca-11d2-aa0d-00e098032b8c
--rw-r--r--    1 root     root            36 Nov  8 14:00 SignatureSupport-8be4df61-93ca-11d2-aa0d-00e098032b8c
--rw-r--r--    1 root     root             5 Nov  8 14:00 VendorKeys-8be4df61-93ca-11d2-aa0d-00e098032b8c
+-rw-r--r--    1 root     root             5 Nov  8 14:07 AuditMode-8be4df61-93ca-11d2-aa0d-00e098032b8c
+-rw-r--r--    1 root     root             5 Nov  8 14:07 DeployedMode-8be4df61-93ca-11d2-aa0d-00e098032b8c
+-rw-r--r--    1 root     root            12 Nov  8 14:07 ExitBootServicesTestVariable-f6fab04f-acaf-4af3-b9fa-dcf97fb4426f
+-rw-r--r--    1 root     root            12 Nov  8 14:07 OsIndicationsSupported-8be4df61-93ca-11d2-aa0d-00e098032b8c
+-rw-r--r--    1 root     root            10 Nov  8 14:07 PlatformLang-8be4df61-93ca-11d2-aa0d-00e098032b8c
+-rw-r--r--    1 root     root            10 Nov  8 14:07 PlatformLangCodes-8be4df61-93ca-11d2-aa0d-00e098032b8c
+-rw-r--r--    1 root     root             5 Nov  8 14:07 SecureBoot-8be4df61-93ca-11d2-aa0d-00e098032b8c
+-rw-r--r--    1 root     root             5 Nov  8 14:07 SetupMode-8be4df61-93ca-11d2-aa0d-00e098032b8c
+-rw-r--r--    1 root     root            36 Nov  8 14:07 SignatureSupport-8be4df61-93ca-11d2-aa0d-00e098032b8c
+-rw-r--r--    1 root     root             5 Nov  8 14:07 VendorKeys-8be4df61-93ca-11d2-aa0d-00e098032b8c
 
 /sys/firmware/efi/esrt:
-drwxr-xr-x    3 root     root             0 Nov  8 14:00 entries
--r--------    1 root     root          4096 Nov  8 14:00 fw_resource_count
--r--------    1 root     root          4096 Nov  8 14:00 fw_resource_count_max
--r--------    1 root     root          4096 Nov  8 14:00 fw_resource_version
+drwxr-xr-x    3 root     root             0 Nov  8 14:07 entries
+-r--------    1 root     root          4096 Nov  8 14:07 fw_resource_count
+-r--------    1 root     root          4096 Nov  8 14:07 fw_resource_count_max
+-r--------    1 root     root          4096 Nov  8 14:07 fw_resource_version
 
 /sys/firmware/efi/esrt/entries:
-drwxr-xr-x    2 root     root             0 Nov  8 14:00 entry0
+drwxr-xr-x    2 root     root             0 Nov  8 14:07 entry0
 
 /sys/firmware/efi/esrt/entries/entry0:
--r--------    1 root     root          4096 Nov  8 14:00 capsule_flags
--r--------    1 root     root          4096 Nov  8 14:00 fw_class
--r--------    1 root     root          4096 Nov  8 14:00 fw_type
--r--------    1 root     root          4096 Nov  8 14:00 fw_version
--r--------    1 root     root          4096 Nov  8 14:00 last_attempt_status
--r--------    1 root     root          4096 Nov  8 14:00 last_attempt_version
--r--------    1 root     root          4096 Nov  8 14:00 lowest_supported_fw_version
+-r--------    1 root     root          4096 Nov  8 14:07 capsule_flags
+-r--------    1 root     root          4096 Nov  8 14:07 fw_class
+-r--------    1 root     root          4096 Nov  8 14:07 fw_type
+-r--------    1 root     root          4096 Nov  8 14:07 fw_version
+-r--------    1 root     root          4096 Nov  8 14:07 last_attempt_status
+-r--------    1 root     root          4096 Nov  8 14:07 last_attempt_version
+-r--------    1 root     root          4096 Nov  8 14:07 lowest_supported_fw_version

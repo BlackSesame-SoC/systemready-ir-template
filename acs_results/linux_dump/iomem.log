@@ -1,32 +1,34 @@
-05160000-0516ffff : reserved
+05160000-0517ffff : reserved
 20008000-2000801f : serial
 22200000-22200fff : 22200000.mmc mmc@22200000
+22300000-22300fff : 22300000.mmc mmc@22300000
 23006000-23006fff : 22200000.mmc mmc@22200000
+23007000-23007fff : 22300000.mmc mmc@22300000
 32800000-3280ffff : GICD
 32880000-3297ffff : GICR
-8c0000000-9be6c3fff : System RAM
+8c0000000-9be6adfff : System RAM
   8c7f00000-8c7f03fff : reserved
-  979020000-979020fff : reserved
-  97922b000-97922bfff : reserved
-  97922e000-97922efff : reserved
-  979240000-97af6ffff : Kernel code
-  97af70000-97ba2ffff : reserved
-  97ba30000-97bf9ffff : Kernel data
+  979010000-979010fff : reserved
+  97921a000-97921afff : reserved
+  97921d000-97921dfff : reserved
+  979230000-97af5ffff : Kernel code
+  97af60000-97ba1ffff : reserved
+  97ba20000-97bf8ffff : Kernel data
   9ba200000-9be3fffff : reserved
-  9be5df000-9be5e0fff : reserved
-9be6c4000-9be6c4fff : reserved
-9be6c5000-9be6c7fff : System RAM
-  9be6c6000-9be6c6fff : reserved
-9be6c8000-9be6c8fff : reserved
-9be6c9000-9be6cafff : System RAM
-9be6cb000-9be6d0fff : reserved
-9be6d1000-9bfeeffff : System RAM
-  9bf156000-9bf756fff : reserved
-  9bf757000-9bf7cefff : reserved
-  9bf7d1000-9bf7d2fff : reserved
-  9bf7d3000-9bf7d3fff : reserved
-  9bf7d4000-9bf7e8fff : reserved
-  9bf7e9000-9bf7ebfff : reserved
+  9be5c9000-9be5cafff : reserved
+9be6ae000-9be6aefff : reserved
+9be6af000-9be6b1fff : System RAM
+  9be6b0000-9be6b0fff : reserved
+9be6b2000-9be6b2fff : reserved
+9be6b3000-9be6b4fff : System RAM
+9be6b5000-9be6bafff : reserved
+9be6bb000-9bfeeffff : System RAM
+  9bf155000-9bf755fff : reserved
+  9bf756000-9bf7cdfff : reserved
+  9bf7d0000-9bf7d1fff : reserved
+  9bf7d2000-9bf7d2fff : reserved
+  9bf7d3000-9bf7e7fff : reserved
+  9bf7e8000-9bf7ebfff : reserved
   9bf7ec000-9bfeeffff : reserved
 9bfef0000-9bfefffff : reserved
 9bff00000-9bfffffff : System RAM

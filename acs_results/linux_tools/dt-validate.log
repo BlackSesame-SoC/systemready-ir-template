@@ -4,5 +4,6 @@ dtschema version: 2022.9
 /home/root/fdt/fdt:0:0: /: failed to match any schema with compatible: ['bst,c1200-cdcu1.0-adas-4c2g', 'bst,c1200']
 /home/root/fdt/fdt:0:0: /: failed to match any schema with compatible: ['bst,c1200-cdcu1.0-adas-4c2g', 'bst,c1200']
 /home/root/fdt/fdt:0:0: /soc/mmc@22200000: failed to match any schema with compatible: ['bst,c1200-sdhci']
+/home/root/fdt/fdt:0:0: /soc/mmc@22300000: failed to match any schema with compatible: ['bst,c1200-sdhci']
 /home/root/fdt/fdt: chosen: 'linux,uefi-mmap-desc-size', 'linux,uefi-mmap-desc-ver', 'linux,uefi-mmap-size', 'linux,uefi-mmap-start', 'linux,uefi-system-table' do not match any of the regexes: '^framebuffer', 'pinctrl-[0-9]+'
 	From schema: /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/recipe-sysroot-native/usr/lib/python3.10/site-packages/dtschema/schemas/chosen.yaml

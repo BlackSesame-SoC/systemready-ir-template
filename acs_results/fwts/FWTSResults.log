@@ -7,7 +7,7 @@ Some of this work - Copyright (c) 2010 - 2021, Canonical.
 Some of this work - Copyright (c) 2016 - 2021, IBM.
 Some of this work - Copyright (c) 2017 - 2021, ARM Ltd.
 
-This test run on 08/11/22 at 14:00:29 on host Linux generic-arm64
+This test run on 08/11/22 at 14:07:18 on host Linux generic-arm64
 6.0.0-yocto-standard #1 SMP PREEMPT Sun Oct 2 21:09:07 UTC 2022 aarch64.
 
 Command: "fwts --ebbr -r /mnt/acs_results/fwts/FWTSResults.log uefivarinfo esrt

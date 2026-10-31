@@ -3,7 +3,7 @@ Getting SMBIOS data from sysfs.
 SMBIOS 3.7.0 present.
 # SMBIOS implementations newer than version 3.5.0 are not
 # fully supported by this version of dmidecode.
-Table at 0x9BE6C4020.
+Table at 0x9BE6AE020.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information

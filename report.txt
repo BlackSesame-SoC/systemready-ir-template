@@ -13,11 +13,11 @@ System information
 - SoC:C1296-cdcu1.0
 - FW version:Mainline U-Boot firmware plus patches 
              U-Boot 2022.07
-- Memory:
-- Storage devices / disks: eMMC
+- Memory:4GB
+- Storage devices / disks: eMMC/SD
 - Network controllers:
 - Total number of network controllers: 0
-- Other Hardware information:
+- Other Hardware information: 4xA78 Core
 
 Test logs and results
 ---------------------
