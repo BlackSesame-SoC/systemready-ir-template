@@ -18,3 +18,11 @@ For SystemReady IR
 
 (*): Booting a live distro is informative only for certification, except if it
      can be used to install the OS.
+
+
+
+https://dl.fedoraproject.org/pub/fedora/linux/development/rawhide/Server/aarch64/iso/Fedora-Server-dvd-aarch64-Rawhide-20261027.n.0.iso
+https://cdimage.ubuntu.com/ubuntu/releases/26.10/release/ubuntu-26.10-live-server-arm64.iso
+https://mirrors.nju.edu.cn/opensuse/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-DVD-aarch64-Snapshot20261020-Media.iso
+
+
