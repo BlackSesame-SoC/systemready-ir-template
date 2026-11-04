@@ -1,0 +1,278 @@
+root@generic-arm64:~#                                                                                                                                                                                           
+root@generic-arm64:~#                                                                                                                                                                                           
+root@generic-arm64:~# warning: phy_calibration=0xffffffff 
+warning: phy_calibration=0xffffffff 
+
+BL2-NOTICE  :BL2: Built : 00:03:05, Nov  6 2025
+Hit ctrl+x to stop autoboot: 0
+BL2-NOTICE  :BL2: Booting BL31 [3733868]
+host->align_buffer:0000000005170000
+host->align_buffer:0000000005170000
+dwmmc0@22200000: 0, dwmmc1@22300000: 1
+Net:   
+Warning: xgmac@32400000 MAC addresses don't match:
+Address in ROM is               ff:ff:ff:ff:ff:ff
+Address in environment is       76:96:98:5c:7a:41
+eth0: xgmac@32400000
+
+
+U-Boot 2022.07+ (Nov 03 2026 - 21:15:14 +0800)BST C1200 ADAS UPdate
+
+Autoboot in 3 seconds, hit ctrl+c to stop
+uhs_en:0
+trying mode HS200 (200MHz) width 8 (at 200 MHz)
+tuning best:20 fffff
+switch to partitions #0, OK
+mmc0(part 0) is current device
+uhs_en:0
+Card did not respond to voltage select! : -110
+Scanning for bootflows in all bootdevs
+Seq  Method       State   Uclass    Part  Name                      Filename
+---  -----------  ------  --------  ----  ------------------------  ----------------
+Scanning bootdev 'dwmmc0@22200000.bootdev':
+part_get_info_efi: Invalid Argument(s)
+part_get_info_efi: Invalid Argument(s)
+EFI bootflow: using embedded UEFI FDT (2991 bytes)
+  0  efi          ready   mmc          1  dwmmc0@22200000.bootdev.p efi/boot/bootaa64.efi
+** Booting bootflow 'dwmmc0@22200000.bootdev.part_1' with efi
+Booting /efi\boot\bootaa64.efi
+Welcome to GRUB!
+
+error: no such device: ((hd0,gpt1)/efi/boot)/EFI/BOOT/grub.cfg.
+error: serial port `com0' isn't found.
+                                                                                                                                                                                                                
+                                                                                             GNU GRUB  version 2.06                                                                                             
+                                                                                                                                                                                                                
+ ┌────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐ 
+ │ Linux Boot                                                                                                                                                                                                 │ 
+ │*bbr/bsa                                                                                                                                                                                                    │ 
+ │ SCT for Security Interface Extension (optional)                                                                                                                                                            │ 
+ │ Linux Boot for Security Interface Extension (optional)                                                                                                                                                     │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ │                                                                                                                                                                                                            │ 
+ └────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘ 
+                                                                                                                                                                                                                
+      Use the ▲ and ▼ keys to select which entry is highlighted.                                                                                                                                                
+      Press enter to boot the selected OS, `e' to edit the commands before booting or `c' for a command-line.                                                                                                   
+                                                                                                                                                                                                                
+                                                                                                                                                                                                                
+/EndEntire                                                                                                                                                                                                      
+file path: /HardwareVendor(e61d73b9-a384-4acc-aeab-82e828f3628b)[0: ]/UnknownMessaging(1d)/UnknownMessaging(1d)/HD(1,800,32000,13b49fad95986f4e,2,2)/File(\EFI\BOOT)/File(Shell.efi)/EndEntire                  
+UEFI Interactive Shell v2.2                                                                                                                                                                                     
+EDK II                                                                                                                                                                                                          
+UEFI v2.90 (Das U-Boot, 0x20220700)                                                                                                                                                                             
+Mapping table                                                                                                                                                                                                   
+      FS0: Alias(s):HD0b:;BLK1:                                                                                                                                                                                 
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(1,GPT,ad9fb413-9895-4e6f-afdf-151f73f95331,0x800,0x32000)                                                                             
+      FS1: Alias(s):HD0c:;BLK2:                                                                                                                                                                                 
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(2,GPT,4491cc92-efd8-49c5-b6d6-79e30947620c,0x32800,0xcf2f0)                                                                           
+      FS2: Alias(s):HD0d:;BLK3:                                                                                                                                                                                 
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(3,GPT,90489a78-a00e-4df4-9728-27a0308efe12,0x102000,0x19000)                                                                          
+     BLK0: Alias(s):                                                                                                                                                                                            
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)                                                                                                                                          
+No SimpleTextInputEx was found. CTRL-based features are not usable.                                                                                                                                             
+No SimpleTextInputEx was found. CTRL-based features are not usable.                                                                                                                                             
+Press ESC in 5 seconds to skip startup.nsh or any other key to continue.                                                                                                                                        
+Shell> FS0:                                                                                                                                                                                                     
+FS0:\> cd EFI\BOOT\app                                                                                                                                                                                          
+FS0:\EFI\BOOT\app\> ls                                                                                                                                                                                          
+Directory of: FS0:\EFI\BOOT\app\                                                                                                                                                                                
+08/05/2011  23:00 <DIR>             0  .                                                                                                                                                                        
+08/05/2011  23:00 <DIR>             0  ..                                                                                                                                                                       
+08/05/2011  23:00              99,840  CapsuleApp.efi                                                                                                                                                           
+          1 File(s)      99,840 bytes                                                                                                                                                                           
+          2 Dir(s)                                                                                                                                                                                              
+FS0:\EFI\BOOT\app\> cd ..                                                                                                                                                                                       
+FS0:\EFI\BOOT\> ks                                                                                                                                                                                              
+'ks' is not recognized as an internal or external command, operable program, or script file.                                                                                                                    
+FS0:\EFI\BOOT\> ls                                                                                                                                                                                              
+Directory of: FS0:\EFI\BOOT\                                                                                                                                                                                    
+08/05/2011  23:00 <DIR>             0  .                                                                                                                                                                        
+08/05/2011  23:00 <DIR>             0  ..                                                                                                                                                                       
+08/05/2011  23:00 <DIR>             0  app                                                                                                                                                                      
+08/05/2011  23:00 <DIR>             0  bbr                                                                                                                                                                      
+08/05/2011  23:00             906,752  bootaa64.efi                                                                                                                                                             
+08/05/2011  23:00 <DIR>             0  bsa                                                                                                                                                                      
+08/05/2011  23:00 <DIR>             0  debug                                                                                                                                                                    
+08/05/2011  23:00                 548  grub.cfg                                                                                                                                                                 
+08/05/2011  23:00             894,464  Shell.efi                                                                                                                                                                
+08/05/2011  23:00               2,518  sie_startup.nsh                                                                                                                                                          
+08/05/2011  23:00               3,753  startup.nsh                                                                                                                                                              
+          5 File(s)   1,808,035 bytes                                                                                                                                                                           
+          6 Dir(s)                                                                                                                                                                                              
+FS0:\EFI\BOOT\> cd bsa
+FS0:\EFI\BOOT\bsa\> bsa.nsh
+FS0:\EFI\BOOT\bsa\> echo -off
+BSA ACS is already run
+FS2:\acs_results\uefi\> BsaDevTree.dtbcd 
+'BsaDevTree.dtbcd' is not recognized as an internal or external command, operable program, or script file.
+FS2:\acs_results\uefi\> cd ../..
+FS2:\> 
+FS2:\> 
+FS2:\> FS0: 
+FS0:\EFI\BOOT\bsa\> 
+FS0:\EFI\BOOT\bsa\> 
+FS0:\EFI\BOOT\bsa\> Bsa.efi
+
+
+ BSA Architecture Compliance Suite
+          Version 1.0.4
+
+ Starting tests with print level :  3
+
+
+ Creating Platform Information Tables
+ PE_INFO: Number of PE detected       :    4 
+  GIC CPUIF not present
+ GIC INFO: GIC version                :    v3 
+ GIC_INFO: Number of GICD             :    1 
+ GIC_INFO: Number of GICR RD          :    1 
+ GIC_INFO: Number of ITS              :    0 
+  MEM timer node offset not found 
+ TIMER_INFO: Number of system timers  :    0 
+ WATCHDOG_INFO: Number of Watchdogs   :    0 
+ PCIE_INFO: Number of ECAM regions    :    0 
+ SMMU_INFO: Number of SMMU CTRL       :    0 
+ Peripheral: Num of USB controllers   :    0 
+ Peripheral: Num of SATA controllers  :    0 
+ Peripheral: Num of UART controllers  :    0 
+
+      ***  Starting PE tests ***  
+Operating System View:
+   1 : Check Arch symmetry across PE              : Result:  PASS 
+   2 : Check for number of PE                     : Result:  PASS 
+   3 : Check for AdvSIMD and FP support           : Result:  PASS 
+   4 : Check PE 4KB Granule Support               : Result:  PASS 
+   6 : Check Cryptographic extensions             : Result:  PASS 
+   7 : Check Little Endian support                : Result:  PASS 
+   8 : Check EL1 and EL0 implementation           : Result:  PASS 
+   9 : Check for PMU and PMU counters             : Result:  PASS 
+  10 : Check PMU Overflow signal                  : Result:  PASS 
+  11 : Check num of Breakpoints and type          : Result:  PASS 
+  12 : Check Synchronous Watchpoints              : Result:  PASS 
+  13 : Check CRC32 instruction support            : Result:  PASS 
+  14 : Check PAuth if implementation              : Result:  PASS 
+
+Hypervisor View:
+  51 : Check EL2 implementation                   : Result:  PASS 
+  52 : Check Stage 2 4KB Granule Support          : Result:  PASS 
+  53 : Check Stage2 and Stage1 Granule match      : Result:  PASS 
+  54 : Check for PMU counters                     : Result:  PASS 
+  55 : Check VMID breakpoint number               : Result:  PASS 
+
+Platform Security View:
+  76 : Check EL3 implementation                   : Result:  PASS 
+
+      All PE tests passed.
+
+      ***  Starting Memory Map tests ***  
+Operating System View:
+ 102 : Mem Access Response in finite time         : Result:  PASS 
+ 103 : PE must access all NS addr space           : Result:  PASS 
+
+      All Memory tests passed.
+
+      ***  Starting GIC tests ***  
+Operating System View:
+ 201 : Check GIC version                          : Result:  PASS 
+ 203 : If PCIe, GICv3 then ITS, LPI          
+       Checkpoint --  1                           : Result:  SKIPPED 
+ 204 : Check GICv3 Security States                : Result:  PASS 
+ 205 : Non-secure SGIs are implemented            : Result:  PASS 
+ 206 : Check PPI Assignments for OS               : Result:  PASS 
+
+Hypervisor View:
+ 226 : Check NS EL2-Virt timer PPI Assignment
+       Failed on PE -    0
+       Checkpoint --  2                           : Result:  FAIL 
+ 227 : Check NS EL2-Phy timer PPI Assignment      : Result:  PASS 
+ 228 : Check GIC Maintenance PPI Assignment       : Result:  PASS 
+
+      One or more GIC tests failed or were skipped.
+
+      *** Starting System MMU tests ***  
+       No SMMU Controller Found, Skipping SMMU tests...
+
+      *** Starting Timer tests ***  
+Operating System View:
+ 401 : Check Counter Frequency                    : Result:  PASS 
+ 402 : SYS Timer if PE Timer not ON               : Result:  PASS 
+ 403 : Memory mapped timer check             
+       Checkpoint --  1                           : Result:  SKIPPED 
+ 404 : Generate Mem Mapped SYS Timer Intr    
+       Checkpoint --  1                           : Result:  SKIPPED 
+ 405 : Restore PE timer on PE wake up        
+       Checkpoint --  1                           : Result:  SKIPPED 
+
+      One or more Timer tests failed or were skipped.
+
+      *** Starting Wakeup semantic tests ***  
+Operating System View:
+ 501 : Wake from EL1 PHY Timer Int                : Result:  PASS 
+ 502 : Wake from EL1 VIR Timer Int                : Result:  PASS 
+ 503 : Wake from EL2 PHY Timer Int                : Result:  PASS 
+ 504 : Wake from Watchdog WS0 Int            
+       Checkpoint --  1                           : Result:  SKIPPED 
+ 505 : Wake from System Timer Int            
+       Checkpoint --  1                           : Result:  SKIPPED 
+
+      One or more Wakeup tests failed or were skipped.
+
+      *** Starting Peripheral tests ***  
+Operating System View:
+ 601 : USB CTRL Interface                    
+       Checkpoint --  1                           : Result:  SKIPPED 
+ 602 : Check SATA CTRL Interface             
+       Checkpoint --  1                           : Result:  SKIPPED 
+ 603 : Check Arm BSA UART register offsets   
+       No UART defined by Platform      
+       Failed on PE -    0
+       Checkpoint --  1                           : Result:  FAIL 
+ 606 : 16550 compatible UART                 
+       No UART defined by Platform      
+       Failed on PE -    0
+       Checkpoint --  1                           : Result:  FAIL 
+
+      One or more Peripheral tests failed or were skipped.
+
+      *** Starting Watchdog tests ***  
+       No Watchdog Found, Skipping Watchdog tests...
+
+      *** Starting PCIe tests ***  
+      *** No ECAM region found, Skipping PCIE tests *** 
+
+      *** Starting PCIe Exerciser tests ***         No ECAMs discovered             
+        No ECAMs discovered             
+ 
+     Create BDF Table Failed, Skipping Exerciser tests...
+
+     ------------------------------------------------------- 
+     Total Tests run  =   43  Tests Passed  =   32  Tests Failed =    3
+     ------------------------------------------------------- 
+
+      *** BSA tests complete. Reset the system. *** 

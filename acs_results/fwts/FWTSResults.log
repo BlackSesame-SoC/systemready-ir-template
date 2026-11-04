@@ -7,7 +7,7 @@ Some of this work - Copyright (c) 2010 - 2021, Canonical.
 Some of this work - Copyright (c) 2016 - 2021, IBM.
 Some of this work - Copyright (c) 2017 - 2021, ARM Ltd.
 
-This test run on 08/11/22 at 14:07:18 on host Linux generic-arm64
+This test run on 08/11/22 at 14:07:25 on host Linux generic-arm64
 6.0.0-yocto-standard #1 SMP PREEMPT Sun Oct 2 21:09:07 UTC 2022 aarch64.
 
 Command: "fwts --ebbr -r /mnt/acs_results/fwts/FWTSResults.log uefivarinfo esrt
@@ -41,9 +41,12 @@ PASSED: Test 2, The fw_class in the ESRT are not default u-boot guids 1
 uefibootpath: Sanity check for UEFI Boot Path Boot####.
 --------------------------------------------------------------------------------
 Test 1 of 1: Test UEFI Boot Path Boot####.
+Name: Boot0000
+Info: UEFI Capsule On Disk
+PASSED: Test 1, Check bootpath Boot0000 test passed.
 
 ================================================================================
-0 passed, 0 failed, 0 warning, 0 aborted, 0 skipped, 0 info only.
+1 passed, 0 failed, 0 warning, 0 aborted, 0 skipped, 0 info only.
 ================================================================================
 
 dt_base: Base device tree validity check
@@ -55,10 +58,12 @@ Test 2 of 3: Check device tree baseline validity
 PASSED: Test 2, Device tree data valid
 
 Test 3 of 3: Check device tree warnings
-PASSED: Test 3, No warnings from dtc
+WARNING: Test 3, Some warnings from dtc. Run command "dtc -I fs -O dts -o my.dts
+/sys/firmware/devicetree/base" for further review: /dev/null: Warning
+(simple_bus_reg): /soc/arm_pmu: missing or empty reg/ranges property 
 
 ================================================================================
-3 passed, 0 failed, 0 warning, 0 aborted, 0 skipped, 0 info only.
+2 passed, 0 failed, 1 warning, 0 aborted, 0 skipped, 0 info only.
 ================================================================================
 
 uefirtmisc: UEFI miscellaneous runtime service interface tests.
@@ -314,7 +319,7 @@ passed.
 ================================================================================
 
 
-12 passed, 0 failed, 0 warning, 0 aborted, 54 skipped, 0 info only.
+12 passed, 0 failed, 1 warning, 0 aborted, 54 skipped, 0 info only.
 
 Test Failure Summary
 ================================================================================
@@ -331,13 +336,13 @@ Other failures: NONE
 
 Test           |Pass |Fail |Abort|Warn |Skip |Info |
 ---------------+-----+-----+-----+-----+-----+-----+
-dt_base        |    3|     |     |     |     |     |
+dt_base        |    2|     |     |    1|     |     |
 esrt           |    2|     |     |     |     |     |
-uefibootpath   |     |     |     |     |     |     |
+uefibootpath   |    1|     |     |     |     |     |
 uefirtmisc     |    1|     |     |     |    8|     |
 uefirttime     |    4|     |     |     |   35|     |
 uefirtvariable |    2|     |     |     |   10|     |
 uefivarinfo    |     |     |     |     |    1|     |
 ---------------+-----+-----+-----+-----+-----+-----+
-Total:         |   12|    0|    0|    0|   54|    0|
+Total:         |   12|    0|    0|    1|   54|    0|
 ---------------+-----+-----+-----+-----+-----+-----+

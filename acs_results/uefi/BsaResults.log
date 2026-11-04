@@ -30,17 +30,13 @@ Operating System View:
    7 : Check Little Endian support                : Result:  PASS 
    8 : Check EL1 and EL0 implementation           : Result:  PASS 
    9 : Check for PMU and PMU counters             : Result:  PASS 
-  10 : Check PMU Overflow signal             
-       Invalid Interrupt ID number 0x5C0054 
-       GIC Install Handler Failed...
-       Failed on PE -    0
-       Checkpoint --  1                           : Result:  FAIL 
+  10 : Check PMU Overflow signal                  : Result:  PASS 
   11 : Check num of Breakpoints and type          : Result:  PASS 
   12 : Check Synchronous Watchpoints              : Result:  PASS 
   13 : Check CRC32 instruction support            : Result:  PASS 
   14 : Check PAuth if implementation              : Result:  PASS 
 
-      One or more PE tests failed or were skipped.
+      All PE tests passed.
 
       ***  Starting Memory Map tests ***  
 Operating System View:
@@ -115,7 +111,7 @@ Operating System View:
        USER Override - Skipping all Exerciser tests 
 
      ------------------------------------------------------- 
-     Total Tests run  =   34  Tests Passed  =   23  Tests Failed =    3
+     Total Tests run  =   34  Tests Passed  =   24  Tests Failed =    2
      ------------------------------------------------------- 
 
       *** BSA tests complete. Reset the system. *** 

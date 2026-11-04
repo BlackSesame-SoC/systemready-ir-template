@@ -1,10 +1,13 @@
 + DTC
+/dev/null: Warning (simple_bus_reg): /soc/arm_pmu: missing or empty reg/ranges property
 + DT-VALIDATE
+/home/bst/systemready-ir-template/acs_results/uefi/BsaDevTree.dtb: soc (simple-bus): arm_pmu: 'ranges' is a required property
+	from schema $id: http://devicetree.org/schemas/simple-bus.yaml
 + END
 + meta-data
 + ---------
 + command-line: ./check-sr-results.py --dir /home/bst/systemready-ir-template/ --all --force-regen
-+ date: Tue Nov  3 06:05:45 2026 UTC
++ date: Wed Nov  4 21:54:30 2026 UTC
 + dt-validate-version: 2026.9
 + dtc-version: DTC 1.6.1
 + git-commit: ir2.0-2024.04-26-gfea6d1b7a28d-dirty

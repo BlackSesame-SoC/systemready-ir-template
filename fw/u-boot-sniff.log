@@ -1,39 +1,61 @@
-warning: phy_calibration=0xffffffff 
+root@generic-arm64:~# 
+root@generic-arm64:~# 
+root@generic-arm64:~# 
+root@generic-arm64:~# 
+root@generic-arm64:~# 
+root@generic-arm64:~# 
+root@generic-arm64:~# 
+root@generic-arm64:~# 
+root@generic-arm64:~# 
+root@generic-arm64:~# 
+root@generic-arm64:~# 
+root@generic-arm64:~# 
+root@generic-arm64:~# 
+root@generic-arm64:~# 
+root@generic-arm64:~# 
+root@generic-arm64:~# 
+root@generic-arm64:~# 
+root@generic-arm64:~# 
+root@generic-arm64:~# 
+root@generic-arm64:~# 
+root@generic-arm64:~# 
+root@generic-arm64:~# 
+root@generic-arm64:~# 
+root@generic-arm64:~# 
+root@generic-arm64:~# sync
+root@generic-arm64:~# 
+root@generic-arm64:~# 
+root@generic-arm64:~# 
+root@generic-arm64:~# 
+root@generic-arm64:~# 
+root@generic-arm64:~# 
+root@generic-arm64:~# 
+root@generic-arm64:~# 
+root@generic-arm64:~# 
+root@generic-arm64:~# 
+root@generic-arm64:~# 
+root@generic-arm64:~# 
+root@generic-arm64:~# 
+root@generic-arm64:~# 
+root@generic-arm64:~# 
+root@generic-arm64:~# 
+root@generic-arm64:~# warning: phy_calibration=0xffffffff 
 warning: phy_calibration=0xffffffff 
 
 BL2-NOTICE  :BL2: Built : 00:03:05, Nov  6 2025
 Hit ctrl+x to stop autoboot: 0
-BL2-NOTICE  :BL2: Booting BL31 [3679937]
+BL2-NOTICE  :BL2: Booting BL31 [3730228]
 host->align_buffer:0000000005170000
 host->align_buffer:0000000005170000
 dwmmc0@22200000: 0, dwmmc1@22300000: 1
 Net:   
 Warning: xgmac@32400000 MAC addresses don't match:
 Address in ROM is               ff:ff:ff:ff:ff:ff
-Address in environment is       4a:57:de:60:22:5a
+Address in environment is       76:96:98:5c:7a:41
 eth0: xgmac@32400000
 
 
-U-Boot 2022.07+ (Oct 29 2026 - 19:28:43 +0800)BST C1200 ADAS
-
-Autoboot in 3 seconds, hit ctrl+c to stop
-u-boot> warning: phy_calibration=0xffffffff 
-warning: phy_calibration=0xffffffff 
-
-BL2-NOTICE  :BL2: Built : 00:03:05, Nov  6 2025
-Hit ctrl+x to stop autoboot: 0
-BL2-NOTICE  :BL2: Booting BL31 [3679715]
-host->align_buffer:0000000005170000
-host->align_buffer:0000000005170000
-dwmmc0@22200000: 0, dwmmc1@22300000: 1
-Net:   
-Warning: xgmac@32400000 MAC addresses don't match:
-Address in ROM is               ff:ff:ff:ff:ff:ff
-Address in environment is       4a:57:de:60:22:5a
-eth0: xgmac@32400000
-
-
-U-Boot 2022.07+ (Oct 29 2026 - 19:28:43 +0800)BST C1200 ADAS
+U-Boot 2022.07+ (Nov 03 2026 - 19:40:20 +0800)BST C1200 ADAS
 
 Autoboot in 3 seconds, hit ctrl+c to stop
 u-boot> help
@@ -44,11 +66,13 @@ bdinfo    - print Board Info structure
 blkcache  - block cache diagnostics and control
 boot      - boot default, i.e., run 'bootcmd'
 bootd     - boot default, i.e., run 'bootcmd'
+bootdev   - Boot devices
 bootefi   - Boots an EFI payload from memory
 bootelf   - Boot from an ELF image in memory
 bootflow  - Boot flows
 booti     - boot Linux kernel 'Image' format from memory
 bootm     - boot application image from memory
+bootmeth  - Boot methods
 bootp     - boot image via network using BOOTP/TFTP protocol
 bootvx    - Boot vxWorks from an ELF image
 cmp       - memory compare
@@ -138,35 +162,27 @@ usb       - USB sub-system
 usbboot   - boot from USB device
 version   - print monitor, compiler and linker version
 u-boot> version
-U-Boot 2022.07+ (Oct 29 2026 - 19:28:43 +0800)BST C1200 ADAS
+U-Boot 2022.07+ (Nov 03 2026 - 19:40:20 +0800)BST C1200 ADAS
 
-aarch64-linux-gnu-gcc (GCC) 13.0.0 20221104 (experimental) [master revision a111cfba4816765b55f4d5c82bc2b034047db92c]
-GNU ld (Linaro_Binutils-2022.11) 2.39.50.20221105
+aarch64-linux-gnu-gcc (Ubuntu/Linaro 7.5.0-3ubuntu1~18.04) 7.5.0
+GNU ld (GNU Binutils for Ubuntu) 2.30
 u-boot> printenv
 board_name=bstc1296-cdcu1.0-adas_8c8g
-bootcmd=run loaddtb;run bootubuntu
-bootcmd1=scsi scan;ext4load scsi 0:1 0x8d5000000 /uEnv.txt; env import -t 0x8d5000000 b47; run bootcmd_cmd
+bootcmd=mmc dev 0;mmc dev 1; bootflow scan -lb
+bootcmd1=scsi scan;ext4load scsi 0:1 0x8d5000000 /uEnv.txt; env import -t 0x8d5000000 ; run bootcmd_cmd
 bootcount=1
-bootsd=load mmc 1:2 0x8d9000000 efi/boot/bootaa64.efi;bootefi 0x8d9000000 0x8d0000000
-bootsdF=load mmc 1:1 0x8d9000000 efi/boot/bootaa64.efi;bootefi 0x8d9000000 0x8d0000000
-bootubuntu=run loaddtb;load mmc 0:1 0x8d9000000 /EFI/ubuntu/grubaa64.efi; bootefi 0x8d9000000 0x8d0000000
 device_type=scsi
-ethaddr=4a:57:de:60:22:5a
+ethaddr=76:96:98:5c:7a:41
 extra_bootargs=swiotlb=noforce loglevel=3 crashkernel=128M@0x9b0000000 mrdump_cb=0x94ca00000,0x200000 crash_kexec_post_notifiers=1 cma=3G
-fdtcontroladdr=9bf6e06b0
-fileaddr=8d0000000
-filesize=b47
-loadIR=load mmc 0:1 0x8d9000000 efi/boot/bootaa64.efi;bootefi 0x8d9000000 0x8d0000000
+fdtcontroladdr=9bf6da6b0
 load_addr=0x8d5000000
-loaddtb=scsi scan; ext4load scsi 0:1 0x8d0000000 bstc1200-uefi.dtb
-loadfedora=load mmc 0:1 0x8d9000000 /EFI/fedora/grubaa64.efi; bootefi 0x8d9000000 0x8d0000000
 serialnumber=c1200-adas
 stderr=serial
 stdin=serial
 stdout=serial
 
-Environment size: 1044/65532 bytes
-u-boot> printenv -e 
+Environment size: 495/65532 bytes
+u-boot> printenv -e
 SecureBoot:
     8be4df61-93ca-11d2-aa0d-00e098032b8c (EFI_GLOBAL_VARIABLE_GUID)
     BS|RT|RO, DataSize = 0x1
@@ -213,30 +229,30 @@ flashstart  = 0x0000000000000000
 flashsize   = 0x0000000000000000
 flashoffset = 0x0000000000000000
 baudrate    = 115200 bps
-relocaddr   = 0x00000009bfef2000
-reloc off   = 0x00000000ffef2000
+relocaddr   = 0x00000009bfeec000
+reloc off   = 0x00000000ffeec000
 Build       = 64-bit
 current eth = xgmac@32400000
-ethaddr     = 4a:57:de:60:22:5a
+ethaddr     = 76:96:98:5c:7a:41
 IP addr     = <NULL>
-fdt_blob    = 0x00000009bf6e06b0
-new_fdt     = 0x00000009bf6e06b0
+fdt_blob    = 0x00000009bf6da6b0
+new_fdt     = 0x00000009bf6da6b0
 fdt_size    = 0x0000000000001700
 lmb_dump_all:
  memory.cnt  = 0x1
  memory[0]      [0x8c0000000-0x9bfffffff], 0x100000000 bytes flags: 0
  reserved.cnt  = 0x1
- reserved[0]    [0x9bf6db790-0x9bfffffff], 0x00924870 bytes flags: 0
+ reserved[0]    [0x9bf6d5780-0x9bfffffff], 0x0092a880 bytes flags: 0
 devicetree  = separate
 arch_number = 0x0000000000000000
 TLB addr    = 0x00000009bfff0000
-irq_sp      = 0x00000009bf6e06a0
-sp start    = 0x00000009bf6e06a0
+irq_sp      = 0x00000009bf6da6a0
+sp start    = 0x00000009bf6da6a0
 Board Type  = 0
 Early malloc usage: 0 / 4000
 u-boot> rtc list
 RTC #0 - rtc_emul
-u-boot> sf probe
+u-boot> sf probe 
 Flash proxy probe bus 0
 u-boot> usb reset
 resetting USB...
@@ -303,23 +319,21 @@ Boot Capacity: 4 MiB ENH
 RPMB Capacity: 4 MiB ENH
 Boot area 0 is not write protected
 Boot area 1 is not write protected
-u-boot> efidefbug devices
-Unknown command 'efidefbug' - try 'help'
-u-boot> efidebug devices 
+u-boot> efidebug devices
 Device           Device Path
 ================ ====================
-00000009bf6e4090 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)
-00000009bffe4e18 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/Uart(0,0,D,D)
-00000009bf6e9060 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/MAC(4a57de60225a,1)
+00000009bf6de230 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)
+00000009bffe4860 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/Uart(0,0,D,D)
+00000009bf6e31b0 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/MAC(7696985c7a41,1)
 u-boot> efidebug drivers
 Driver           Name                 Image Path
 ================ ==================== ====================
-00000009bf6e8ea0 <NULL>               <built-in>
+00000009bf6e2ff0 <NULL>               <built-in>
 u-boot> efidebug dh     
 Handle           Protocols
 ================ ====================
 
-00000009bf6e4090  /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)
+00000009bf6de230  /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)
   Device Path To Text
   Device Path Utilities
   Device-Tree Fixup
@@ -330,32 +344,32 @@ Handle           Protocols
   Simple Text Input
   Simple Text Input Ex
 
-00000009bffe4e18  /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/Uart(0,0,D,D)
+00000009bffe4860  /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/Uart(0,0,D,D)
 
-00000009bf6e8ea0  Driver Binding
+00000009bf6e2ff0  Driver Binding
 
-00000009bf6e8f10  Firmware Management
+00000009bf6e3060  Firmware Management
 
-00000009bf6e9060  /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/MAC(4a57de60225a,1)
+00000009bf6e31b0  /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/MAC(7696985c7a41,1)
   Simple Network
   PXE Base Code
 u-boot> efidebug memmap
 Type             Start            End              Attributes
 ================ ================ ================ ==========
-CONVENTIONAL     00000008c0000000-00000009be6cd000 WB
-LOADER DATA      00000009be6cd000-00000009be6ce000 WB
-BOOT DATA        00000009be6ce000-00000009be6cf000 WB
-RUNTIME DATA     00000009be6cf000-00000009be6d0000 WB|RT
-BOOT DATA        00000009be6d0000-00000009be6d3000 WB
-RUNTIME DATA     00000009be6d3000-00000009be6d4000 WB|RT
-BOOT DATA        00000009be6d4000-00000009be6d6000 WB
-RUNTIME DATA     00000009be6d6000-00000009be6d8000 WB|RT
-BOOT DATA        00000009be6d8000-00000009be6d9000 WB
-RUNTIME DATA     00000009be6d9000-00000009be6dd000 WB|RT
-BOOT DATA        00000009be6dd000-00000009be6e0000 WB
-LOADER DATA      00000009be6e0000-00000009bfef0000 WB
-RUNTIME CODE     00000009bfef0000-00000009bff00000 WB|RT
-LOADER DATA      00000009bff00000-00000009c0000000 WB
+CONVENTIONAL     00000008c0000000-00000009be6c7000 WB
+LOADER DATA      00000009be6c7000-00000009be6c8000 WB
+BOOT DATA        00000009be6c8000-00000009be6c9000 WB
+RUNTIME DATA     00000009be6c9000-00000009be6ca000 WB|RT
+BOOT DATA        00000009be6ca000-00000009be6cd000 WB
+RUNTIME DATA     00000009be6cd000-00000009be6ce000 WB|RT
+BOOT DATA        00000009be6ce000-00000009be6d0000 WB
+RUNTIME DATA     00000009be6d0000-00000009be6d2000 WB|RT
+BOOT DATA        00000009be6d2000-00000009be6d3000 WB
+RUNTIME DATA     00000009be6d3000-00000009be6d7000 WB|RT
+BOOT DATA        00000009be6d7000-00000009be6da000 WB
+LOADER DATA      00000009be6da000-00000009bfee0000 WB
+RUNTIME CODE     00000009bfee0000-00000009bfef0000 WB|RT
+LOADER DATA      00000009bfef0000-00000009c0000000 WB
 u-boot> efidebug tables
 b122a263-3661-4f68-9929-78f8b0d62180 (EFI System Resource Table)
 eb66918a-7eef-402a-842e-931d21c38ae9 (Runtime properties)
@@ -364,58 +378,7 @@ u-boot> efidebug query
 Max storage size 16360
 Remaining storage size 15704
 Max variable size 16328
-u-boot> efidebug bootdump
-efidebug - Configure UEFI environment
-
-Usage:
-efidebug   - UEFI Shell-like interface to configure UEFI environment
-
-efidebug boot add - set UEFI BootXXXX variable
-  -b|-B <bootid> <label> <interface> <devnum>[:<part>] <file path>
-  -i|-I <interface> <devnum>[:<part>] <initrd file path>
-  (-b, -i for short form device path)
-  -s '<optional data>'
-efidebug boot rm <bootid#1> [<bootid#2> [<bootid#3> [...]]]
-  - delete UEFI BootXXXX variables
-efidebug boot dump
-  - dump all UEFI BootXXXX variables
-efidebug boot next <bootid>
-  - set UEFI BootNext variable
-efidebug boot order [<bootid#1> [<bootid#2> [<bootid#3> [...]]]]
-  - set/show UEFI boot order
-
-efidebug capsule update [-v] <capsule address>
-  - process a capsule
-efidebug capsule disk-update
-  - update a capsule from disk
-efidebug capsule show <capsule address>
-  - show capsule information
-efidebug capsule result [<capsule result var>]
-  - show a capsule update result
-efidebug capsule esrt
-  - print the ESRT
-
-efidebug devices
-  - show UEFI devices
-efidebug drivers
-  - show UEFI drivers
-efidebug dh
-  - show UEFI handles
-efidebug images
-  - show loaded images
-efidebug memmap
-  - show UEFI memory map
-efidebug tables
-  - show UEFI configuration tables
-efidebug test bootmgr
-  - run simple bootmgr for test
-efidebug query [-nv][-bs][-rt][-at]
-  - show size of UEFI variables store
-
 u-boot> efidebug boot dump
-u-boot> 
-u-boot> 
-u-boot> 
 u-boot> 
 u-boot> efidebug capsule esrt
 ========================================
@@ -432,14 +395,14 @@ ESRT: last_attempt_version=0
 ESRT: last_attempt_status=success
 ========================================
 u-boot> bootefi hello ${fdtcontroladdr}
-Booting /MemoryMapped(0x0,0x9bff84fb0,0x11e0)
+Booting /MemoryMapped(0x0,0x9bff82170,0x1210)
 Hello, world!
 Running on UEFI 2.9
 Have device tree
 Load options: <none>
-Boot device: /MemoryMapped(0x0,0x9bff84fb0,0x11e0)
+Boot device: /MemoryMapped(0x0,0x9bff82170,0x1210)
 File path: <none>
-u-boot>  bootefi selftest ${fdtcontroladdr}
+u-boot> bootefi selftest ${fdtcontrladdr}
 
 Testing EFI API implementation
 
@@ -449,7 +412,7 @@ Setting up 'block device'
 Setting up 'block device' succeeded
 
 Executing 'block device'
-../lib/efi_selftest/efi_selftest_block_device.c(407):
+../lib/efi_selftest/efi_selftest_block_device.c(409):
 TODO: Wrong volume label '', expected 'U-BOOT TEST'
 Executing 'block device' succeeded
 
@@ -475,7 +438,7 @@ Executing 'device path'
 Installed device path protocols:
 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)
 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/Uart(0,0,D,D)
-/VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/MAC(4a57de60225a,1)
+/VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/MAC(7696985c7a41,1)
 /VenHw(dbca4c98-6cb0-694d-0872-819c650cb7b8)/HD(1,MBR,0xd1535d21,0x1,0x7f)
 /VenHw(dbca4c98-6cb0-694d-0872-819c650cbbb1)
 /VenHw(dbca4c98-6cb0-694d-0872-819c650cbbb1)/VenHw(dbca4c98-6cb0-694d-0872-819c650cbba2)
@@ -626,7 +589,7 @@ Setting up 'real time clock'
 Setting up 'real time clock' succeeded
 
 Executing 'real time clock'
-Time according to real time clock: 2026-10-29 11:28:43
+Time according to real time clock: 2026-11-03 11:40:20
 Executing 'real time clock' succeeded
 
 Setting up 'simple network protocol'
@@ -759,14 +722,14 @@ Preparing for reset. Press any key...
 resetting ...
 
 BL2-NOTICE  :BL2: Built : 00:03:05, Nov  6 2025
-BL2-NOTICE  :BL2: Booting BL31 [28311]
+BL2-NOTICE  :BL2: Booting BL31 [28011]
 host->align_buffer:0000000005170000
 host->align_buffer:0000000005170000
 dwmmc0@22200000: 0, dwmmc1@22300000: 1
 Net:   eth0: xgmac@32400000
 
 
-U-Boot 2022.07+ (Oct 29 2026 - 19:28:43 +0800)BST C1200 ADAS
+U-Boot 2022.07+ (Nov 03 2026 - 19:40:20 +0800)BST C1200 ADAS
 
 Autoboot in 3 seconds, hit ctrl+c to stop
 u-boot> 
