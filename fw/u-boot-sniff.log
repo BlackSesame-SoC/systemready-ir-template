@@ -1,735 +1,765 @@
-root@generic-arm64:~# 
-root@generic-arm64:~# 
-root@generic-arm64:~# 
-root@generic-arm64:~# 
-root@generic-arm64:~# 
-root@generic-arm64:~# 
-root@generic-arm64:~# 
-root@generic-arm64:~# 
-root@generic-arm64:~# 
-root@generic-arm64:~# 
-root@generic-arm64:~# 
-root@generic-arm64:~# 
-root@generic-arm64:~# 
-root@generic-arm64:~# 
-root@generic-arm64:~# 
-root@generic-arm64:~# 
-root@generic-arm64:~# 
-root@generic-arm64:~# 
-root@generic-arm64:~# 
-root@generic-arm64:~# 
-root@generic-arm64:~# 
-root@generic-arm64:~# 
-root@generic-arm64:~# 
-root@generic-arm64:~# 
-root@generic-arm64:~# sync
-root@generic-arm64:~# 
-root@generic-arm64:~# 
-root@generic-arm64:~# 
-root@generic-arm64:~# 
-root@generic-arm64:~# 
-root@generic-arm64:~# 
-root@generic-arm64:~# 
-root@generic-arm64:~# 
-root@generic-arm64:~# 
-root@generic-arm64:~# 
-root@generic-arm64:~# 
-root@generic-arm64:~# 
-root@generic-arm64:~# 
-root@generic-arm64:~# 
-root@generic-arm64:~# 
-root@generic-arm64:~# 
-root@generic-arm64:~# warning: phy_calibration=0xffffffff 
-warning: phy_calibration=0xffffffff 
-
-BL2-NOTICE  :BL2: Built : 00:03:05, Nov  6 2025
-Hit ctrl+x to stop autoboot: 0
-BL2-NOTICE  :BL2: Booting BL31 [3730228]
-host->align_buffer:0000000005170000
-host->align_buffer:0000000005170000
-dwmmc0@22200000: 0, dwmmc1@22300000: 1
-Net:   
-Warning: xgmac@32400000 MAC addresses don't match:
-Address in ROM is               ff:ff:ff:ff:ff:ff
-Address in environment is       76:96:98:5c:7a:41
-eth0: xgmac@32400000
-
-
-U-Boot 2022.07+ (Nov 03 2026 - 19:40:20 +0800)BST C1200 ADAS
-
-Autoboot in 3 seconds, hit ctrl+c to stop
-u-boot> help
-?         - alias for 'help'
-adtimg    - manipulate dtb/dtbo Android image
-base      - print or set address offset
-bdinfo    - print Board Info structure
-blkcache  - block cache diagnostics and control
-boot      - boot default, i.e., run 'bootcmd'
-bootd     - boot default, i.e., run 'bootcmd'
-bootdev   - Boot devices
-bootefi   - Boots an EFI payload from memory
-bootelf   - Boot from an ELF image in memory
-bootflow  - Boot flows
-booti     - boot Linux kernel 'Image' format from memory
-bootm     - boot application image from memory
-bootmeth  - Boot methods
-bootp     - boot image via network using BOOTP/TFTP protocol
-bootvx    - Boot vxWorks from an ELF image
-cmp       - memory compare
-coninfo   - print console devices and information
-cp        - memory copy
-crc32     - checksum calculation
-date      - get/set/reset date & time
-dcache    - enable or disable data cache
-dfu       - Device Firmware Upgrade
-dhcp      - boot image via network using DHCP/TFTP protocol
-dm        - Driver model low level access
-echo      - echo args to console
-editenv   - edit environment variable
-efidebug  - Configure UEFI environment
-env       - environment handling commands
-exit      - exit script
-ext2load  - load binary file from a Ext2 filesystem
-ext2ls    - list files in a directory (default /)
-ext4load  - load binary file from a Ext4 filesystem
-ext4ls    - list files in a directory (default /)
-ext4size  - determine a file's size
-ext4write - create a file in the root directory
-false     - do nothing, unsuccessfully
-fastboot  - run as a fastboot usb or udp device
-fatinfo   - print information about filesystem
-fatload   - load binary file from a dos filesystem
-fatls     - list files in a directory (default /)
-fatmkdir  - create a directory
-fatrm     - delete a file
-fatsize   - determine a file's size
-fatwrite  - write file into a dos filesystem
-fdt       - flattened device tree utility commands
-fstype    - Look up a filesystem type
-fstypes   - List supported filesystem types
-go        - start application at address 'addr'
-gpt       - GUID Partition Table
-gzwrite   - unzip and write memory to block device
-help      - print command description/usage
-icache    - enable or disable instruction cache
-iminfo    - print header information for application image
-ln        - Create a symbolic link
-load      - load binary file from a filesystem
-loadb     - load binary file over serial line (kermit mode)
-loads     - load S-Record file over serial line
-loadx     - load binary file over serial line (xmodem mode)
-loady     - load binary file over serial line (ymodem mode)
-loop      - infinite loop on address range
-ls        - list files in a directory (default /)
-lzmadec   - lzma uncompress a memory region
-md        - memory display
-mm        - memory modify (auto-incrementing address)
-mmc       - MMC sub system
-mmcinfo   - display MMC info
-mtest     - simple RAM read/write test
-mw        - memory write (fill)
-net       - NET sub-system
-nfs       - boot image via network using NFS protocol
-nm        - memory modify (constant address)
-panic     - Panic with optional message
-part      - disk partition related commands
-ping      - send ICMP ECHO_REQUEST to network host
-poweroff  - Perform POWEROFF of the device
-printenv  - print environment variables
-random    - fill memory with random pattern
-reset     - Perform RESET of the CPU
-rtc       - RTC subsystem
-run       - run commands in an environment variable
-save      - save file to a filesystem
-saveenv   - save environment variables to persistent storage
-scsi      - SCSI sub-system
-scsiboot  - boot from SCSI device
-setenv    - set environment variables
-sf        - SPI flash sub-system
-showvar   - print local hushshell variables
-size      - determine a file's size
-sleep     - delay execution for some time
-smc       - Issue a Secure Monitor Call
-sspi      - SPI utility command
-test      - minimal test like /bin/sh
-tftpboot  - boot image via network using TFTP protocol
-true      - do nothing, successfully
-ufs       - UFS  sub system
-ums       - Use the UMS [USB Mass Storage]
-unlz4     - lz4 uncompress a memory region
-unzip     - unzip a memory region
-usb       - USB sub-system
-usbboot   - boot from USB device
-version   - print monitor, compiler and linker version
-u-boot> version
-U-Boot 2022.07+ (Nov 03 2026 - 19:40:20 +0800)BST C1200 ADAS
-
-aarch64-linux-gnu-gcc (Ubuntu/Linaro 7.5.0-3ubuntu1~18.04) 7.5.0
-GNU ld (GNU Binutils for Ubuntu) 2.30
-u-boot> printenv
-board_name=bstc1296-cdcu1.0-adas_8c8g
-bootcmd=mmc dev 0;mmc dev 1; bootflow scan -lb
-bootcmd1=scsi scan;ext4load scsi 0:1 0x8d5000000 /uEnv.txt; env import -t 0x8d5000000 ; run bootcmd_cmd
-bootcount=1
-device_type=scsi
-ethaddr=76:96:98:5c:7a:41
-extra_bootargs=swiotlb=noforce loglevel=3 crashkernel=128M@0x9b0000000 mrdump_cb=0x94ca00000,0x200000 crash_kexec_post_notifiers=1 cma=3G
-fdtcontroladdr=9bf6da6b0
-load_addr=0x8d5000000
-serialnumber=c1200-adas
-stderr=serial
-stdin=serial
-stdout=serial
-
-Environment size: 495/65532 bytes
-u-boot> printenv -e
-SecureBoot:
-    8be4df61-93ca-11d2-aa0d-00e098032b8c (EFI_GLOBAL_VARIABLE_GUID)
-    BS|RT|RO, DataSize = 0x1
-    00000000: 00                                               .
-SetupMode:
-    8be4df61-93ca-11d2-aa0d-00e098032b8c (EFI_GLOBAL_VARIABLE_GUID)
-    BS|RT|RO, DataSize = 0x1
-    00000000: 01                                               .
-AuditMode:
-    8be4df61-93ca-11d2-aa0d-00e098032b8c (EFI_GLOBAL_VARIABLE_GUID)
-    BS|RT|RO, DataSize = 0x1
-    00000000: 00                                               .
-DeployedMode:
-    8be4df61-93ca-11d2-aa0d-00e098032b8c (EFI_GLOBAL_VARIABLE_GUID)
-    BS|RT|RO, DataSize = 0x1
-    00000000: 00                                               .
-VendorKeys:
-    8be4df61-93ca-11d2-aa0d-00e098032b8c (EFI_GLOBAL_VARIABLE_GUID)
-    BS|RT|RO, DataSize = 0x1
-    00000000: 00                                               .
-PlatformLangCodes:
-    8be4df61-93ca-11d2-aa0d-00e098032b8c (EFI_GLOBAL_VARIABLE_GUID)
-    BS|RT|RO, DataSize = 0x6
-    00000000: 65 6e 2d 55 53 00                                en-US.
-PlatformLang:
-    8be4df61-93ca-11d2-aa0d-00e098032b8c (EFI_GLOBAL_VARIABLE_GUID)
-    NV|BS|RT, DataSize = 0x6
-    00000000: 65 6e 2d 55 53 00                                en-US.
-OsIndicationsSupported:
-    8be4df61-93ca-11d2-aa0d-00e098032b8c (EFI_GLOBAL_VARIABLE_GUID)
-    BS|RT|RO, DataSize = 0x8
-    00000000: 1c 00 00 00 00 00 00 00                          ........
-SignatureSupport:
-    8be4df61-93ca-11d2-aa0d-00e098032b8c (EFI_GLOBAL_VARIABLE_GUID)
-    BS|RT|RO, DataSize = 0x20
-    00000000: 26 16 c4 c1 4c 50 92 40 ac a9 41 f9 36 93 43 28  &...LP.@..A.6.C(
-    00000010: a1 59 c0 a5 e4 94 a7 4a 87 b5 ab 15 5c 2b f0 72  .Y.....J....\+.r
-u-boot> bdinfo
-boot_params = 0x0000000000000000
-DRAM bank   = 0x0000000000000000
--> start    = 0x00000008c0000000
--> size     = 0x0000000100000000
-flashstart  = 0x0000000000000000
-flashsize   = 0x0000000000000000
-flashoffset = 0x0000000000000000
-baudrate    = 115200 bps
-relocaddr   = 0x00000009bfeec000
-reloc off   = 0x00000000ffeec000
-Build       = 64-bit
-current eth = xgmac@32400000
-ethaddr     = 76:96:98:5c:7a:41
-IP addr     = <NULL>
-fdt_blob    = 0x00000009bf6da6b0
-new_fdt     = 0x00000009bf6da6b0
-fdt_size    = 0x0000000000001700
-lmb_dump_all:
- memory.cnt  = 0x1
- memory[0]      [0x8c0000000-0x9bfffffff], 0x100000000 bytes flags: 0
- reserved.cnt  = 0x1
- reserved[0]    [0x9bf6d5780-0x9bfffffff], 0x0092a880 bytes flags: 0
-devicetree  = separate
-arch_number = 0x0000000000000000
-TLB addr    = 0x00000009bfff0000
-irq_sp      = 0x00000009bf6da6a0
-sp start    = 0x00000009bf6da6a0
-Board Type  = 0
-Early malloc usage: 0 / 4000
-u-boot> rtc list
-RTC #0 - rtc_emul
-u-boot> sf probe 
-Flash proxy probe bus 0
-u-boot> usb reset
-resetting USB...
-Bus usbhost@0x022100000: Using usb cmn_offset: 0x1000000000
-dwc3_hsphy_mode_setup 388 REG 102407
-Register 2000140 NbrPorts 2
-Starting the controller
-USB XHCI 1.20
-Bus usbhost@0x022000000: Using usb cmn_offset: 0x1000000000
-dwc3_hsphy_mode_setup 388 REG 102407
-Register 2000140 NbrPorts 2
-Starting the controller
-USB XHCI 1.20
-scanning bus usbhost@0x022100000 for devices... 1 USB Device(s) found
-scanning bus usbhost@0x022000000 for devices... 1 USB Device(s) found
-       scanning usb for storage devices... 0 Storage Device(s) found
-u-boot> usb info
-1: Hub,  USB Revision 3.0
- - U-Boot XHCI Host Controller 
- - Class: Hub
- - PacketSize: 512  Configurations: 1
- - Vendor: 0x0000  Product 0x0000 Version 1.0
-   Configuration: 1
-   - Interfaces: 1 Self Powered 0mA
-     Interface: 0
-     - Alternate Setting 0, Endpoints: 1
-     - Class Hub
-     - Endpoint 1 In Interrupt MaxPacket 8 Interval 255ms
-
-1: Hub,  USB Revision 3.0
- - U-Boot XHCI Host Controller 
- - Class: Hub
- - PacketSize: 512  Configurations: 1
- - Vendor: 0x0000  Product 0x0000 Version 1.0
-   Configuration: 1
-   - Interfaces: 1 Self Powered 0mA
-     Interface: 0
-     - Alternate Setting 0, Endpoints: 1
-     - Class Hub
-     - Endpoint 1 In Interrupt MaxPacket 8 Interval 255ms
-
-u-boot> mmc rescan
-uhs_en:0
-trying mode HS200 (200MHz) width 8 (at 200 MHz)
-tuning best:20 fffff
-u-boot> mmc list
-dwmmc0@22200000: 0 (eMMC)
-dwmmc1@22300000: 1
-u-boot> mmc info
-Device: dwmmc0@22200000
-Manufacturer ID: 32
-OEM: 1
-Name: MMC64G 
-Bus Speed: 200000000
-Rd Block Len: 512
-MMC version 5.1
-High Capacity: Yes
-Capacity: 58.2 GiB
-Bus Width: 8-bit
-Erase Group Size: 512 KiB
-HC WP Group Size: 8 MiB
-User Capacity: 58.2 GiB WRREL
-Boot Capacity: 4 MiB ENH
-RPMB Capacity: 4 MiB ENH
-Boot area 0 is not write protected
-Boot area 1 is not write protected
-u-boot> efidebug devices
-Device           Device Path
-================ ====================
-00000009bf6de230 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)
-00000009bffe4860 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/Uart(0,0,D,D)
-00000009bf6e31b0 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/MAC(7696985c7a41,1)
-u-boot> efidebug drivers
-Driver           Name                 Image Path
-================ ==================== ====================
-00000009bf6e2ff0 <NULL>               <built-in>
-u-boot> efidebug dh     
-Handle           Protocols
-================ ====================
-
-00000009bf6de230  /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)
-  Device Path To Text
-  Device Path Utilities
-  Device-Tree Fixup
-  Unicode Collation 2
-  HII String
-  HII Database
-  Simple Text Output
-  Simple Text Input
-  Simple Text Input Ex
-
-00000009bffe4860  /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/Uart(0,0,D,D)
-
-00000009bf6e2ff0  Driver Binding
-
-00000009bf6e3060  Firmware Management
-
-00000009bf6e31b0  /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/MAC(7696985c7a41,1)
-  Simple Network
-  PXE Base Code
-u-boot> efidebug memmap
-Type             Start            End              Attributes
-================ ================ ================ ==========
-CONVENTIONAL     00000008c0000000-00000009be6c7000 WB
-LOADER DATA      00000009be6c7000-00000009be6c8000 WB
-BOOT DATA        00000009be6c8000-00000009be6c9000 WB
-RUNTIME DATA     00000009be6c9000-00000009be6ca000 WB|RT
-BOOT DATA        00000009be6ca000-00000009be6cd000 WB
-RUNTIME DATA     00000009be6cd000-00000009be6ce000 WB|RT
-BOOT DATA        00000009be6ce000-00000009be6d0000 WB
-RUNTIME DATA     00000009be6d0000-00000009be6d2000 WB|RT
-BOOT DATA        00000009be6d2000-00000009be6d3000 WB
-RUNTIME DATA     00000009be6d3000-00000009be6d7000 WB|RT
-BOOT DATA        00000009be6d7000-00000009be6da000 WB
-LOADER DATA      00000009be6da000-00000009bfee0000 WB
-RUNTIME CODE     00000009bfee0000-00000009bfef0000 WB|RT
-LOADER DATA      00000009bfef0000-00000009c0000000 WB
-u-boot> efidebug tables
-b122a263-3661-4f68-9929-78f8b0d62180 (EFI System Resource Table)
-eb66918a-7eef-402a-842e-931d21c38ae9 (Runtime properties)
-f2fd1544-9794-4a2c-992e-e5bbcf20e394 (f2fd1544-9794-4a2c-992e-e5bbcf20e394)
-u-boot> efidebug query 
-Max storage size 16360
-Remaining storage size 15704
-Max variable size 16328
-u-boot> efidebug boot dump
-u-boot> 
-u-boot> efidebug capsule esrt
-========================================
-ESRT: fw_resource_count=1
-ESRT: fw_resource_count_max=1
-ESRT: fw_resource_version=1
-[entry 0]==============================
-ESRT: fw_class=63CC9A90-C296-49FE-BBBF-6AFB42C4E385
-ESRT: fw_type=unknown
-ESRT: fw_version=0
-ESRT: lowest_supported_fw_version=0
-ESRT: capsule_flags=0
-ESRT: last_attempt_version=0
-ESRT: last_attempt_status=success
-========================================
-u-boot> bootefi hello ${fdtcontroladdr}
-Booting /MemoryMapped(0x0,0x9bff82170,0x1210)
-Hello, world!
-Running on UEFI 2.9
-Have device tree
-Load options: <none>
-Boot device: /MemoryMapped(0x0,0x9bff82170,0x1210)
-File path: <none>
-u-boot> bootefi selftest ${fdtcontrladdr}
-
-Testing EFI API implementation
-
-Number of tests to execute: 39
-
-Setting up 'block device'
-Setting up 'block device' succeeded
-
-Executing 'block device'
-../lib/efi_selftest/efi_selftest_block_device.c(409):
-TODO: Wrong volume label '', expected 'U-BOOT TEST'
-Executing 'block device' succeeded
-
-Tearing down 'block device'
-Tearing down 'block device' succeeded
-
-Setting up 'configuration tables'
-Setting up 'configuration tables' succeeded
-
-Executing 'configuration tables'
-Executing 'configuration tables' succeeded
-
-Setting up 'controllers'
-Setting up 'controllers' succeeded
-
-Executing 'controllers'
-Executing 'controllers' succeeded
-
-Setting up 'device path'
-Setting up 'device path' succeeded
-
-Executing 'device path'
-Installed device path protocols:
-/VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)
-/VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/Uart(0,0,D,D)
-/VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/MAC(7696985c7a41,1)
-/VenHw(dbca4c98-6cb0-694d-0872-819c650cb7b8)/HD(1,MBR,0xd1535d21,0x1,0x7f)
-/VenHw(dbca4c98-6cb0-694d-0872-819c650cbbb1)
-/VenHw(dbca4c98-6cb0-694d-0872-819c650cbbb1)/VenHw(dbca4c98-6cb0-694d-0872-819c650cbba2)
-/VenHw(dbca4c98-6cb0-694d-0872-819c650cbbb1)/VenHw(dbca4c98-6cb0-694d-0872-819c650cbba2)/VenHw(dbca4c98-6cb0-694d-0872-819c650cbbc3)
-Executing 'device path' succeeded
-
-Tearing down 'device path'
-Tearing down 'device path' succeeded
-
-Setting up 'device path utilities protocol'
-Setting up 'device path utilities protocol' succeeded
-
-Executing 'device path utilities protocol'
-Executing 'device path utilities protocol' succeeded
-
-Setting up 'esrt'
-Setting up 'esrt' succeeded
-
-Executing 'esrt'
-Executing 'esrt' succeeded
-
-Tearing down 'esrt'
-Tearing down 'esrt' succeeded
-
-Setting up 'event groups'
-Setting up 'event groups' succeeded
-
-Executing 'event groups'
-Executing 'event groups' succeeded
-
-Setting up 'event services'
-Setting up 'event services' succeeded
-
-Executing 'event services'
-Executing 'event services' succeeded
-
-Tearing down 'event services'
-Tearing down 'event services' succeeded
-
-Setting up 'device tree'
-Setting up 'device tree' succeeded
-
-Executing 'device tree'
-compatible: bst,c1200
-Executing 'device tree' succeeded
-
-Setting up 'graphical output'
-Graphical output protocol is not available.
-Setting up 'graphical output' succeeded
-
-Executing 'graphical output'
-Executing 'graphical output' succeeded
-
-Tearing down 'graphical output'
-Tearing down 'graphical output' succeeded
-
-Setting up 'HII database protocols'
-Setting up 'HII database protocols' succeeded
-
-Executing 'HII database protocols'
-test_hii_database_new_package_list:
-test_hii_database_update_package_list:
-test_hii_database_list_package_lists:
-test_hii_database_export_package_lists:
-test_hii_database_register_package_notify:
-test_hii_database_unregister_package_notify:
-test_hii_database_find_keyboard_layouts:
-test_hii_database_get_keyboard_layout:
-test_hii_database_set_keyboard_layout:
-test_hii_database_get_package_list_handle:
-test_hii_string_new_string:
-new string id is 2
-test_hii_string_get_string:
-test_hii_string_set_string:
-test_hii_string_get_languages:
-got languages are en-US;zh-Hant
-test_hii_string_get_secondary_languages:
-no secondary languages
-Executing 'HII database protocols' succeeded
-
-Setting up 'load file protocol'
-Setting up 'load file protocol' succeeded
-
-Executing 'load file protocol'
-EFI application calling Exit
-Executing 'load file protocol' succeeded
-
-Tearing down 'load file protocol'
-Tearing down 'load file protocol' succeeded
-
-Setting up 'loaded image'
-Setting up 'loaded image' succeeded
-
-Executing 'loaded image'
-2 protocols installed on image handle
-Executing 'loaded image' succeeded
-
-Setting up 'load image from file'
-Setting up 'load image from file' succeeded
-
-Executing 'load image from file'
-EFI application calling Exit
-Executing 'load image from file' succeeded
-
-Tearing down 'load image from file'
-Tearing down 'load image from file' succeeded
-
-Setting up 'mem'
-Setting up 'mem' succeeded
-
-Executing 'mem'
-Executing 'mem' succeeded
-
-Setting up 'memory'
-Setting up 'memory' succeeded
-
-Executing 'memory'
-Executing 'memory' succeeded
-
-Setting up 'open protocol'
-Setting up 'open protocol' succeeded
-
-Executing 'open protocol'
-Executing 'open protocol' succeeded
-
-Tearing down 'open protocol'
-Tearing down 'open protocol' succeeded
-
-Setting up 'manage protocols'
-Setting up 'manage protocols' succeeded
-
-Executing 'manage protocols'
-Executing 'manage protocols' succeeded
-
-Tearing down 'manage protocols'
-Tearing down 'manage protocols' succeeded
-
-Setting up 'register protocol notify'
-Setting up 'register protocol notify' succeeded
-
-Executing 'register protocol notify'
-Executing 'register protocol notify' succeeded
-
-Tearing down 'register protocol notify'
-Tearing down 'register protocol notify' succeeded
-
-Setting up 'real time clock'
-Setting up 'real time clock' succeeded
-
-Executing 'real time clock'
-Time according to real time clock: 2026-11-03 11:40:20
-Executing 'real time clock' succeeded
-
-Setting up 'simple network protocol'
-Setting up 'simple network protocol' succeeded
-
-Executing 'simple network protocol'
-DHCP Discover
-DHCP Discover
-DHCP Discover
-DHCP Discover
-DHCP Discover
-DHCP Discover
-DHCP Discover
-DHCP Discover
-DHCP Discover
-DHCP Discover
-../lib/efi_selftest/efi_selftest_snp.c(353):
-ERROR: Timeout occurred
-../lib/efi_selftest/efi_selftest.c(114):
-ERROR: Executing 'simple network protocol' failed
-
-Tearing down 'simple network protocol'
-Tearing down 'simple network protocol' succeeded
-
-Setting up 'start image return'
-Setting up 'start image return' succeeded
-
-Executing 'start image return'
-EFI application returning w/o calling Exit
-Executing 'start image return' succeeded
-
-Tearing down 'start image return'
-Tearing down 'start image return' succeeded
-
-Setting up 'start image exit'
-Setting up 'start image exit' succeeded
-
-Executing 'start image exit'
-EFI application calling Exit
-Executing 'start image exit' succeeded
-
-Tearing down 'start image exit'
-Tearing down 'start image exit' succeeded
-
-Executing 'text output'
-
-Color palette
-00000000000000000000000000000010000000000000002000000000000000300000000000000040000000000000005000000000000000600000000000000070
-00000000000000010000000000000011000000000000002100000000000000310000000000000041000000000000005100000000000000610000000000000071
-00000000000000020000000000000012000000000000002200000000000000320000000000000042000000000000005200000000000000620000000000000072
-00000000000000030000000000000013000000000000002300000000000000330000000000000043000000000000005300000000000000630000000000000073
-00000000000000040000000000000014000000000000002400000000000000340000000000000044000000000000005400000000000000640000000000000074
-00000000000000050000000000000015000000000000002500000000000000350000000000000045000000000000005500000000000000650000000000000075
-00000000000000060000000000000016000000000000002600000000000000360000000000000046000000000000005600000000000000660000000000000076
-00000000000000070000000000000017000000000000002700000000000000370000000000000047000000000000005700000000000000670000000000000077
-00000000000000080000000000000018000000000000002800000000000000380000000000000048000000000000005800000000000000680000000000000078
-00000000000000090000000000000019000000000000002900000000000000390000000000000049000000000000005900000000000000690000000000000079
-000000000000000a000000000000001a000000000000002a000000000000003a000000000000004a000000000000005a000000000000006a000000000000007a
-000000000000000b000000000000001b000000000000002b000000000000003b000000000000004b000000000000005b000000000000006b000000000000007b
-000000000000000c000000000000001c000000000000002c000000000000003c000000000000004c000000000000005c000000000000006c000000000000007c
-000000000000000d000000000000001d000000000000002d000000000000003d000000000000004d000000000000005d000000000000006d000000000000007d
-000000000000000e000000000000001e000000000000002e000000000000003e000000000000004e000000000000005e000000000000006e000000000000007e
-000000000000000f000000000000001f000000000000002f000000000000003f000000000000004f000000000000005f000000000000006f000000000000007f
-Testing cursor column update
-
-𑀅𑀢3
-Executing 'text output' succeeded
-
-Setting up 'task priority levels'
-Setting up 'task priority levels' succeeded
-
-Executing 'task priority levels'
-Executing 'task priority levels' succeeded
-
-Tearing down 'task priority levels'
-Tearing down 'task priority levels' succeeded
-
-Setting up 'unicode collation'
-Setting up 'unicode collation' succeeded
-
-Executing 'unicode collation'
-Executing 'unicode collation' succeeded
-
-Setting up 'variables'
-Setting up 'variables' succeeded
-
-Executing 'variables'
-Executing 'variables' succeeded
-
-Setting up 'watchdog timer'
-Setting up 'watchdog timer' succeeded
-
-Executing 'watchdog timer'
-Executing 'watchdog timer' succeeded
-
-Tearing down 'watchdog timer'
-Tearing down 'watchdog timer' succeeded
-
-Setting up 'crc32'
-Setting up 'crc32' succeeded
-
-Setting up 'ExitBootServices'
-Setting up 'ExitBootServices' succeeded
-
-Setting up 'variables at runtime'
-Setting up 'variables at runtime' succeeded
-
-Setting up 'virtual address map'
-Setting up 'virtual address map' succeeded
-
-Boot services terminated
-
-Executing 'crc32'
-Executing 'crc32' succeeded
-
-Executing 'ExitBootServices'
-
-Boot services terminated
-Executing 'ExitBootServices' succeeded
-
-Executing 'variables at runtime'
-Executing 'variables at runtime' succeeded
-
-Executing 'virtual address map'
-Executing 'virtual address map' succeeded
-
-Summary: 1 failures
-
-Preparing for reset. Press any key...
-resetting ...
-
-BL2-NOTICE  :BL2: Built : 00:03:05, Nov  6 2025
-BL2-NOTICE  :BL2: Booting BL31 [28011]
-host->align_buffer:0000000005170000
-host->align_buffer:0000000005170000
-dwmmc0@22200000: 0, dwmmc1@22300000: 1
-Net:   eth0: xgmac@32400000
-
-
-U-Boot 2022.07+ (Nov 03 2026 - 19:40:20 +0800)BST C1200 ADAS
-
-Autoboot in 3 seconds, hit ctrl+c to stop
-u-boot> 
+[2026-11-05 14:34:13] warning: phy_calibration=0xffffffff 
+[2026-11-05 14:34:13] warning: phy_calibration=0xffffffff 
+[2026-11-05 14:34:13] 
+[2026-11-05 14:34:13] BL2-NOTICE  :BL2: Built : 00:03:05, Nov  6 2025
+[2026-11-05 14:34:16] Hit ctrl+x to stop autoboot: 0
+[2026-11-05 14:34:16] BL2-NOTICE  :BL2: Booting BL31 [3746295]
+[2026-11-05 14:34:16] host->align_buffer:0000000005170000
+[2026-11-05 14:34:16] host->align_buffer:0000000005170000
+[2026-11-05 14:34:16] dwmmc0@22200000: 0, dwmmc1@22300000: 1
+[2026-11-05 14:34:16] Net:   
+[2026-11-05 14:34:16] Warning: xgmac@32400000 MAC addresses don't match:
+[2026-11-05 14:34:16] Address in ROM is               ff:ff:ff:ff:ff:ff
+[2026-11-05 14:34:16] Address in environment is       76:96:98:5c:7a:41
+[2026-11-05 14:34:16] eth0: xgmac@32400000
+[2026-11-05 14:34:16] 
+[2026-11-05 14:34:16] 
+[2026-11-05 14:34:16] U-Boot 2022.07+ (Nov 05 2026 - 13:20:07 +0800)BST C1200 ADAS UPdate New
+[2026-11-05 14:34:16] 
+[2026-11-05 14:34:16] Autoboot in 3 seconds, hit ctrl+c to stop
+[2026-11-05 14:34:17] u-boot> <INTERRUPT>
+[2026-11-05 14:34:22] u-boot> mmc dev 0
+[2026-11-05 14:34:22] uhs_en:0
+[2026-11-05 14:34:22] trying mode HS200 (200MHz) width 4 (at 200 MHz)
+[2026-11-05 14:34:22] tuning best:19 7ffff
+[2026-11-05 14:34:22] switch to partitions #0, OK
+[2026-11-05 14:34:22] mmc0(part 0) is current device
+[2026-11-05 14:34:24] u-boot> mmc dev 1
+[2026-11-05 14:34:24] uhs_en:0
+[2026-11-05 14:34:25] trying mode SD High Speed (50MHz) width 4 (at 50 MHz)
+[2026-11-05 14:34:25] switch to partitions #0, OK
+[2026-11-05 14:34:25] mmc1 is current device
+[2026-11-05 14:34:29] u-boot> help
+[2026-11-05 14:34:30] ?         - alias for 'help'
+[2026-11-05 14:34:30] adtimg    - manipulate dtb/dtbo Android image
+[2026-11-05 14:34:30] base      - print or set address offset
+[2026-11-05 14:34:30] bdinfo    - print Board Info structure
+[2026-11-05 14:34:30] blkcache  - block cache diagnostics and control
+[2026-11-05 14:34:30] boot      - boot default, i.e., run 'bootcmd'
+[2026-11-05 14:34:30] bootd     - boot default, i.e., run 'bootcmd'
+[2026-11-05 14:34:30] bootdev   - Boot devices
+[2026-11-05 14:34:30] bootefi   - Boots an EFI payload from memory
+[2026-11-05 14:34:30] bootelf   - Boot from an ELF image in memory
+[2026-11-05 14:34:30] bootflow  - Boot flows
+[2026-11-05 14:34:30] booti     - boot Linux kernel 'Image' format from memory
+[2026-11-05 14:34:30] bootm     - boot application image from memory
+[2026-11-05 14:34:30] bootmeth  - Boot methods
+[2026-11-05 14:34:30] bootp     - boot image via network using BOOTP/TFTP protocol
+[2026-11-05 14:34:30] bootvx    - Boot vxWorks from an ELF image
+[2026-11-05 14:34:30] cmp       - memory compare
+[2026-11-05 14:34:30] coninfo   - print console devices and information
+[2026-11-05 14:34:30] cp        - memory copy
+[2026-11-05 14:34:30] crc32     - checksum calculation
+[2026-11-05 14:34:30] date      - get/set/reset date & time
+[2026-11-05 14:34:30] dcache    - enable or disable data cache
+[2026-11-05 14:34:30] dfu       - Device Firmware Upgrade
+[2026-11-05 14:34:30] dhcp      - boot image via network using DHCP/TFTP protocol
+[2026-11-05 14:34:30] dm        - Driver model low level access
+[2026-11-05 14:34:30] echo      - echo args to console
+[2026-11-05 14:34:30] editenv   - edit environment variable
+[2026-11-05 14:34:30] efidebug  - Configure UEFI environment
+[2026-11-05 14:34:30] env       - environment handling commands
+[2026-11-05 14:34:30] exit      - exit script
+[2026-11-05 14:34:30] ext2load  - load binary file from a Ext2 filesystem
+[2026-11-05 14:34:30] ext2ls    - list files in a directory (default /)
+[2026-11-05 14:34:30] ext4load  - load binary file from a Ext4 filesystem
+[2026-11-05 14:34:30] ext4ls    - list files in a directory (default /)
+[2026-11-05 14:34:30] ext4size  - determine a file's size
+[2026-11-05 14:34:30] ext4write - create a file in the root directory
+[2026-11-05 14:34:30] false     - do nothing, unsuccessfully
+[2026-11-05 14:34:30] fastboot  - run as a fastboot usb or udp device
+[2026-11-05 14:34:30] fatinfo   - print information about filesystem
+[2026-11-05 14:34:30] fatload   - load binary file from a dos filesystem
+[2026-11-05 14:34:30] fatls     - list files in a directory (default /)
+[2026-11-05 14:34:30] fatmkdir  - create a directory
+[2026-11-05 14:34:30] fatrm     - delete a file
+[2026-11-05 14:34:30] fatsize   - determine a file's size
+[2026-11-05 14:34:30] fatwrite  - write file into a dos filesystem
+[2026-11-05 14:34:30] fdt       - flattened device tree utility commands
+[2026-11-05 14:34:30] fstype    - Look up a filesystem type
+[2026-11-05 14:34:30] fstypes   - List supported filesystem types
+[2026-11-05 14:34:30] go        - start application at address 'addr'
+[2026-11-05 14:34:30] gpt       - GUID Partition Table
+[2026-11-05 14:34:30] gzwrite   - unzip and write memory to block device
+[2026-11-05 14:34:30] help      - print command description/usage
+[2026-11-05 14:34:30] icache    - enable or disable instruction cache
+[2026-11-05 14:34:30] iminfo    - print header information for application image
+[2026-11-05 14:34:30] ln        - Create a symbolic link
+[2026-11-05 14:34:30] load      - load binary file from a filesystem
+[2026-11-05 14:34:30] loadb     - load binary file over serial line (kermit mode)
+[2026-11-05 14:34:30] loads     - load S-Record file over serial line
+[2026-11-05 14:34:30] loadx     - load binary file over serial line (xmodem mode)
+[2026-11-05 14:34:30] loady     - load binary file over serial line (ymodem mode)
+[2026-11-05 14:34:30] loop      - infinite loop on address range
+[2026-11-05 14:34:30] ls        - list files in a directory (default /)
+[2026-11-05 14:34:30] lzmadec   - lzma uncompress a memory region
+[2026-11-05 14:34:30] md        - memory display
+[2026-11-05 14:34:30] mm        - memory modify (auto-incrementing address)
+[2026-11-05 14:34:30] mmc       - MMC sub system
+[2026-11-05 14:34:30] mmcinfo   - display MMC info
+[2026-11-05 14:34:30] mtest     - simple RAM read/write test
+[2026-11-05 14:34:30] mw        - memory write (fill)
+[2026-11-05 14:34:30] net       - NET sub-system
+[2026-11-05 14:34:30] nfs       - boot image via network using NFS protocol
+[2026-11-05 14:34:30] nm        - memory modify (constant address)
+[2026-11-05 14:34:30] panic     - Panic with optional message
+[2026-11-05 14:34:30] part      - disk partition related commands
+[2026-11-05 14:34:30] ping      - send ICMP ECHO_REQUEST to network host
+[2026-11-05 14:34:30] poweroff  - Perform POWEROFF of the device
+[2026-11-05 14:34:30] printenv  - print environment variables
+[2026-11-05 14:34:30] random    - fill memory with random pattern
+[2026-11-05 14:34:30] reset     - Perform RESET of the CPU
+[2026-11-05 14:34:30] rtc       - RTC subsystem
+[2026-11-05 14:34:30] run       - run commands in an environment variable
+[2026-11-05 14:34:30] save      - save file to a filesystem
+[2026-11-05 14:34:30] saveenv   - save environment variables to persistent storage
+[2026-11-05 14:34:30] scsi      - SCSI sub-system
+[2026-11-05 14:34:30] scsiboot  - boot from SCSI device
+[2026-11-05 14:34:30] setenv    - set environment variables
+[2026-11-05 14:34:30] sf        - SPI flash sub-system
+[2026-11-05 14:34:30] showvar   - print local hushshell variables
+[2026-11-05 14:34:30] size      - determine a file's size
+[2026-11-05 14:34:30] sleep     - delay execution for some time
+[2026-11-05 14:34:30] smc       - Issue a Secure Monitor Call
+[2026-11-05 14:34:30] sspi      - SPI utility command
+[2026-11-05 14:34:30] test      - minimal test like /bin/sh
+[2026-11-05 14:34:30] tftpboot  - boot image via network using TFTP protocol
+[2026-11-05 14:34:30] true      - do nothing, successfully
+[2026-11-05 14:34:30] ufs       - UFS  sub system
+[2026-11-05 14:34:30] ums       - Use the UMS [USB Mass Storage]
+[2026-11-05 14:34:30] unlz4     - lz4 uncompress a memory region
+[2026-11-05 14:34:30] unzip     - unzip a memory region
+[2026-11-05 14:34:30] usb       - USB sub-system
+[2026-11-05 14:34:30] usbboot   - boot from USB device
+[2026-11-05 14:34:30] version   - print monitor, compiler and linker version
+[2026-11-05 14:34:33] u-boot> version
+[2026-11-05 14:34:34] U-Boot 2022.07+ (Nov 05 2026 - 13:20:07 +0800)BST C1200 ADAS UPdate New
+[2026-11-05 14:34:30] 
+[2026-11-05 14:34:34] aarch64-linux-gnu-gcc (GCC) 13.0.0 20221104 (experimental) [master revision a111cfba4816765b55f4d5c82bc2b034047db92c]
+[2026-11-05 14:34:34] GNU ld (Linaro_Binutils-2022.11) 2.39.50.20221105
+[2026-11-05 14:34:38] u-boot> printenv 
+[2026-11-05 14:34:38] board_name=bstc1296-cdcu1.0-adas_8c8g
+[2026-11-05 14:34:38] bootcmd=mmc dev 0;mmc dev 1; bootflow scan -lb
+[2026-11-05 14:34:38] bootcmd1=scsi scan;ext4load scsi 0:1 0x8d5000000 /uEnv.txt; env import -t 0x8d5000000 ; run bootcmd_cmd
+[2026-11-05 14:34:38] bootcount=1
+[2026-11-05 14:34:38] device_type=scsi
+[2026-11-05 14:34:38] ethaddr=76:96:98:5c:7a:41
+[2026-11-05 14:34:38] extra_bootargs=swiotlb=noforce loglevel=3 crashkernel=128M@0x9b0000000 mrdump_cb=0x94ca00000,0x200000 crash_kexec_post_notifiers=1 cma=3G
+[2026-11-05 14:34:38] fdtcontroladdr=9bf6db6b0
+[2026-11-05 14:34:38] load_addr=0x8d5000000
+[2026-11-05 14:34:38] serialnumber=c1200-adas
+[2026-11-05 14:34:38] stderr=serial
+[2026-11-05 14:34:38] stdin=serial
+[2026-11-05 14:34:38] stdout=serial
+[2026-11-05 14:34:30] 
+[2026-11-05 14:34:38] Environment size: 495/65532 bytes
+[2026-11-05 14:34:41] u-boot> printenv -e
+[2026-11-05 14:34:41] PlatformLang:
+[2026-11-05 14:34:41]     8be4df61-93ca-11d2-aa0d-00e098032b8c (EFI_GLOBAL_VARIABLE_GUID)
+[2026-11-05 14:34:41]     NV|BS|RT, DataSize = 0x6
+[2026-11-05 14:34:41]     00000000: 65 6e 2d 55 53 00                                en-US.
+[2026-11-05 14:34:41] Boot0000:
+[2026-11-05 14:34:41]     8be4df61-93ca-11d2-aa0d-00e098032b8c (EFI_GLOBAL_VARIABLE_GUID)
+[2026-11-05 14:34:41]     NV|BS|RT, DataSize = 0x78
+[2026-11-05 14:34:41]     00000000: 01 00 00 00 64 00 55 00 62 00 75 00 6e 00 74 00  ....d.U.b.u.n.t.
+[2026-11-05 14:34:41]     00000010: 75 00 00 00 04 01 2a 00 01 00 00 00 00 08 00 00  u.....*.........
+[2026-11-05 14:34:41]     00000020: 00 00 00 00 00 98 21 00 00 00 00 00 18 26 7d 89  ......!......&}.
+[2026-11-05 14:34:41]     00000030: 79 23 19 4a a0 c2 3d ed ed 22 71 f4 02 02 04 04  y#.J..=.."q.....
+[2026-11-05 14:34:41]     00000040: 36 00 5c 00 45 00 46 00 49 00 5c 00 75 00 62 00  6.\.E.F.I.\.u.b.
+[2026-11-05 14:34:41]     00000050: 75 00 6e 00 74 00 75 00 5c 00 73 00 68 00 69 00  u.n.t.u.\.s.h.i.
+[2026-11-05 14:34:41]     00000060: 6d 00 61 00 61 00 36 00 34 00 2e 00 65 00 66 00  m.a.a.6.4...e.f.
+[2026-11-05 14:34:41]     00000070: 69 00 00 00 7f ff 04 00                          i.......
+[2026-11-05 14:34:41] BootOrder:
+[2026-11-05 14:34:41]     8be4df61-93ca-11d2-aa0d-00e098032b8c (EFI_GLOBAL_VARIABLE_GUID)
+[2026-11-05 14:34:41]     NV|BS|RT, DataSize = 0x2
+[2026-11-05 14:34:41]     00000000: 00 00                                            ..
+[2026-11-05 14:34:41] SecureBoot:
+[2026-11-05 14:34:41]     8be4df61-93ca-11d2-aa0d-00e098032b8c (EFI_GLOBAL_VARIABLE_GUID)
+[2026-11-05 14:34:41]     BS|RT|RO, DataSize = 0x1
+[2026-11-05 14:34:41]     00000000: 00                                               .
+[2026-11-05 14:34:41] SetupMode:
+[2026-11-05 14:34:41]     8be4df61-93ca-11d2-aa0d-00e098032b8c (EFI_GLOBAL_VARIABLE_GUID)
+[2026-11-05 14:34:41]     BS|RT|RO, DataSize = 0x1
+[2026-11-05 14:34:41]     00000000: 01                                               .
+[2026-11-05 14:34:41] AuditMode:
+[2026-11-05 14:34:41]     8be4df61-93ca-11d2-aa0d-00e098032b8c (EFI_GLOBAL_VARIABLE_GUID)
+[2026-11-05 14:34:41]     BS|RT|RO, DataSize = 0x1
+[2026-11-05 14:34:41]     00000000: 00                                               .
+[2026-11-05 14:34:41] DeployedMode:
+[2026-11-05 14:34:41]     8be4df61-93ca-11d2-aa0d-00e098032b8c (EFI_GLOBAL_VARIABLE_GUID)
+[2026-11-05 14:34:41]     BS|RT|RO, DataSize = 0x1
+[2026-11-05 14:34:41]     00000000: 00                                               .
+[2026-11-05 14:34:41] VendorKeys:
+[2026-11-05 14:34:41]     8be4df61-93ca-11d2-aa0d-00e098032b8c (EFI_GLOBAL_VARIABLE_GUID)
+[2026-11-05 14:34:41]     BS|RT|RO, DataSize = 0x1
+[2026-11-05 14:34:41]     00000000: 00                                               .
+[2026-11-05 14:34:41] PlatformLangCodes:
+[2026-11-05 14:34:41]     8be4df61-93ca-11d2-aa0d-00e098032b8c (EFI_GLOBAL_VARIABLE_GUID)
+[2026-11-05 14:34:41]     BS|RT|RO, DataSize = 0x6
+[2026-11-05 14:34:41]     00000000: 65 6e 2d 55 53 00                                en-US.
+[2026-11-05 14:34:41] OsIndicationsSupported:
+[2026-11-05 14:34:41]     8be4df61-93ca-11d2-aa0d-00e098032b8c (EFI_GLOBAL_VARIABLE_GUID)
+[2026-11-05 14:34:41]     BS|RT|RO, DataSize = 0x8
+[2026-11-05 14:34:41]     00000000: 1c 00 00 00 00 00 00 00                          ........
+[2026-11-05 14:34:41] SignatureSupport:
+[2026-11-05 14:34:41]     8be4df61-93ca-11d2-aa0d-00e098032b8c (EFI_GLOBAL_VARIABLE_GUID)
+[2026-11-05 14:34:41]     BS|RT|RO, DataSize = 0x20
+[2026-11-05 14:34:41]     00000000: 26 16 c4 c1 4c 50 92 40 ac a9 41 f9 36 93 43 28  &...LP.@..A.6.C(
+[2026-11-05 14:34:41]     00000010: a1 59 c0 a5 e4 94 a7 4a 87 b5 ab 15 5c 2b f0 72  .Y.....J....\+.r
+[2026-11-05 14:34:48] u-boot> bdinfo
+[2026-11-05 14:34:48] boot_params = 0x0000000000000000
+[2026-11-05 14:34:48] DRAM bank   = 0x0000000000000000
+[2026-11-05 14:34:48] -> start    = 0x00000008c0000000
+[2026-11-05 14:34:48] -> size     = 0x0000000100000000
+[2026-11-05 14:34:48] flashstart  = 0x0000000000000000
+[2026-11-05 14:34:48] flashsize   = 0x0000000000000000
+[2026-11-05 14:34:48] flashoffset = 0x0000000000000000
+[2026-11-05 14:34:48] baudrate    = 115200 bps
+[2026-11-05 14:34:48] relocaddr   = 0x00000009bfeed000
+[2026-11-05 14:34:48] reloc off   = 0x00000000ffeed000
+[2026-11-05 14:34:48] Build       = 64-bit
+[2026-11-05 14:34:48] current eth = xgmac@32400000
+[2026-11-05 14:34:48] ethaddr     = 76:96:98:5c:7a:41
+[2026-11-05 14:34:48] IP addr     = <NULL>
+[2026-11-05 14:34:48] fdt_blob    = 0x00000009bf6db6b0
+[2026-11-05 14:34:48] new_fdt     = 0x00000009bf6db6b0
+[2026-11-05 14:34:48] fdt_size    = 0x0000000000001700
+[2026-11-05 14:34:48] lmb_dump_all:
+[2026-11-05 14:34:48]  memory.cnt  = 0x1
+[2026-11-05 14:34:48]  memory[0]      [0x8c0000000-0x9bfffffff], 0x100000000 bytes flags: 0
+[2026-11-05 14:34:48]  reserved.cnt  = 0x1
+[2026-11-05 14:34:48]  reserved[0]    [0x9bf6d6790-0x9bfffffff], 0x00929870 bytes flags: 0
+[2026-11-05 14:34:48] devicetree  = separate
+[2026-11-05 14:34:48] arch_number = 0x0000000000000000
+[2026-11-05 14:34:48] TLB addr    = 0x00000009bfff0000
+[2026-11-05 14:34:48] irq_sp      = 0x00000009bf6db6a0
+[2026-11-05 14:34:48] sp start    = 0x00000009bf6db6a0
+[2026-11-05 14:34:48] Board Type  = 0
+[2026-11-05 14:34:48] Early malloc usage: 0 / 4000
+[2026-11-05 14:34:52] u-boot> rtc list
+[2026-11-05 14:34:52] RTC #0 - rtc_emul
+[2026-11-05 14:34:56] u-boot> sf probe
+[2026-11-05 14:34:56] Flash proxy probe bus 0
+[2026-11-05 14:35:02] u-boot> usb reset
+[2026-11-05 14:35:02] resetting USB...
+[2026-11-05 14:35:02] Bus usbhost@0x022100000: Using usb cmn_offset: 0x1000000000
+[2026-11-05 14:35:02] dwc3_hsphy_mode_setup 388 REG 102407
+[2026-11-05 14:35:02] Register 2000140 NbrPorts 2
+[2026-11-05 14:35:02] Starting the controller
+[2026-11-05 14:35:02] USB XHCI 1.20
+[2026-11-05 14:35:02] Bus usbhost@0x022000000: Using usb cmn_offset: 0x1000000000
+[2026-11-05 14:35:02] dwc3_hsphy_mode_setup 388 REG 102407
+[2026-11-05 14:35:03] Register 2000140 NbrPorts 2
+[2026-11-05 14:35:03] Starting the controller
+[2026-11-05 14:35:03] USB XHCI 1.20
+[2026-11-05 14:35:04] scanning bus usbhost@0x022100000 for devices... 1 USB Device(s) found
+[2026-11-05 14:35:05] scanning bus usbhost@0x022000000 for devices... 1 USB Device(s) found
+[2026-11-05 14:35:05]        scanning usb for storage devices... 0 Storage Device(s) found
+[2026-11-05 14:35:10] u-boot> usb info 
+[2026-11-05 14:35:11] 1: Hub,  USB Revision 3.0
+[2026-11-05 14:35:11]  - U-Boot XHCI Host Controller 
+[2026-11-05 14:35:11]  - Class: Hub
+[2026-11-05 14:35:11]  - PacketSize: 512  Configurations: 1
+[2026-11-05 14:35:11]  - Vendor: 0x0000  Product 0x0000 Version 1.0
+[2026-11-05 14:35:11]    Configuration: 1
+[2026-11-05 14:35:11]    - Interfaces: 1 Self Powered 0mA
+[2026-11-05 14:35:11]      Interface: 0
+[2026-11-05 14:35:11]      - Alternate Setting 0, Endpoints: 1
+[2026-11-05 14:35:11]      - Class Hub
+[2026-11-05 14:35:11]      - Endpoint 1 In Interrupt MaxPacket 8 Interval 255ms
+[2026-11-05 14:34:48] 
+[2026-11-05 14:35:11] 1: Hub,  USB Revision 3.0
+[2026-11-05 14:35:11]  - U-Boot XHCI Host Controller 
+[2026-11-05 14:35:11]  - Class: Hub
+[2026-11-05 14:35:11]  - PacketSize: 512  Configurations: 1
+[2026-11-05 14:35:11]  - Vendor: 0x0000  Product 0x0000 Version 1.0
+[2026-11-05 14:35:11]    Configuration: 1
+[2026-11-05 14:35:11]    - Interfaces: 1 Self Powered 0mA
+[2026-11-05 14:35:11]      Interface: 0
+[2026-11-05 14:35:11]      - Alternate Setting 0, Endpoints: 1
+[2026-11-05 14:35:11]      - Class Hub
+[2026-11-05 14:35:11]      - Endpoint 1 In Interrupt MaxPacket 8 Interval 255ms
+[2026-11-05 14:34:52] 
+[2026-11-05 14:35:13] u-boot> mmc rescan
+[2026-11-05 14:35:14] uhs_en:0
+[2026-11-05 14:35:14] trying mode SD High Speed (50MHz) width 4 (at 50 MHz)
+[2026-11-05 14:35:16] u-boot> mmc list
+[2026-11-05 14:35:17] dwmmc0@22200000: 0 (eMMC)
+[2026-11-05 14:35:17] dwmmc1@22300000: 1 (SD)
+[2026-11-05 14:35:19] u-boot> mmc info
+[2026-11-05 14:35:19] Device: dwmmc1@22300000
+[2026-11-05 14:35:19] Manufacturer ID: 3
+[2026-11-05 14:35:19] OEM: 5344
+[2026-11-05 14:35:19] Name: SA08G 
+[2026-11-05 14:35:19] Bus Speed: 50000000
+[2026-11-05 14:35:19] Rd Block Len: 512
+[2026-11-05 14:35:19] SD version 3.0
+[2026-11-05 14:35:19] High Capacity: Yes
+[2026-11-05 14:35:19] Capacity: 7.4 GiB
+[2026-11-05 14:35:19] Bus Width: 4-bit
+[2026-11-05 14:35:19] Erase Group Size: 512 Bytes
+[2026-11-05 14:35:25] u-boot> efidebug devices
+[2026-11-05 14:35:25] Device           Device Path
+[2026-11-05 14:35:25] ================ ====================
+[2026-11-05 14:35:25] 00000009bf6df230 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)
+[2026-11-05 14:35:25] 00000009bffe45d8 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/Uart(0,0,D,D)
+[2026-11-05 14:35:25] 00000009bf6e49d0 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)
+[2026-11-05 14:35:25] 00000009bf6e4b40 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(1,GPT,897d2618-2379-4a19-a0c2-3deded2271f4,0x800,0x219800)
+[2026-11-05 14:35:25] 00000009bf6e4fb0 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(2,GPT,8b02cc43-b831-41ef-91c5-8a36907598b5,0x21a000,0x400000)
+[2026-11-05 14:35:25] 00000009bf6e6150 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(3,GPT,669e4bf4-54d9-46da-84a9-0781a0c164b5,0x61a000,0x6e61800)
+[2026-11-05 14:35:25] 00000009bf6e7410 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(1)/SD(1)
+[2026-11-05 14:35:25] 00000009bf6e7580 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(1)/SD(1)/HD(1,GPT,ad9fb413-9895-4e6f-afdf-151f73f95331,0x800,0x32000)
+[2026-11-05 14:35:25] 00000009bf6e79f0 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(1)/SD(1)/HD(2,GPT,4491cc92-efd8-49c5-b6d6-79e30947620c,0x32800,0xcf2f0)
+[2026-11-05 14:35:25] 00000009bf6e8b90 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(1)/SD(1)/HD(3,GPT,90489a78-a00e-4df4-9728-27a0308efe12,0x102000,0x19000)
+[2026-11-05 14:35:25] 00000009bf6e91a0 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/MAC(7696985c7a41,1)
+[2026-11-05 14:35:29] u-boot> efidebug drivers
+[2026-11-05 14:35:29] Driver           Name                 Image Path
+[2026-11-05 14:35:29] ================ ==================== ====================
+[2026-11-05 14:35:29] 00000009bf6e8620 <NULL>               <built-in>
+[2026-11-05 14:35:34] u-boot> efidebug dh     
+[2026-11-05 14:35:34] Handle           Protocols
+[2026-11-05 14:35:34] ================ ====================
+[2026-11-05 14:35:11] 
+[2026-11-05 14:35:34] 00000009bf6df230  /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)
+[2026-11-05 14:35:34]   Device Path To Text
+[2026-11-05 14:35:34]   Device Path Utilities
+[2026-11-05 14:35:34]   Device-Tree Fixup
+[2026-11-05 14:35:34]   Unicode Collation 2
+[2026-11-05 14:35:34]   HII String
+[2026-11-05 14:35:34]   HII Database
+[2026-11-05 14:35:34]   Simple Text Output
+[2026-11-05 14:35:34]   Simple Text Input
+[2026-11-05 14:35:34]   Simple Text Input Ex
+[2026-11-05 14:35:19] 
+[2026-11-05 14:35:34] 00000009bffe45d8  /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/Uart(0,0,D,D)
+[2026-11-05 14:35:19] 
+[2026-11-05 14:35:34] 00000009bf6e49d0  /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)
+[2026-11-05 14:35:34]   Block IO
+[2026-11-05 14:35:19] 
+[2026-11-05 14:35:34] 00000009bf6e4b40  /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(1,GPT,897d2618-2379-4a19-a0c2-3deded2271f4,0x800,0x219800)
+[2026-11-05 14:35:34]   Block IO
+[2026-11-05 14:35:34]   System Partition
+[2026-11-05 14:35:34]   Simple File System
+[2026-11-05 14:35:25] 
+[2026-11-05 14:35:34] 00000009bf6e4fb0  /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(2,GPT,8b02cc43-b831-41ef-91c5-8a36907598b5,0x21a000,0x400000)
+[2026-11-05 14:35:34]   Block IO
+[2026-11-05 14:35:34]   Simple File System
+[2026-11-05 14:35:25] 
+[2026-11-05 14:35:34] 00000009bf6e6150  /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(3,GPT,669e4bf4-54d9-46da-84a9-0781a0c164b5,0x61a000,0x6e61800)
+[2026-11-05 14:35:34]   Block IO
+[2026-11-05 14:35:25] 
+[2026-11-05 14:35:34] 00000009bf6e7410  /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(1)/SD(1)
+[2026-11-05 14:35:34]   Block IO
+[2026-11-05 14:35:25] 
+[2026-11-05 14:35:34] 00000009bf6e7580  /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(1)/SD(1)/HD(1,GPT,ad9fb413-9895-4e6f-afdf-151f73f95331,0x800,0x32000)
+[2026-11-05 14:35:34]   Block IO
+[2026-11-05 14:35:34]   System Partition
+[2026-11-05 14:35:34]   Simple File System
+[2026-11-05 14:35:29] 
+[2026-11-05 14:35:34] 00000009bf6e79f0  /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(1)/SD(1)/HD(2,GPT,4491cc92-efd8-49c5-b6d6-79e30947620c,0x32800,0xcf2f0)
+[2026-11-05 14:35:34]   Block IO
+[2026-11-05 14:35:34]   Simple File System
+[2026-11-05 14:35:34] 
+[2026-11-05 14:35:34] 00000009bf6e8b90  /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(1)/SD(1)/HD(3,GPT,90489a78-a00e-4df4-9728-27a0308efe12,0x102000,0x19000)
+[2026-11-05 14:35:34]   Block IO
+[2026-11-05 14:35:34]   Simple File System
+[2026-11-05 14:35:34] 
+[2026-11-05 14:35:34] 00000009bf6e8620  Driver Binding
+[2026-11-05 14:35:34] 
+[2026-11-05 14:35:34] 00000009bf6e80d0  Firmware Management
+[2026-11-05 14:35:34] 
+[2026-11-05 14:35:34] 00000009bf6e91a0  /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/MAC(7696985c7a41,1)
+[2026-11-05 14:35:34]   Simple Network
+[2026-11-05 14:35:34]   PXE Base Code
+[2026-11-05 14:35:39] u-boot> efidebug memmap
+[2026-11-05 14:35:39] Type             Start            End              Attributes
+[2026-11-05 14:35:39] ================ ================ ================ ==========
+[2026-11-05 14:35:39] CONVENTIONAL     00000008c0000000-00000009be6b8000 WB
+[2026-11-05 14:35:39] LOADER DATA      00000009be6b8000-00000009be6b9000 WB
+[2026-11-05 14:35:39] BOOT DATA        00000009be6b9000-00000009be6ba000 WB
+[2026-11-05 14:35:39] RUNTIME DATA     00000009be6ba000-00000009be6bb000 WB|RT
+[2026-11-05 14:35:39] BOOT DATA        00000009be6bb000-00000009be6be000 WB
+[2026-11-05 14:35:39] RUNTIME DATA     00000009be6be000-00000009be6bf000 WB|RT
+[2026-11-05 14:35:39] BOOT DATA        00000009be6bf000-00000009be6c1000 WB
+[2026-11-05 14:35:39] RUNTIME DATA     00000009be6c1000-00000009be6c3000 WB|RT
+[2026-11-05 14:35:39] BOOT DATA        00000009be6c3000-00000009be6c4000 WB
+[2026-11-05 14:35:39] RUNTIME DATA     00000009be6c4000-00000009be6c8000 WB|RT
+[2026-11-05 14:35:39] BOOT DATA        00000009be6c8000-00000009be6db000 WB
+[2026-11-05 14:35:39] LOADER DATA      00000009be6db000-00000009bfee0000 WB
+[2026-11-05 14:35:39] RUNTIME CODE     00000009bfee0000-00000009bfef0000 WB|RT
+[2026-11-05 14:35:39] LOADER DATA      00000009bfef0000-00000009c0000000 WB
+[2026-11-05 14:35:44] u-boot> efidebug tables
+[2026-11-05 14:35:44] b122a263-3661-4f68-9929-78f8b0d62180 (EFI System Resource Table)
+[2026-11-05 14:35:44] eb66918a-7eef-402a-842e-931d21c38ae9 (Runtime properties)
+[2026-11-05 14:35:44] f2fd1544-9794-4a2c-992e-e5bbcf20e394 (f2fd1544-9794-4a2c-992e-e5bbcf20e394)
+[2026-11-05 14:35:50] u-boot> efidebug query 
+[2026-11-05 14:35:50] Max storage size 16360
+[2026-11-05 14:35:50] Remaining storage size 15472
+[2026-11-05 14:35:50] Max variable size 16328
+[2026-11-05 14:35:57] u-boot> efidebug boot dump
+[2026-11-05 14:35:57] Boot0000:
+[2026-11-05 14:35:57] attributes: A-- (0x00000001)
+[2026-11-05 14:35:57]   label: Ubuntu
+[2026-11-05 14:35:57]   file_path: /HD(1,GPT,897d2618-2379-4a19-a0c2-3deded2271f4,0x800,0x219800)/\EFI\ubuntu\shimaa64.efi
+[2026-11-05 14:35:57]   data:
+[2026-11-05 14:36:03] u-boot> efidebug capsule esrt
+[2026-11-05 14:36:03] ========================================
+[2026-11-05 14:36:03] ESRT: fw_resource_count=1
+[2026-11-05 14:36:03] ESRT: fw_resource_count_max=1
+[2026-11-05 14:36:03] ESRT: fw_resource_version=1
+[2026-11-05 14:36:03] [entry 0]==============================
+[2026-11-05 14:36:03] ESRT: fw_class=63CC9A90-C296-49FE-BBBF-6AFB42C4E385
+[2026-11-05 14:36:03] ESRT: fw_type=unknown
+[2026-11-05 14:36:03] ESRT: fw_version=0
+[2026-11-05 14:36:03] ESRT: lowest_supported_fw_version=0
+[2026-11-05 14:36:03] ESRT: capsule_flags=0
+[2026-11-05 14:36:03] ESRT: last_attempt_version=0
+[2026-11-05 14:36:03] ESRT: last_attempt_status=success
+[2026-11-05 14:36:03] ========================================
+[2026-11-05 14:36:11] u-boot> bootefi hello ${fdtcontroladdr}
+[2026-11-05 14:36:12] Booting /MemoryMapped(0x0,0x9bff82430,0x11e0)
+[2026-11-05 14:36:12] Hello, world!
+[2026-11-05 14:36:12] Running on UEFI 2.9
+[2026-11-05 14:36:12] Have device tree
+[2026-11-05 14:36:12] Load options: <none>
+[2026-11-05 14:36:12] Boot device: /MemoryMapped(0x0,0x9bff82430,0x11e0)
+[2026-11-05 14:36:12] File path: <none>
+[2026-11-05 14:36:18] u-boot> bootefi selftest ${fdtcontroladdr}
+[2026-11-05 14:35:39] 
+[2026-11-05 14:36:19] Testing EFI API implementation
+[2026-11-05 14:35:39] 
+[2026-11-05 14:36:19] Number of tests to execute: 39
+[2026-11-05 14:35:39] 
+[2026-11-05 14:36:19] Setting up 'block device'
+[2026-11-05 14:36:19] Setting up 'block device' succeeded
+[2026-11-05 14:35:44] 
+[2026-11-05 14:36:19] Executing 'block device'
+[2026-11-05 14:36:19] ../lib/efi_selftest/efi_selftest_block_device.c(407):
+[2026-11-05 14:36:19] TODO: Wrong volume label '', expected 'U-BOOT TEST'
+[2026-11-05 14:36:19] Executing 'block device' succeeded
+[2026-11-05 14:35:50] 
+[2026-11-05 14:36:19] Tearing down 'block device'
+[2026-11-05 14:36:19] Tearing down 'block device' succeeded
+[2026-11-05 14:35:57] 
+[2026-11-05 14:36:19] Setting up 'configuration tables'
+[2026-11-05 14:36:19] Setting up 'configuration tables' succeeded
+[2026-11-05 14:35:57] 
+[2026-11-05 14:36:19] Executing 'configuration tables'
+[2026-11-05 14:36:19] Executing 'configuration tables' succeeded
+[2026-11-05 14:36:03] 
+[2026-11-05 14:36:19] Setting up 'controllers'
+[2026-11-05 14:36:19] Setting up 'controllers' succeeded
+[2026-11-05 14:36:03] 
+[2026-11-05 14:36:19] Executing 'controllers'
+[2026-11-05 14:36:19] Executing 'controllers' succeeded
+[2026-11-05 14:36:03] 
+[2026-11-05 14:36:19] Setting up 'device path'
+[2026-11-05 14:36:19] Setting up 'device path' succeeded
+[2026-11-05 14:36:03] 
+[2026-11-05 14:36:19] Executing 'device path'
+[2026-11-05 14:36:19] Installed device path protocols:
+[2026-11-05 14:36:19] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)
+[2026-11-05 14:36:19] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/Uart(0,0,D,D)
+[2026-11-05 14:36:19] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)
+[2026-11-05 14:36:19] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(1,GPT,897d2618-2379-4a19-a0c2-3deded2271f4,0x800,0x219800)
+[2026-11-05 14:36:19] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(2,GPT,8b02cc43-b831-41ef-91c5-8a36907598b5,0x21a000,0x400000)
+[2026-11-05 14:36:19] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(3,GPT,669e4bf4-54d9-46da-84a9-0781a0c164b5,0x61a000,0x6e61800)
+[2026-11-05 14:36:19] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(1)/SD(1)
+[2026-11-05 14:36:19] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(1)/SD(1)/HD(1,GPT,ad9fb413-9895-4e6f-afdf-151f73f95331,0x800,0x32000)
+[2026-11-05 14:36:19] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(1)/SD(1)/HD(2,GPT,4491cc92-efd8-49c5-b6d6-79e30947620c,0x32800,0xcf2f0)
+[2026-11-05 14:36:19] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(1)/SD(1)/HD(3,GPT,90489a78-a00e-4df4-9728-27a0308efe12,0x102000,0x19000)
+[2026-11-05 14:36:19] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/MAC(7696985c7a41,1)
+[2026-11-05 14:36:19] /VenHw(dbca4c98-6cb0-694d-0872-819c650cb7b8)/HD(1,MBR,0xd1535d21,0x1,0x7f)
+[2026-11-05 14:36:19] /VenHw(dbca4c98-6cb0-694d-0872-819c650cbbb1)
+[2026-11-05 14:36:19] /VenHw(dbca4c98-6cb0-694d-0872-819c650cbbb1)/VenHw(dbca4c98-6cb0-694d-0872-819c650cbba2)
+[2026-11-05 14:36:19] /VenHw(dbca4c98-6cb0-694d-0872-819c650cbbb1)/VenHw(dbca4c98-6cb0-694d-0872-819c650cbba2)/VenHw(dbca4c98-6cb0-694d-0872-819c650cbbc3)
+[2026-11-05 14:36:19] Executing 'device path' succeeded
+[2026-11-05 14:35:44] 
+[2026-11-05 14:36:19] Tearing down 'device path'
+[2026-11-05 14:36:19] Tearing down 'device path' succeeded
+[2026-11-05 14:36:19] 
+[2026-11-05 14:36:19] Setting up 'device path utilities protocol'
+[2026-11-05 14:36:19] Setting up 'device path utilities protocol' succeeded
+[2026-11-05 14:36:19] 
+[2026-11-05 14:36:19] Executing 'device path utilities protocol'
+[2026-11-05 14:36:19] Executing 'device path utilities protocol' succeeded
+[2026-11-05 14:36:19] 
+[2026-11-05 14:36:19] Setting up 'esrt'
+[2026-11-05 14:36:19] Setting up 'esrt' succeeded
+[2026-11-05 14:36:19] 
+[2026-11-05 14:36:19] Executing 'esrt'
+[2026-11-05 14:36:19] Executing 'esrt' succeeded
+[2026-11-05 14:36:19] 
+[2026-11-05 14:36:19] Tearing down 'esrt'
+[2026-11-05 14:36:19] Tearing down 'esrt' succeeded
+[2026-11-05 14:36:19] 
+[2026-11-05 14:36:19] Setting up 'event groups'
+[2026-11-05 14:36:19] Setting up 'event groups' succeeded
+[2026-11-05 14:36:19] 
+[2026-11-05 14:36:19] Executing 'event groups'
+[2026-11-05 14:36:19] Executing 'event groups' succeeded
+[2026-11-05 14:36:19] 
+[2026-11-05 14:36:19] Setting up 'event services'
+[2026-11-05 14:36:19] Setting up 'event services' succeeded
+[2026-11-05 14:36:19] 
+[2026-11-05 14:36:19] Executing 'event services'
+[2026-11-05 14:36:20] Executing 'event services' succeeded
+[2026-11-05 14:36:19] 
+[2026-11-05 14:36:20] Tearing down 'event services'
+[2026-11-05 14:36:20] Tearing down 'event services' succeeded
+[2026-11-05 14:36:19] 
+[2026-11-05 14:36:20] Setting up 'device tree'
+[2026-11-05 14:36:20] Setting up 'device tree' succeeded
+[2026-11-05 14:36:19] 
+[2026-11-05 14:36:20] Executing 'device tree'
+[2026-11-05 14:36:20] compatible: bst,c1200
+[2026-11-05 14:36:20] Executing 'device tree' succeeded
+[2026-11-05 14:36:19] 
+[2026-11-05 14:36:20] Setting up 'graphical output'
+[2026-11-05 14:36:20] Graphical output protocol is not available.
+[2026-11-05 14:36:20] Setting up 'graphical output' succeeded
+[2026-11-05 14:36:19] 
+[2026-11-05 14:36:20] Executing 'graphical output'
+[2026-11-05 14:36:20] Executing 'graphical output' succeeded
+[2026-11-05 14:36:19] 
+[2026-11-05 14:36:20] Tearing down 'graphical output'
+[2026-11-05 14:36:20] Tearing down 'graphical output' succeeded
+[2026-11-05 14:36:19] 
+[2026-11-05 14:36:20] Setting up 'HII database protocols'
+[2026-11-05 14:36:20] Setting up 'HII database protocols' succeeded
+[2026-11-05 14:36:19] 
+[2026-11-05 14:36:20] Executing 'HII database protocols'
+[2026-11-05 14:36:20] test_hii_database_new_package_list:
+[2026-11-05 14:36:20] test_hii_database_update_package_list:
+[2026-11-05 14:36:20] test_hii_database_list_package_lists:
+[2026-11-05 14:36:20] test_hii_database_export_package_lists:
+[2026-11-05 14:36:20] test_hii_database_register_package_notify:
+[2026-11-05 14:36:20] test_hii_database_unregister_package_notify:
+[2026-11-05 14:36:20] test_hii_database_find_keyboard_layouts:
+[2026-11-05 14:36:20] test_hii_database_get_keyboard_layout:
+[2026-11-05 14:36:20] test_hii_database_set_keyboard_layout:
+[2026-11-05 14:36:20] test_hii_database_get_package_list_handle:
+[2026-11-05 14:36:20] test_hii_string_new_string:
+[2026-11-05 14:36:20] new string id is 2
+[2026-11-05 14:36:20] test_hii_string_get_string:
+[2026-11-05 14:36:20] test_hii_string_set_string:
+[2026-11-05 14:36:20] test_hii_string_get_languages:
+[2026-11-05 14:36:20] got languages are en-US;zh-Hant
+[2026-11-05 14:36:20] test_hii_string_get_secondary_languages:
+[2026-11-05 14:36:20] no secondary languages
+[2026-11-05 14:36:20] Executing 'HII database protocols' succeeded
+[2026-11-05 14:36:20] 
+[2026-11-05 14:36:20] Setting up 'load file protocol'
+[2026-11-05 14:36:20] Setting up 'load file protocol' succeeded
+[2026-11-05 14:36:20] 
+[2026-11-05 14:36:20] Executing 'load file protocol'
+[2026-11-05 14:36:20] EFI application calling Exit
+[2026-11-05 14:36:20] Executing 'load file protocol' succeeded
+[2026-11-05 14:36:20] 
+[2026-11-05 14:36:20] Tearing down 'load file protocol'
+[2026-11-05 14:36:20] Tearing down 'load file protocol' succeeded
+[2026-11-05 14:36:20] 
+[2026-11-05 14:36:20] Setting up 'loaded image'
+[2026-11-05 14:36:20] Setting up 'loaded image' succeeded
+[2026-11-05 14:36:20] 
+[2026-11-05 14:36:20] Executing 'loaded image'
+[2026-11-05 14:36:20] 2 protocols installed on image handle
+[2026-11-05 14:36:20] Executing 'loaded image' succeeded
+[2026-11-05 14:36:20] 
+[2026-11-05 14:36:20] Setting up 'load image from file'
+[2026-11-05 14:36:20] Setting up 'load image from file' succeeded
+[2026-11-05 14:36:20] 
+[2026-11-05 14:36:20] Executing 'load image from file'
+[2026-11-05 14:36:20] EFI application calling Exit
+[2026-11-05 14:36:20] Executing 'load image from file' succeeded
+[2026-11-05 14:36:20] 
+[2026-11-05 14:36:20] Tearing down 'load image from file'
+[2026-11-05 14:36:20] Tearing down 'load image from file' succeeded
+[2026-11-05 14:36:20] 
+[2026-11-05 14:36:20] Setting up 'mem'
+[2026-11-05 14:36:20] Setting up 'mem' succeeded
+[2026-11-05 14:36:20] 
+[2026-11-05 14:36:20] Executing 'mem'
+[2026-11-05 14:36:20] Executing 'mem' succeeded
+[2026-11-05 14:36:20] 
+[2026-11-05 14:36:20] Setting up 'memory'
+[2026-11-05 14:36:20] Setting up 'memory' succeeded
+[2026-11-05 14:36:20] 
+[2026-11-05 14:36:20] Executing 'memory'
+[2026-11-05 14:36:20] Executing 'memory' succeeded
+[2026-11-05 14:36:20] 
+[2026-11-05 14:36:20] Setting up 'open protocol'
+[2026-11-05 14:36:20] Setting up 'open protocol' succeeded
+[2026-11-05 14:36:20] 
+[2026-11-05 14:36:20] Executing 'open protocol'
+[2026-11-05 14:36:20] Executing 'open protocol' succeeded
+[2026-11-05 14:36:20] 
+[2026-11-05 14:36:20] Tearing down 'open protocol'
+[2026-11-05 14:36:20] Tearing down 'open protocol' succeeded
+[2026-11-05 14:36:20] 
+[2026-11-05 14:36:20] Setting up 'manage protocols'
+[2026-11-05 14:36:20] Setting up 'manage protocols' succeeded
+[2026-11-05 14:36:20] 
+[2026-11-05 14:36:20] Executing 'manage protocols'
+[2026-11-05 14:36:20] Executing 'manage protocols' succeeded
+[2026-11-05 14:36:20] 
+[2026-11-05 14:36:20] Tearing down 'manage protocols'
+[2026-11-05 14:36:20] Tearing down 'manage protocols' succeeded
+[2026-11-05 14:36:20] 
+[2026-11-05 14:36:20] Setting up 'register protocol notify'
+[2026-11-05 14:36:20] Setting up 'register protocol notify' succeeded
+[2026-11-05 14:36:20] 
+[2026-11-05 14:36:20] Executing 'register protocol notify'
+[2026-11-05 14:36:20] Executing 'register protocol notify' succeeded
+[2026-11-05 14:36:20] 
+[2026-11-05 14:36:20] Tearing down 'register protocol notify'
+[2026-11-05 14:36:20] Tearing down 'register protocol notify' succeeded
+[2026-11-05 14:36:20] 
+[2026-11-05 14:36:20] Setting up 'real time clock'
+[2026-11-05 14:36:20] Setting up 'real time clock' succeeded
+[2026-11-05 14:36:20] 
+[2026-11-05 14:36:20] Executing 'real time clock'
+[2026-11-05 14:36:20] Time according to real time clock: 2026-11-05 05:20:07
+[2026-11-05 14:36:20] Executing 'real time clock' succeeded
+[2026-11-05 14:36:20] 
+[2026-11-05 14:36:20] Setting up 'simple network protocol'
+[2026-11-05 14:36:20] Setting up 'simple network protocol' succeeded
+[2026-11-05 14:36:20] 
+[2026-11-05 14:36:20] Executing 'simple network protocol'
+[2026-11-05 14:36:20] DHCP Discover
+[2026-11-05 14:36:21] DHCP Discover
+[2026-11-05 14:36:22] DHCP Discover
+[2026-11-05 14:36:23] DHCP Discover
+[2026-11-05 14:36:24] DHCP Discover
+[2026-11-05 14:36:25] DHCP Discover
+[2026-11-05 14:36:26] DHCP Discover
+[2026-11-05 14:36:27] DHCP Discover
+[2026-11-05 14:36:28] DHCP Discover
+[2026-11-05 14:36:29] DHCP Discover
+[2026-11-05 14:36:31] ../lib/efi_selftest/efi_selftest_snp.c(353):
+[2026-11-05 14:36:31] ERROR: Timeout occurred
+[2026-11-05 14:36:31] ../lib/efi_selftest/efi_selftest.c(114):
+[2026-11-05 14:36:31] ERROR: Executing 'simple network protocol' failed
+[2026-11-05 14:36:20] 
+[2026-11-05 14:36:31] Tearing down 'simple network protocol'
+[2026-11-05 14:36:31] Tearing down 'simple network protocol' succeeded
+[2026-11-05 14:36:20] 
+[2026-11-05 14:36:31] Setting up 'start image return'
+[2026-11-05 14:36:31] Setting up 'start image return' succeeded
+[2026-11-05 14:36:20] 
+[2026-11-05 14:36:31] Executing 'start image return'
+[2026-11-05 14:36:31] EFI application returning w/o calling Exit
+[2026-11-05 14:36:31] Executing 'start image return' succeeded
+[2026-11-05 14:36:20] 
+[2026-11-05 14:36:31] Tearing down 'start image return'
+[2026-11-05 14:36:31] Tearing down 'start image return' succeeded
+[2026-11-05 14:36:20] 
+[2026-11-05 14:36:31] Setting up 'start image exit'
+[2026-11-05 14:36:31] Setting up 'start image exit' succeeded
+[2026-11-05 14:36:20] 
+[2026-11-05 14:36:31] Executing 'start image exit'
+[2026-11-05 14:36:31] EFI application calling Exit
+[2026-11-05 14:36:31] Executing 'start image exit' succeeded
+[2026-11-05 14:36:20] 
+[2026-11-05 14:36:31] Tearing down 'start image exit'
+[2026-11-05 14:36:31] Tearing down 'start image exit' succeeded
+[2026-11-05 14:36:20] 
+[2026-11-05 14:36:31] Executing 'text output'
+[2026-11-05 14:36:20] 
+[2026-11-05 14:36:31] Color palette
+[2026-11-05 14:36:31] 00000000000000000000000000000010000000000000002000000000000000300000000000000040000000000000005000000000000000600000000000000070
+[2026-11-05 14:36:31] 00000000000000010000000000000011000000000000002100000000000000310000000000000041000000000000005100000000000000610000000000000071
+[2026-11-05 14:36:31] 00000000000000020000000000000012000000000000002200000000000000320000000000000042000000000000005200000000000000620000000000000072
+[2026-11-05 14:36:31] 00000000000000030000000000000013000000000000002300000000000000330000000000000043000000000000005300000000000000630000000000000073
+[2026-11-05 14:36:31] 00000000000000040000000000000014000000000000002400000000000000340000000000000044000000000000005400000000000000640000000000000074
+[2026-11-05 14:36:31] 00000000000000050000000000000015000000000000002500000000000000350000000000000045000000000000005500000000000000650000000000000075
+[2026-11-05 14:36:31] 00000000000000060000000000000016000000000000002600000000000000360000000000000046000000000000005600000000000000660000000000000076
+[2026-11-05 14:36:31] 00000000000000070000000000000017000000000000002700000000000000370000000000000047000000000000005700000000000000670000000000000077
+[2026-11-05 14:36:31] 00000000000000080000000000000018000000000000002800000000000000380000000000000048000000000000005800000000000000680000000000000078
+[2026-11-05 14:36:31] 00000000000000090000000000000019000000000000002900000000000000390000000000000049000000000000005900000000000000690000000000000079
+[2026-11-05 14:36:31] 000000000000000a000000000000001a000000000000002a000000000000003a000000000000004a000000000000005a000000000000006a000000000000007a
+[2026-11-05 14:36:31] 000000000000000b000000000000001b000000000000002b000000000000003b000000000000004b000000000000005b000000000000006b000000000000007b
+[2026-11-05 14:36:31] 000000000000000c000000000000001c000000000000002c000000000000003c000000000000004c000000000000005c000000000000006c000000000000007c
+[2026-11-05 14:36:31] 000000000000000d000000000000001d000000000000002d000000000000003d000000000000004d000000000000005d000000000000006d000000000000007d
+[2026-11-05 14:36:31] 000000000000000e000000000000001e000000000000002e000000000000003e000000000000004e000000000000005e000000000000006e000000000000007e
+[2026-11-05 14:36:31] 000000000000000f000000000000001f000000000000002f000000000000003f000000000000004f000000000000005f000000000000006f000000000000007f
+[2026-11-05 14:36:31] Testing cursor column update
+[2026-11-05 14:36:31] 
+[2026-11-05 14:36:31] 𑀅𑀢3
+[2026-11-05 14:36:31] Executing 'text output' succeeded
+[2026-11-05 14:36:31] 
+[2026-11-05 14:36:31] Setting up 'task priority levels'
+[2026-11-05 14:36:31] Setting up 'task priority levels' succeeded
+[2026-11-05 14:36:31] 
+[2026-11-05 14:36:31] Executing 'task priority levels'
+[2026-11-05 14:36:31] Executing 'task priority levels' succeeded
+[2026-11-05 14:36:31] 
+[2026-11-05 14:36:31] Tearing down 'task priority levels'
+[2026-11-05 14:36:31] Tearing down 'task priority levels' succeeded
+[2026-11-05 14:36:31] 
+[2026-11-05 14:36:31] Setting up 'unicode collation'
+[2026-11-05 14:36:31] Setting up 'unicode collation' succeeded
+[2026-11-05 14:36:31] 
+[2026-11-05 14:36:31] Executing 'unicode collation'
+[2026-11-05 14:36:31] Executing 'unicode collation' succeeded
+[2026-11-05 14:36:20] 
+[2026-11-05 14:36:31] Setting up 'variables'
+[2026-11-05 14:36:31] Setting up 'variables' succeeded
+[2026-11-05 14:36:20] 
+[2026-11-05 14:36:31] Executing 'variables'
+[2026-11-05 14:36:31] Executing 'variables' succeeded
+[2026-11-05 14:36:31] 
+[2026-11-05 14:36:31] Setting up 'watchdog timer'
+[2026-11-05 14:36:31] Setting up 'watchdog timer' succeeded
+[2026-11-05 14:36:31] 
+[2026-11-05 14:36:31] Executing 'watchdog timer'
+[2026-11-05 14:36:32] Executing 'watchdog timer' succeeded
+[2026-11-05 14:36:31] 
+[2026-11-05 14:36:32] Tearing down 'watchdog timer'
+[2026-11-05 14:36:32] Tearing down 'watchdog timer' succeeded
+[2026-11-05 14:36:31] 
+[2026-11-05 14:36:32] Setting up 'crc32'
+[2026-11-05 14:36:32] Setting up 'crc32' succeeded
+[2026-11-05 14:36:31] 
+[2026-11-05 14:36:32] Setting up 'ExitBootServices'
+[2026-11-05 14:36:32] Setting up 'ExitBootServices' succeeded
+[2026-11-05 14:36:31] 
+[2026-11-05 14:36:32] Setting up 'variables at runtime'
+[2026-11-05 14:36:32] Setting up 'variables at runtime' succeeded
+[2026-11-05 14:36:31] 
+[2026-11-05 14:36:32] Setting up 'virtual address map'
+[2026-11-05 14:36:32] Setting up 'virtual address map' succeeded
+[2026-11-05 14:36:31] 
+[2026-11-05 14:36:32] Boot services terminated
+[2026-11-05 14:36:31] 
+[2026-11-05 14:36:32] Executing 'crc32'
+[2026-11-05 14:36:32] Executing 'crc32' succeeded
+[2026-11-05 14:36:31] 
+[2026-11-05 14:36:32] Executing 'ExitBootServices'
+[2026-11-05 14:36:31] 
+[2026-11-05 14:36:32] Boot services terminated
+[2026-11-05 14:36:32] Executing 'ExitBootServices' succeeded
+[2026-11-05 14:36:31] 
+[2026-11-05 14:36:32] Executing 'variables at runtime'
+[2026-11-05 14:36:32] Executing 'variables at runtime' succeeded
+[2026-11-05 14:36:31] 
+[2026-11-05 14:36:32] Executing 'virtual address map'
+[2026-11-05 14:36:32] Executing 'virtual address map' succeeded
+[2026-11-05 14:36:31] 
+[2026-11-05 14:36:32] Summary: 1 failures
+[2026-11-05 14:36:20] 
+[2026-11-05 14:36:32] Preparing for reset. Press any key...
+[2026-11-05 14:36:34] resetting ...
+[2026-11-05 14:36:31] 
+[2026-11-05 14:36:34] BL2-NOTICE  :BL2: Built : 00:03:05, Nov  6 2025
+[2026-11-05 14:36:34] BL2-NOTICE  :BL2: Booting BL31 [28110]
+[2026-11-05 14:36:34] host->align_buffer:0000000005170000
+[2026-11-05 14:36:34] host->align_buffer:0000000005170000
+[2026-11-05 14:36:34] dwmmc0@22200000: 0, dwmmc1@22300000: 1
+[2026-11-05 14:36:34] Net:   eth0: xgmac@32400000
+[2026-11-05 14:36:32] 
+[2026-11-05 14:36:32] 
+[2026-11-05 14:36:34] U-Boot 2022.07+ (Nov 05 2026 - 13:20:07 +0800)BST C1200 ADAS UPdate New
+[2026-11-05 14:36:32] 
+[2026-11-05 14:36:34] Autoboot in 3 seconds, hit ctrl+c to stop
+[2026-11-05 14:36:52] u-boot> mmc rescan

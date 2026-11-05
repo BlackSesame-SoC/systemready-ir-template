@@ -2,13 +2,13 @@
   9:          0          0          0          0     GICv3  25 Level     vgic
  11:          0          0          0          0     GICv3  30 Level     kvm guest ptimer
  12:          0          0          0          0     GICv3  27 Level     kvm guest vtimer
- 13:       2678       2640       2702       2623     GICv3  26 Level     arch_timer
+ 13:       2889       2990       2956       2943     GICv3  26 Level     arch_timer
  14:          0          0          0          0     GICv3  23 Level     arm-pmu
- 15:         49          0          0          0     GICv3 243 Level     ttyS0
- 16:       4852          0          0          0     GICv3 176 Level     mmc0
- 17:        239          0          0          0     GICv3 179 Level     mmc1
-IPI0:       359        418        374        344       Rescheduling interrupts
-IPI1:       573        682       1190        510       Function call interrupts
+ 15:          9          0          0          0     GICv3 243 Level     ttyS0
+ 16:        748          0          0          0     GICv3 176 Level     mmc0
+ 17:       5738          0          0          0     GICv3 179 Level     mmc1
+IPI0:       387        527        572        661       Rescheduling interrupts
+IPI1:       622       1092       1029        713       Function call interrupts
 IPI2:         0          0          0          0       CPU stop interrupts
 IPI3:         0          0          0          0       CPU stop (for crash dump) interrupts
 IPI4:         0          0          0          0       Timer broadcast interrupts

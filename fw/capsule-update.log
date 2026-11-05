@@ -1,52 +1,9 @@
-PlatformLang:
-    8be4df61-93ca-11d2-aa0d-00e098032b8c (EFI_GLOBAL_VARIABLE_GUID)
-    NV|BS|RT, DataSize = 0x6
-    00000000: 65 6e 2d 55 53 00                                en-US.
-ExitBootServicesTestVariable:
-    f6fab04f-acaf-4af3-b9fa-dcf97fb4426f (f6fab04f-acaf-4af3-b9fa-dcf97fb4426f)
-    NV|BS|RT, DataSize = 0x8
-    00000000: 02 00 00 00 00 00 00 80                          ........
-SecureBoot:
-    8be4df61-93ca-11d2-aa0d-00e098032b8c (EFI_GLOBAL_VARIABLE_GUID)
-    BS|RT|RO, DataSize = 0x1
-    00000000: 00                                               .
-SetupMode:
-    8be4df61-93ca-11d2-aa0d-00e098032b8c (EFI_GLOBAL_VARIABLE_GUID)
-    BS|RT|RO, DataSize = 0x1
-    00000000: 01                                               .
-AuditMode:
-    8be4df61-93ca-11d2-aa0d-00e098032b8c (EFI_GLOBAL_VARIABLE_GUID)
-    BS|RT|RO, DataSize = 0x1
-    00000000: 00                                               .
-DeployedMode:
-    8be4df61-93ca-11d2-aa0d-00e098032b8c (EFI_GLOBAL_VARIABLE_GUID)
-    BS|RT|RO, DataSize = 0x1
-    00000000: 00                                               .
-VendorKeys:
-    8be4df61-93ca-11d2-aa0d-00e098032b8c (EFI_GLOBAL_VARIABLE_GUID)
-    BS|RT|RO, DataSize = 0x1
-    00000000: 00                                               .
-PlatformLangCodes:
-    8be4df61-93ca-11d2-aa0d-00e098032b8c (EFI_GLOBAL_VARIABLE_GUID)
-    BS|RT|RO, DataSize = 0x6
-    00000000: 65 6e 2d 55 53 00                                en-US.
-OsIndicationsSupported:
-    8be4df61-93ca-11d2-aa0d-00e098032b8c (EFI_GLOBAL_VARIABLE_GUID)
-    BS|RT|RO, DataSize = 0x8
-    00000000: 1c 00 00 00 00 00 00 00                          ........
-SignatureSupport:
-    8be4df61-93ca-11d2-aa0d-00e098032b8c (EFI_GLOBAL_VARIABLE_GUID)
-    BS|RT|RO, DataSize = 0x20
-    00000000: 26 16 c4 c1 4c 50 92 40 ac a9 41 f9 36 93 43 28  &...LP.@..A.6.C(
-    00000010: a1 59 c0 a5 e4 94 a7 4a 87 b5 ab 15 5c 2b f0 72  .Y.....J....\+.r
-u-boot> 
-
-warning: phy_calibration=0xffffffff 
+Shell> warning: phy_calibration=0xffffffff 
 warning: phy_calibration=0xffffffff 
 
 BL2-NOTICE  :BL2: Built : 00:03:05, Nov  6 2025
 Hit ctrl+x to stop autoboot: 0
-BL2-NOTICE  :BL2: Booting BL31 [3734193]
+BL2-NOTICE  :BL2: Booting BL31 [3706014]
 host->align_buffer:0000000005170000
 host->align_buffer:0000000005170000
 dwmmc0@22200000: 0, dwmmc1@22300000: 1
@@ -57,25 +14,30 @@ Address in environment is       76:96:98:5c:7a:41
 eth0: xgmac@32400000
 
 
-U-Boot 2022.07+ (Nov 03 2026 - 19:40:20 +0800)BST C1200 ADAS
+U-Boot 2022.07+ (Nov 05 2026 - 13:20:07 +0800)BST C1200 ADAS UPdate New
 
 Autoboot in 3 seconds, hit ctrl+c to stop
 uhs_en:0
-trying mode HS200 (200MHz) width 8 (at 200 MHz)
+trying mode HS200 (200MHz) width 4 (at 200 MHz)
 tuning best:20 fffff
 switch to partitions #0, OK
 mmc0(part 0) is current device
 uhs_en:0
-Card did not respond to voltage select! : -110
+trying mode SD High Speed (50MHz) width 4 (at 50 MHz)
+switch to partitions #0, OK
+mmc1 is current device
 Scanning for bootflows in all bootdevs
 Seq  Method       State   Uclass    Part  Name                      Filename
 ---  -----------  ------  --------  ----  ------------------------  ----------------
 Scanning bootdev 'dwmmc0@22200000.bootdev':
 part_get_info_efi: Invalid Argument(s)
 part_get_info_efi: Invalid Argument(s)
-EFI bootflow: using embedded UEFI FDT (2991 bytes)
-  0  efi          ready   mmc          1  dwmmc0@22200000.bootdev.p efi/boot/bootaa64.efi
-** Booting bootflow 'dwmmc0@22200000.bootdev.part_1' with efi
+Scanning bootdev 'dwmmc1@22300000.bootdev':
+part_get_info_efi: Invalid Argument(s)
+part_get_info_efi: Invalid Argument(s)
+EFI bootflow: using embedded UEFI FDT (3036 bytes)
+  0  efi          ready   mmc          1  dwmmc1@22300000.bootdev.p efi/boot/bootaa64.efi
+** Booting bootflow 'dwmmc1@22300000.bootdev.part_1' with efi
 Booting /efi\boot\bootaa64.efi
 Welcome to GRUB!
 
@@ -123,27 +85,33 @@ error: serial port `com0' isn't found.
                                                                                                                                                                                                                 
                                                                                                                                                                                                                 
 /EndEntire                                                                                                                                                                                                      
-file path: /HardwareVendor(e61d73b9-a384-4acc-aeab-82e828f3628b)[0: ]/UnknownMessaging(1d)/UnknownMessaging(1d)/HD(1,800,32000,13b49fad95986f4e,2,2)/File(\EFI\BOOT)/File(Shell.efi)/EndEntire                  
+file path: /HardwareVendor(e61d73b9-a384-4acc-aeab-82e828f3628b)[0: ]/UnknownMessaging(1a)/UnknownMessaging(1a)/HD(1,800,32000,13b49fad95986f4e,2,2)/File(\EFI\BOOT)/File(Shell.efi)/EndEntire                  
 UEFI Interactive Shell v2.2                                                                                                                                                                                     
 EDK II                                                                                                                                                                                                          
 UEFI v2.90 (Das U-Boot, 0x20220700)                                                                                                                                                                             
 Mapping table                                                                                                                                                                                                   
       FS0: Alias(s):HD0b:;BLK1:                                                                                                                                                                                 
-          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(1,GPT,ad9fb413-9895-4e6f-afdf-151f73f95331,0x800,0x32000)                                                                             
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(1,GPT,897d2618-2379-4a19-a0c2-3deded2271f4,0x800,0x219800)                                                                            
       FS1: Alias(s):HD0c:;BLK2:                                                                                                                                                                                 
-          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(2,GPT,4491cc92-efd8-49c5-b6d6-79e30947620c,0x32800,0xcf2f0)                                                                           
-      FS2: Alias(s):HD0d:;BLK3:                                                                                                                                                                                 
-          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(3,GPT,90489a78-a00e-4df4-9728-27a0308efe12,0x102000,0x19000)                                                                          
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(2,GPT,8b02cc43-b831-41ef-91c5-8a36907598b5,0x21a000,0x400000)                                                                         
+      FS2: Alias(s):HD0b:;BLK5:                                                                                                                                                                                 
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(1)/SD(1)/HD(1,GPT,ad9fb413-9895-4e6f-afdf-151f73f95331,0x800,0x32000)                                                                                 
+      FS3: Alias(s):HD0c:;BLK6:                                                                                                                                                                                 
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(1)/SD(1)/HD(2,GPT,4491cc92-efd8-49c5-b6d6-79e30947620c,0x32800,0xcf2f0)                                                                               
+      FS4: Alias(s):HD0d:;BLK7:                                                                                                                                                                                 
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(1)/SD(1)/HD(3,GPT,90489a78-a00e-4df4-9728-27a0308efe12,0x102000,0x19000)                                                                              
      BLK0: Alias(s):                                                                                                                                                                                            
           /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)                                                                                                                                          
+     BLK3: Alias(s):                                                                                                                                                                                            
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(3,GPT,669e4bf4-54d9-46da-84a9-0781a0c164b5,0x61a000,0x6e61800)                                                                        
+     BLK4: Alias(s):                                                                                                                                                                                            
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(1)/SD(1)                                                                                                                                              
 No SimpleTextInputEx was found. CTRL-based features are not usable.                                                                                                                                             
 No SimpleTextInputEx was found. CTRL-based features are not usable.                                                                                                                                             
 Press ESC in 5 seconds to skip startup.nsh or any other key to continue.                                                                                                                                        
-Shell> FS0:                                                                                                                                                                                                     
-FS0:\>                                                                                                                                                                                                          
-FS0:\>                                                                                                                                                                                                          
-FS0:\>                                                                                                                                                                                                          
-FS0:\> \EFI\BOOT\app\CapsuleApp.efi -D unauth.bin                                                                                                                                                               
+Shell> FS2:                                                                                                                                                                                                     
+FS2:\>                                                                                                                                                                                                          
+FS2:\> EFI\BOOT\app\CapsuleApp.efi -D unauth.bin                                                                                                                                                                
                                                                                                                                                                                                                 
 ASSERT_EFI_ERROR (Status = Not Found)                                                                                                                                                                           
 ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdeModulePkg/Library/UefiHiiServicesLib/UefiHiiServicesLib.c(94): !(((INTN)(RETURN_STAT                                                                                                                                                                 
@@ -154,13 +122,13 @@ ASSERT_EFI_ERROR (Status = Not Found)
 ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/build/Build/MdeModule/RELEASE_GCC5/AARCH64/MdeModulePkg/Application/CapsuleApp/CapsuleApp/DE                                                                                                                                                                 
 ASSERT_EFI_ERROR (Status = Not Found)                                                                                                                                                                           
 ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeHobLib/HobLib.c(48): !(((INTN)(RETURN_STATUS)(Status)) < 0)                                                                                                                                                                           
-ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeHobLib/HobLib.c(49): mHobList != ((void *) 0)                                                                                                                                                                                         
-[FmpCapsule]                                                                                                                                                                                                    
-CapsuleHeader:                                                                                                                                                                                                  
-  CapsuleGuid      - 6DCBD5ED-E82D-4C44-BDA1-7194199AD92A                                                                                                                                                       
-  HeaderSize       - 0x1C                                                                                                                                                                                       
-  Flags            - 0x10000                                                                                                                                                                                    
-  CapsuleImageSize - 0xDE4F8
+ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeHobLib/HobLib.c(49): mHobList != ((void *) 0)
+[FmpCapsule]
+CapsuleHeader:
+  CapsuleGuid      - 6DCBD5ED-E82D-4C44-BDA1-7194199AD92A
+  HeaderSize       - 0x1C
+  Flags            - 0x10000
+  CapsuleImageSize - 0xDEDF8
 FmpHeader:
   Version             - 0x1
   EmbeddedDriverCount - 0x0
@@ -170,11 +138,11 @@ FmpPayload[0] ImageHeader:
   Version                - 0x3
   UpdateImageTypeId      - 63CC9A90-C296-49FE-BBBF-6AFB42C4E385
   UpdateImageIndex       - 0x1
-  UpdateImageSize        - 0xDE49C
+  UpdateImageSize        - 0xDED9C
   UpdateVendorCodeSize   - 0x0
   UpdateHardwareInstance - 0x0
   ImageCapsuleSupport    - 0x0
-FS0:\> \EFI\BOOT\app\CapsuleApp.efi unauth.bin   
+FS2:\> EFI\BOOT\app\CapsuleApp.efi unauth.bin   
 
 ASSERT_EFI_ERROR (Status = Not Found)
 ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdeModulePkg/Library/UefiHiiServicesLib/UefiHiiServicesLib.c(94): !(((INTN)(RETURN_STAT
@@ -186,11 +154,11 @@ ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-syst
 ASSERT_EFI_ERROR (Status = Not Found)
 ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeHobLib/HobLib.c(48): !(((INTN)(RETURN_STATUS)(Status)) < 0)
 ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeHobLib/HobLib.c(49): mHobList != ((void *) 0)
-CapsuleApp: creating capsule descriptors at 0x7EA09040
-CapsuleApp: capsule data starts          at 0x7E8D4040 with size 0xDE4F8
-CapsuleApp: capsule block/size              0x7E8D4040/0xDE4F8
+CapsuleApp: creating capsule descriptors at 0x7E9D4040
+CapsuleApp: capsule data starts          at 0x7E8A2040 with size 0xDEDF8
+CapsuleApp: capsule block/size              0x7E8A2040/0xDEDF8
 CapsuleApp: failed to update capsule - Security Violation
-FS0:\> \EFI\BOOT\app\CapsuleApp.efi -D tampered.bin
+FS2:\> EFI\BOOT\app\CapsuleApp.efi -D tampered.bin
 
 ASSERT_EFI_ERROR (Status = Not Found)
 ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdeModulePkg/Library/UefiHiiServicesLib/UefiHiiServicesLib.c(94): !(((INTN)(RETURN_STAT
@@ -207,7 +175,7 @@ CapsuleHeader:
   CapsuleGuid      - 6DCBD5ED-E82D-4C44-BDA1-7194199AD92A
   HeaderSize       - 0x1C
   Flags            - 0x10000
-  CapsuleImageSize - 0xDEA11
+  CapsuleImageSize - 0xDF311
 FmpHeader:
   Version             - 0x1
   EmbeddedDriverCount - 0x0
@@ -217,60 +185,11 @@ FmpPayload[0] ImageHeader:
   Version                - 0x3
   UpdateImageTypeId      - 63CC9A90-C296-49FE-BBBF-6AFB42C4E385
   UpdateImageIndex       - 0x1
-  UpdateImageSize        - 0xDE9B5
+  UpdateImageSize        - 0xDF2B5
   UpdateVendorCodeSize   - 0x0
   UpdateHardwareInstance - 0x0
   ImageCapsuleSupport    - 0x1
-FS0:\> \EFI\BOOT\app\CapsuleApp.efi tampered.bin   
-
-ASSERT_EFI_ERROR (Status = Not Found)
-ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdeModulePkg/Library/UefiHiiServicesLib/UefiHiiServicesLib.c(94): !(((INTN)(RETURN_STAT
-ASSERT_EFI_ERROR (Status = Not Found)
-ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeServicesTableLib/DxeServicesTableLib.c(58): !(((INTN)(RETURN_STATUS)(ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeServicesTableLib/DxeServicesTableLib.c(59): gDS != ((void *) 0)
-
-ASSERT_EFI_ERROR (Status = Not Found)
-ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/build/Build/MdeModule/RELEASE_GCC5/AARCH64/MdeModulePkg/Application/CapsuleApp/CapsuleApp/DE
-ASSERT_EFI_ERROR (Status = Not Found)
-ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeHobLib/HobLib.c(48): !(((INTN)(RETURN_STATUS)(Status)) < 0)
-ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeHobLib/HobLib.c(49): mHobList != ((void *) 0)
-CapsuleApp: creating capsule descriptors at 0x7E9C5040
-CapsuleApp: capsule data starts          at 0x7E8BB040 with size 0xDEA11
-CapsuleApp: capsule block/size              0x7E8BB040/0xDEA11
-Capsule authentication check failed. Aborting update
-Firmware update failed: <NULL>
-CapsuleApp: failed to update capsule - Security Violation
-FS0:\> \EFI\BOOT\app\CapsuleApp.efi -D capsule1.bin
-
-ASSERT_EFI_ERROR (Status = Not Found)
-ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdeModulePkg/Library/UefiHiiServicesLib/UefiHiiServicesLib.c(94): !(((INTN)(RETURN_STAT
-ASSERT_EFI_ERROR (Status = Not Found)
-ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeServicesTableLib/DxeServicesTableLib.c(58): !(((INTN)(RETURN_STATUS)(ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeServicesTableLib/DxeServicesTableLib.c(59): gDS != ((void *) 0)
-
-ASSERT_EFI_ERROR (Status = Not Found)
-ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/build/Build/MdeModule/RELEASE_GCC5/AARCH64/MdeModulePkg/Application/CapsuleApp/CapsuleApp/DE
-ASSERT_EFI_ERROR (Status = Not Found)
-ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeHobLib/HobLib.c(48): !(((INTN)(RETURN_STATUS)(Status)) < 0)
-ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeHobLib/HobLib.c(49): mHobList != ((void *) 0)
-[FmpCapsule]
-CapsuleHeader:
-  CapsuleGuid      - 6DCBD5ED-E82D-4C44-BDA1-7194199AD92A
-  HeaderSize       - 0x1C
-  Flags            - 0x10000
-  CapsuleImageSize - 0xDEA11
-FmpHeader:
-  Version             - 0x1
-  EmbeddedDriverCount - 0x0
-  PayloadItemCount    - 0x1
-  Offset[0]           - 0x10
-FmpPayload[0] ImageHeader:
-  Version                - 0x3
-  UpdateImageTypeId      - 63CC9A90-C296-49FE-BBBF-6AFB42C4E385
-  UpdateImageIndex       - 0x1
-  UpdateImageSize        - 0xDE9B5
-  UpdateVendorCodeSize   - 0x0
-  UpdateHardwareInstance - 0x0
-  ImageCapsuleSupport    - 0x1
-FS0:\> \EFI\BOOT\app\CapsuleApp.efi capsule1.bin   
+FS2:\> EFI\BOOT\app\CapsuleApp.efi tampered.bin   
 
 ASSERT_EFI_ERROR (Status = Not Found)
 ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdeModulePkg/Library/UefiHiiServicesLib/UefiHiiServicesLib.c(94): !(((INTN)(RETURN_STAT
@@ -283,40 +202,94 @@ ASSERT_EFI_ERROR (Status = Not Found)
 ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeHobLib/HobLib.c(48): !(((INTN)(RETURN_STATUS)(Status)) < 0)
 ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeHobLib/HobLib.c(49): mHobList != ((void *) 0)
 CapsuleApp: creating capsule descriptors at 0x7E990040
-CapsuleApp: capsule data starts          at 0x7E88B040 with size 0xDEA11
-CapsuleApp: capsule block/size              0x7E88B040/0xDEA11
+CapsuleApp: capsule data starts          at 0x7E890040 with size 0xDF311
+CapsuleApp: capsule block/size              0x7E890040/0xDF311
+Capsule authentication check failed. Aborting update
+Firmware update failed: <NULL>
+CapsuleApp: failed to update capsule - Security Violation
+FS2:\> EFI\BOOT\app\CapsuleApp.efi -D capsule1.bin
+
+ASSERT_EFI_ERROR (Status = Not Found)
+ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdeModulePkg/Library/UefiHiiServicesLib/UefiHiiServicesLib.c(94): !(((INTN)(RETURN_STAT
+ASSERT_EFI_ERROR (Status = Not Found)
+ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeServicesTableLib/DxeServicesTableLib.c(58): !(((INTN)(RETURN_STATUS)(ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeServicesTableLib/DxeServicesTableLib.c(59): gDS != ((void *) 0)
+
+ASSERT_EFI_ERROR (Status = Not Found)
+ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/build/Build/MdeModule/RELEASE_GCC5/AARCH64/MdeModulePkg/Application/CapsuleApp/CapsuleApp/DE
+ASSERT_EFI_ERROR (Status = Not Found)
+ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeHobLib/HobLib.c(48): !(((INTN)(RETURN_STATUS)(Status)) < 0)
+ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeHobLib/HobLib.c(49): mHobList != ((void *) 0)
+[FmpCapsule]
+CapsuleHeader:
+  CapsuleGuid      - 6DCBD5ED-E82D-4C44-BDA1-7194199AD92A
+  HeaderSize       - 0x1C
+  Flags            - 0x10000
+  CapsuleImageSize - 0xDF311
+FmpHeader:
+  Version             - 0x1
+  EmbeddedDriverCount - 0x0
+  PayloadItemCount    - 0x1
+  Offset[0]           - 0x10
+FmpPayload[0] ImageHeader:
+  Version                - 0x3
+  UpdateImageTypeId      - 63CC9A90-C296-49FE-BBBF-6AFB42C4E385
+  UpdateImageIndex       - 0x1
+  UpdateImageSize        - 0xDF2B5
+  UpdateVendorCodeSize   - 0x0
+  UpdateHardwareInstance - 0x0
+  ImageCapsuleSupport    - 0x1
+FS2:\> EFI\BOOT\app\CapsuleApp.efi capsule1.bin   
+
+ASSERT_EFI_ERROR (Status = Not Found)
+ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdeModulePkg/Library/UefiHiiServicesLib/UefiHiiServicesLib.c(94): !(((INTN)(RETURN_STAT
+ASSERT_EFI_ERROR (Status = Not Found)
+ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeServicesTableLib/DxeServicesTableLib.c(58): !(((INTN)(RETURN_STATUS)(ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeServicesTableLib/DxeServicesTableLib.c(59): gDS != ((void *) 0)
+
+ASSERT_EFI_ERROR (Status = Not Found)
+ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/build/Build/MdeModule/RELEASE_GCC5/AARCH64/MdeModulePkg/Application/CapsuleApp/CapsuleApp/DE
+ASSERT_EFI_ERROR (Status = Not Found)
+ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeHobLib/HobLib.c(48): !(((INTN)(RETURN_STATUS)(Status)) < 0)
+ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeHobLib/HobLib.c(49): mHobList != ((void *) 0)
+CapsuleApp: creating capsule descriptors at 0x7E951040
+CapsuleApp: capsule data starts          at 0x7E851040 with size 0xDF311
+CapsuleApp: capsule block/size              0x7E851040/0xDF311
 Processing update 'u-boot.bin' :sha1+ 
 Flash proxy probe bus 0
-##############################################################################################################################################################################################################################
+###############################################################################################################################################################################################################################
 resetting ...
 
 BL2-NOTICE  :BL2: Built : 00:03:05, Nov  6 2025
-BL2-NOTICE  :BL2: Booting BL31 [28210]
+BL2-NOTICE  :BL2: Booting BL31 [26708]
 host->align_buffer:0000000005170000
 host->align_buffer:0000000005170000
 dwmmc0@22200000: 0, dwmmc1@22300000: 1
 Net:   eth0: xgmac@32400000
 
 
-U-Boot 2022.07+ (Nov 03 2026 - 21:15:14 +0800)BST C1200 ADAS UPdate
+U-Boot 2022.07+ (Nov 05 2026 - 14:13:59 +0800)BST C1200 ADAS CapsuleTest
 
 Autoboot in 3 seconds, hit ctrl+c to stop
 uhs_en:0
-trying mode HS200 (200MHz) width 8 (at 200 MHz)
+trying mode HS200 (200MHz) width 4 (at 200 MHz)
 tuning best:20 fffff
 switch to partitions #0, OK
 mmc0(part 0) is current device
 uhs_en:0
-Card did not respond to voltage select! : -110
+trying mode SD High Speed (50MHz) width 4 (at 50 MHz)
+switch to partitions #0, OK
+mmc1 is current device
 Scanning for bootflows in all bootdevs
 Seq  Method       State   Uclass    Part  Name                      Filename
 ---  -----------  ------  --------  ----  ------------------------  ----------------
 Scanning bootdev 'dwmmc0@22200000.bootdev':
 part_get_info_efi: Invalid Argument(s)
 part_get_info_efi: Invalid Argument(s)
-EFI bootflow: using embedded UEFI FDT (2991 bytes)
-  0  efi          ready   mmc          1  dwmmc0@22200000.bootdev.p efi/boot/bootaa64.efi
-** Booting bootflow 'dwmmc0@22200000.bootdev.part_1' with efi
+Scanning bootdev 'dwmmc1@22300000.bootdev':
+part_get_info_efi: Invalid Argument(s)
+part_get_info_efi: Invalid Argument(s)
+EFI bootflow: using embedded UEFI FDT (3023 bytes)
+  0  efi          ready   mmc          1  dwmmc1@22300000.bootdev.p efi/boot/bootaa64.efi
+** Booting bootflow 'dwmmc1@22300000.bootdev.part_1' with efi
 Booting /efi\boot\bootaa64.efi
 Welcome to GRUB!
 
@@ -364,24 +337,35 @@ error: serial port `com0' isn't found.
                                                                                                                                                                                                                 
                                                                                                                                                                                                                 
 /EndEntire                                                                                                                                                                                                      
-file path: /HardwareVendor(e61d73b9-a384-4acc-aeab-82e828f3628b)[0: ]/UnknownMessaging(1d)/UnknownMessaging(1d)/HD(1,800,32000,13b49fad95986f4e,2,2)/File(\EFI\BOOT)/File(Shell.efi)/EndEntire                  
+file path: /HardwareVendor(e61d73b9-a384-4acc-aeab-82e828f3628b)[0: ]/UnknownMessaging(1a)/UnknownMessaging(1a)/HD(1,800,32000,13b49fad95986f4e,2,2)/File(\EFI\BOOT)/File(Shell.efi)/EndEntire                  
 UEFI Interactive Shell v2.2                                                                                                                                                                                     
 EDK II                                                                                                                                                                                                          
 UEFI v2.90 (Das U-Boot, 0x20220700)                                                                                                                                                                             
 Mapping table                                                                                                                                                                                                   
       FS0: Alias(s):HD0b:;BLK1:                                                                                                                                                                                 
-          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(1,GPT,ad9fb413-9895-4e6f-afdf-151f73f95331,0x800,0x32000)                                                                             
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(1,GPT,897d2618-2379-4a19-a0c2-3deded2271f4,0x800,0x219800)                                                                            
       FS1: Alias(s):HD0c:;BLK2:                                                                                                                                                                                 
-          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(2,GPT,4491cc92-efd8-49c5-b6d6-79e30947620c,0x32800,0xcf2f0)                                                                           
-      FS2: Alias(s):HD0d:;BLK3:                                                                                                                                                                                 
-          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(3,GPT,90489a78-a00e-4df4-9728-27a0308efe12,0x102000,0x19000)                                                                          
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(2,GPT,8b02cc43-b831-41ef-91c5-8a36907598b5,0x21a000,0x400000)                                                                         
+      FS2: Alias(s):HD0b:;BLK5:                                                                                                                                                                                 
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(1)/SD(1)/HD(1,GPT,ad9fb413-9895-4e6f-afdf-151f73f95331,0x800,0x32000)                                                                                 
+      FS3: Alias(s):HD0c:;BLK6:                                                                                                                                                                                 
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(1)/SD(1)/HD(2,GPT,4491cc92-efd8-49c5-b6d6-79e30947620c,0x32800,0xcf2f0)                                                                               
+      FS4: Alias(s):HD0d:;BLK7:                                                                                                                                                                                 
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(1)/SD(1)/HD(3,GPT,90489a78-a00e-4df4-9728-27a0308efe12,0x102000,0x19000)                                                                              
      BLK0: Alias(s):                                                                                                                                                                                            
           /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)                                                                                                                                          
+     BLK3: Alias(s):                                                                                                                                                                                            
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(3,GPT,669e4bf4-54d9-46da-84a9-0781a0c164b5,0x61a000,0x6e61800)                                                                        
+     BLK4: Alias(s):                                                                                                                                                                                            
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(1)/SD(1)                                                                                                                                              
 No SimpleTextInputEx was found. CTRL-based features are not usable.                                                                                                                                             
 No SimpleTextInputEx was found. CTRL-based features are not usable.                                                                                                                                             
 Press ESC in 5 seconds to skip startup.nsh or any other key to continue.                                                                                                                                        
-Shell> FS0:                                                                                                                                                                                                     
-FS0:\> \EFI\BOOT\app\CapsuleApp.efi -E                                                                                                                                                                          
+Shell> FS2:                                                                                                                                                                                                     
+FS2:\>                                                                                                                                                                                                          
+FS2:\>                                                                                                                                                                                                          
+FS2:\>                                                                                                                                                                                                          
+FS2:\> EFI\BOOT\app\CapsuleApp.efi -E                                                                                                                                                                           
                                                                                                                                                                                                                 
 ASSERT_EFI_ERROR (Status = Not Found)                                                                                                                                                                           
 ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdeModulePkg/Library/UefiHiiServicesLib/UefiHiiServicesLib.c(94): !(((INTN)(RETURN_STAT                                                                                                                                                                 
@@ -391,16 +375,16 @@ ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-syst
 ASSERT_EFI_ERROR (Status = Not Found)                                                                                                                                                                           
 ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/build/Build/MdeModule/RELEASE_GCC5/AARCH64/MdeModulePkg/Application/CapsuleApp/CapsuleApp/DE                                                                                                                                                                 
 ASSERT_EFI_ERROR (Status = Not Found)                                                                                                                                                                           
-ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeHobLib/HobLib.c(48): !(((INTN)(RETURN_STATUS)(Status)) < 0)                                                                                                                                                                           
-ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeHobLib/HobLib.c(49): mHobList != ((void *) 0)                                                                                                                                                                                         
-##############                                                                                                                                                                                                  
-# ESRT TABLE #                                                                                                                                                                                                  
-##############                                                                                                                                                                                                  
-EFI_SYSTEM_RESOURCE_TABLE:                                                                                                                                                                                      
-FwResourceCount    - 0x1                                                                                                                                                                                        
-FwResourceCountMax - 0x1                                                                                                                                                                                        
-FwResourceVersion  - 0x1                                                                                                                                                                                        
-EFI_SYSTEM_RESOURCE_ENTRY (0):                                                                                                                                                                                  
+ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeHobLib/HobLib.c(48): !(((INTN)(RETURN_STATUS)(Status)) < 0)
+ASSERT [CapsuleApp] /home/bst/android/systemready/IR2.0/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeHobLib/HobLib.c(49): mHobList != ((void *) 0)
+##############
+# ESRT TABLE #
+##############
+EFI_SYSTEM_RESOURCE_TABLE:
+FwResourceCount    - 0x1
+FwResourceCountMax - 0x1
+FwResourceVersion  - 0x1
+EFI_SYSTEM_RESOURCE_ENTRY (0):
   FwClass                  - 63CC9A90-C296-49FE-BBBF-6AFB42C4E385
   FwType                   - 0x0 (Unknown)
   FwVersion                - 0x0
@@ -409,4 +393,4 @@ EFI_SYSTEM_RESOURCE_ENTRY (0):
   LastAttemptVersion       - 0x0
   LastAttemptStatus        - 0x0 (Success)
 
-FS0:\> 
+FS2:\> 

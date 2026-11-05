@@ -3,11 +3,13 @@
 + DT-VALIDATE
 /home/bst/systemready-ir-template/acs_results/uefi/BsaDevTree.dtb: soc (simple-bus): arm_pmu: 'ranges' is a required property
 	from schema $id: http://devicetree.org/schemas/simple-bus.yaml
+/home/bst/systemready-ir-template/acs_results/uefi/BsaDevTree.dtb: chosen: stdout-path:0: 'serial0:115200n8 loglevel=8' does not match '^[a-zA-Z0-9@/,+\\-._]*(:[0-9]*[noe]?[78]?[r]?)?$'
+	from schema $id: http://devicetree.org/schemas/chosen.yaml
 + END
 + meta-data
 + ---------
 + command-line: ./check-sr-results.py --dir /home/bst/systemready-ir-template/ --all --force-regen
-+ date: Wed Nov  4 21:54:30 2026 UTC
++ date: Fri Nov  6 08:56:01 2026 UTC
 + dt-validate-version: 2026.9
 + dtc-version: DTC 1.6.1
 + git-commit: ir2.0-2024.04-26-gfea6d1b7a28d-dirty
